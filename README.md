@@ -158,22 +158,6 @@ Generates histograms and polar (pie-style) charts to visualize how each variable
 
 ---
 
-## Requirements
 
-**R:**  
-- tidyverse  
-- data.table  
-- arrow  
-- ggplot2  
-
-**Python:**  
-- pandas  
-- scikit-learn  
-- xgboost  
-- shap  
-- matplotlib  
-- joblib  
-
-Python 3.9+ and R 4.2+ are recommended.
 
 
