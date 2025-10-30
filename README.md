@@ -8,7 +8,7 @@ The workflow integrates R and Python scripts to prepare data, train models, and 
 ## Overview
 
 **Objective**  
-To predict mortality among Danish adults aged 50–69 using linked national registers and to quantify how socioeconomic, health, and demographic factors contribute to predicted risk.
+To predict mortality among Danish adults aged 60–69 using linked national registers and to quantify how socioeconomic, health, and demographic factors contribute to predicted risk.
 
 **Approach**  
 - Cohort construction and variable aggregation in R  
