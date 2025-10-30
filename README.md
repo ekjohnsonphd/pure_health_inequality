@@ -1,6 +1,6 @@
 # Pure Health Project Code
 
-This repository contains scripts that build and analyze a cohort of Danish adults aged 50–69 to predict mortality using national register data and machine learning.  
+This repository contains scripts that build and analyze a cohort of Danish adults aged 60–69 to predict mortality using national register data and machine learning.  
 The workflow integrates R and Python scripts to prepare data, train models, and interpret results.
 
 ---
