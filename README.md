@@ -1,6 +1,6 @@
 # Pure Health Project Code
 
-This repository contains scripts that build and analyze cohorts of Danish adults aged 50–69 to predict mortality using national register data and machine learning.  
+This repository contains scripts used to build and analyze cohorts of Danish adults aged 50–69 to predict mortality using national register data and machine learning.  
 The workflow integrates R and Python scripts to prepare data, train models, and interpret results.
 
 ---
@@ -25,9 +25,9 @@ Interpretable model explanations, feature importance plots, and decompositions o
 
 1. **Cohort construction (R):** Identify individuals aged 50–69, define the mortality outcome, and compute long-term aggregated features (e.g., diagnoses, income, hospitalizations).  
 2. **Data preparation (Python):** Format data for modeling, split into train/test sets, and handle class imbalance.  
-3. **Model training:** XGBoost trained via random hyperparameters grid search and stratified cross-validation.  
+3. **Model training:** XGBoost trained tuning hyperparameters via random grid search and stratified cross-validation.  
 4. **Evaluation:** Compute precision, recall, F1 and F2-score; create confusion matrices and precision–recall curves.  
-5. **Interpretation:** Generate SHAP feature importance and Shapley–Owens decomposition analyses.  
+5. **Interpretation:** Generate SHAP feature importance and Shapley–Owens decomposition analyses of the risk gap between deceased and survivors.  
 6. **Visualization (R):** Produce domain- and time-level visualizations of SHAP and decomposition results.
 
 ---
@@ -39,7 +39,6 @@ Interpretable model explanations, feature importance plots, and decompositions o
 ###  preprocessing/
 - **cohort_data_prep.R** — Build cohort (ages 50–69), define outcome, aggregate long-term variables.  
 - **splitformat.py** — Split data and handle preprocessing (scaling, encoding, imputation).  
-- **resample.py** — Functions for class imbalance (upsample / downsample).  
 
 ###  models/
 - **xgboost_model.py** — XGBoost grid-search training and model selection.  
