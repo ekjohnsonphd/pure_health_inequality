@@ -1,6 +1,6 @@
 # Pure Health Project Code
 
-This repository contains scripts that build and analyze a cohort of Danish adults aged 60–69 to predict mortality using national register data and machine learning.  
+This repository contains scripts that build and analyze cohorts of Danish adults aged 50–69 to predict mortality using national register data and machine learning.  
 The workflow integrates R and Python scripts to prepare data, train models, and interpret results.
 
 ---
@@ -8,7 +8,7 @@ The workflow integrates R and Python scripts to prepare data, train models, and 
 ## Overview
 
 **Objective**  
-To predict mortality among Danish adults aged 60–69 using linked national registers and to quantify how socioeconomic, health, and demographic factors contribute to predicted risk.
+To predict mortality among Danish adults aged 50–69 using linked national registers and to quantify how socioeconomic, health, and demographic factors contribute to predicted risk.
 
 **Approach**  
 - Cohort construction and variable aggregation in R  
@@ -25,8 +25,8 @@ Interpretable model explanations, feature importance plots, and decompositions o
 
 1. **Cohort construction (R):** Identify individuals aged 50–69, define the mortality outcome, and compute long-term aggregated features (e.g., diagnoses, income, hospitalizations).  
 2. **Data preparation (Python):** Format data for modeling, split into train/test sets, and handle class imbalance.  
-3. **Model training:** Logistic Regression and XGBoost trained via grid search and stratified cross-validation.  
-4. **Evaluation:** Compute precision, recall, and F1-score; create confusion matrices and precision–recall curves.  
+3. **Model training:** XGBoost trained via random hyperparameters grid search and stratified cross-validation.  
+4. **Evaluation:** Compute precision, recall, F1 and F2-score; create confusion matrices and precision–recall curves.  
 5. **Interpretation:** Generate SHAP feature importance and Shapley–Owens decomposition analyses.  
 6. **Visualization (R):** Produce domain- and time-level visualizations of SHAP and decomposition results.
 
@@ -43,7 +43,6 @@ Interpretable model explanations, feature importance plots, and decompositions o
 
 ###  models/
 - **xgboost_model.py** — XGBoost grid-search training and model selection.  
-- **logistic.py** — Logistic Regression with grid search and coefficient extraction.  
 
 ###  explain/
 - **evaluate_model.py** — Evaluate model performance and save metrics/plots.  
@@ -90,14 +89,6 @@ Implements `train_xgboost_model()` for grid-search training of an XGBoost classi
 Tests all hyperparameter combinations using stratified K-fold cross-validation.  
 Computes F1, precision, and recall scores, and selects the best-performing model based on a chosen metric (default: F1).  
 Returns the trained model and its best parameters.
-
----
-
-### 5. `models/logistic.py`
-Provides utilities for Logistic Regression training and interpretation.  
-- `train_logistic_model()` tests combinations of regularization penalties (L1/L2) and strengths (C values) using stratified cross-validation.  
-  The function averages F1, precision, and recall scores and selects the best configuration.  
-- `extract_coefficients()` extracts and ranks model coefficients by absolute magnitude to identify key predictors.
 
 ---
 
