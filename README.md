@@ -56,14 +56,14 @@ For each age band, the script:
 - Defines the outcome variable `early_death`  
   (1 if death occurs within the age band, 0 otherwise)
 - Constructs long-term aggregated features using rolling windows:
-  - **0–5 years (late)**
+  - **0–5 years (early)**
   - **6–10 years (mid)**
-  - **11–15 years (early)**  
+  - **11–15 years (late)**  
   covering diagnoses, hospitalizations, medication use, and socioeconomic characteristics
 
-After cohort-specific processing, the script outputs a **single combined dataset** containing all four age bands, spanning the full observation period **1995–2023**.
+After cohort-specific processing, the script outputs a **single combined dataset** , spanning the full observation period **1995–2023**.
 
-The final dataset is saved in **Parquet format** and serves as the input for downstream modeling.
+The final dataset is saved in **Parquet format** and is used for machine learning modelling. 
 
 ---
 
