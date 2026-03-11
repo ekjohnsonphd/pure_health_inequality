@@ -17,9 +17,10 @@ def train_xgboost_model_random(
     maximize="f1", # Or recall, precision, roc_auc, pr_auc
     #min_precision=0.3,
     random_state=42,
-    n_iter: int =80, # Numer of combinations 
+    n_iter: int =60, # Numer of combinations 
     n_jobs=3,
     scale_pos_weight=None,
+    max_bin =256,
 ):
     X=X.copy()
     y=np.asarray(y).astype(int)
@@ -89,8 +90,8 @@ def train_xgboost_model_random(
     print("Best CV score:", search.best_score_)
 
 
-    #Choosen threshold (no threshold tuning)
-    chosen_threshold=0.5
+    #Choosen threshold (no threshold tuning here)
+    chosen_threshold=None
 
 
     return best_model, best_params, chosen_threshold
