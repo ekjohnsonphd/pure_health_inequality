@@ -6,33 +6,44 @@ library(duckdb)
 
 
 # source Nicolai's functions
-source("...../Nicolai/ExpBoD-data/functions/generate_rolling_variables.R")
+source("/generate_rolling_variables.R")
 
 
 # Settings for this cohort
-min_age <- 65
-max_age <- 69
+min_age <- 60
+max_age <- 64
 
-cohort_name <-"65_to_69"
+#Index age = year before outcome window starts
+index_age <- min_age-1
+
+cohort_name <-"60_to_64"
 
 # Yearly panel files including parish variables from 2002
-data_path <- "/....Anne/Data_files/data_panel2/"
-time_periods <- list(c(0, 5), c(6, 10), c(11, 15))
-#time_periods <- list(c(0,5))
-
-# read in a single year of panel data so I can get the colnames
-tdf <- open_dataset(paste0(data_path, "data_panel2018_with_parish.parquet")) 
-colnames_tdf <- names(tdf)
+data_path <- "/data_panel2/"
 
 ## Years we use:
 data_years <- 1995:2023
+
+time_periods <- list(
+  c(2, 6), #Proximal 
+  c(7, 15) # Distal
+)
+
+max_back <- max(sapply(time_periods, function(x) x[2]))
+min_age_needed <- index_age - max_back # Needed for raw + rolling variables
+
+# read in a single year of panel data so I can get the colnames for config list later
+tdf <- open_dataset(paste0(data_path, "data_panel2018_with_parish.parquet")) 
+colnames_tdf <- names(tdf)
+
 
 # Read panel files and build dt for the age band
 message("Step 1: reading panel file and buiding dt")
 
 panel_files <- paste0(data_path, "data_panel", data_years, "_with_parish.parquet")
 
-dt <- lapply(panel_files, function(file) {
+# This data set is for defining the cohort
+dt_band <- lapply(panel_files, function(file) {
   dat <- open_dataset(file) |> 
     filter(in_dk == 1 & de_age %in% min_age:max_age) |> # in Denmark and age range
     collect()
@@ -44,12 +55,12 @@ dt <- lapply(panel_files, function(file) {
 message("Step 1 done")
 
 # Keep people alive at the record year. 
-dt <- dt[alive == 1 & (is.na(de_age_at_death) | de_age_at_death >= min_age)]
+dt_band <- dt_band[alive == 1 & (is.na(de_age_at_death) | de_age_at_death >= min_age)]
 
 
 message("Step 2: creating population table")
 # Collapse to one row per person to define cohort
-population <- dt[,
+population <- dt_band[,
                  .(
                    year_max = max(year), # Last observed year in age band
                    age_max = max(de_age), # highest observed age
@@ -60,36 +71,74 @@ population <- dt[,
                  by = "pnr"
 ] 
 
+# Replace inf when Na in de_age_at death
+population[is.infinite(de_age_at_death), de_age_at_death :=NA_real] 
+
 message("Step 2 done: population has: ",nrow(population), "persons.")
 
 # Define cohort, death year and drop future deaths. 
 population <- population[
-  age_min == min_age & (age_max == max_age | de_age_at_death <= max_age)
+  age_min == min_age & 
+    (age_max == max_age | (!is.na(de_age_at_death) & de_age_at_death <= max_age))
 ]
+#Death year estimate
 population[, death_year := year_max + (floor(de_age_at_death) - age_max)]
+
+# Drop future deaths:
 population <- population[
-  (is.na(de_age_at_death) | de_age_at_death >= max_age) | death_year <= 2023
+  is.na(de_age_at_death) | death_year <= max(data_years)
 ]
 
+# Remove left and right cencoring
 
-# Ensure the fill age window fits inside the data range: removes left and right cencoring. 
-# We keep people who turn 65 2005-2014. Fully observable cohort. 
-population <- population[year_max >= min(data_years) + (max_age - min_age)]
-population <- population[year_min <= max(data_years) - (max_age - min_age)]
+# Remove left and right censoring:
+# Keep only people whose full age band can be observed inside the available data window.
+
+population <- population[
+  year_max >= min(data_years) + (max_age - min_age)
+]
+
+population <- population[
+  year_min <= max(data_years) - (max_age - min_age)
+]
+
+message("After censoring restriction, population has: ", nrow(population), " persons.")
+message("year_min range: ", min(population$year_min), " to ", max(population$year_min))
+message("year_max range: ", min(population$year_max), " to ", max(population$year_max))
+
+# 2b. Read feature window data: index_age and back: what we use for raw variables and rolling variables
 
 
-# Restrict dt to indivuals in the cohort 
-dt <- dt[pnr %in% population$pnr]
+message("Step 2b: reading feature window data ")
 
+dt_feat <- lapply(panel_files, function(file) {
+  dat <- open_dataset(file) |>
+    filter(in_dk==1 & de_age %in% min_age_needed:index_age)|>
+    collect()
 
+  setDT(dat)
+  dat
+}) |>
+  rbindlist(fill = TRUE)
 
-# generate create population panel files: input to rolling function:
-# One year at a time
+message("Step 2b: : dt_feat has: ", nrow(dt_feat), "rows before cohort restriction")
+
+# Restrict to individuals in cohort
+
+dt_feat <-dt_feat[pnr %in% population$pnr] 
+message("Step 2b: : dt_feat restricted by pnr has: ", nrow(dt_feat))
+
+# Ekstra
+setkey(population,pnr)
+setkey(dt_feat,pnr)
+
+dt_feat[population, nomatch=0] 
+
+message("Step 2b: done: dt_feat has: ", nrow(dt_feat), "rows after join")
 
 message(" Step 3: Writing population panel files")
-out_path <- paste0("...../Anne/Data_files/population_panel_",cohort_name, "/")
+out_path <- paste0("population_panel_",cohort_name, "/")
 dir.create(out_path, showWarnings = FALSE, recursive = TRUE)
-
 
 panel_files <- paste0(data_path, "data_panel", data_years, "_with_parish.parquet")
 
@@ -326,24 +375,23 @@ data_roll <- generate_rolling_variables(
 
 message("Step 5 done: rolling  dataset has: " , nrow(data_roll), "rows")
 #Merge rolling variables back onto dt
-dt <- merge(dt, data_roll, by = c("pnr", "year"), all.x = TRUE)
+dt <- merge(dt_feat, data_roll, by = c("pnr", "year"), all.x = TRUE)
 
 #Step 6
 # Create final data and outcome:
 
-# Keep one row per person at min_age in the ageband
-final_data <- dt[de_age == min_age]
+# Keep one row per person at index age in the ageband
+final_data <- dt[de_age == index_age]
 
 #Outcome: death between min_age and max_age (inclusive)
-final_data[, early_death := 0]
+final_data[, early_death := 0L]
 final_data[
   de_age_at_death >= min_age & de_age_at_death <= max_age,
-  early_death := 1
-]
+  early_death := 1L]
 
 # Write parquet.
 write_parquet(
-  final_data, "....Anne/Data_files/cohort_data/cohort65_to_69.parquet")
+  final_data, "/cohort60_to_64.parquet")
 
-
+message("Finished: cohort file saved for ",  cohort_name, ".")
 
