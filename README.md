@@ -49,21 +49,22 @@ Builds the analysis cohorts of Danish adults aged **50–69**, stratified into f
 - **60–64**
 - **65–69**
 
-The script loads yearly Danish panel data covering **1995–2023** and identifies individuals belonging to each age band in the relevant years.
+The script loads yearly Danish panel data (**1995–2023**) and constructs cohort datasets for each age band.
 
-For each age band, the script:
-- Filters individuals by age
-- Defines the outcome variable `early_death`  
-  (1 if death occurs within the age band, 0 otherwise)
-- Constructs long-term aggregated features using rolling windows:
-  - **0–5 years (early)**
-  - **6–10 years (mid)**
-  - **11–15 years (late)**  
-  covering diagnoses, hospitalizations, medication use, and socioeconomic characteristics
+For each cohort, the script:
 
-After cohort-specific processing, the script outputs a **single combined dataset** , spanning the full observation period **1995–2023**.
+- identifies individuals entering the age band
+- removes left- and right-censored observations
+- defines the outcome variable `early_death`
+- generates historical features using rolling time windows  
+  (**2–6 years** and **7–15 years before index age**)
+- merges rolling variables with index variables
 
-The final dataset is saved in **Parquet format** and is used for machine learning modelling. 
+The **index age** corresponds to the year immediately preceding the outcome window.
+
+The final output is a **cohort dataset with one row per individual at index age**, containing all features and the outcome variable.
+
+Datasets are saved in **Parquet format** and used for machine learning modelling.
 
 ---
 
@@ -74,7 +75,7 @@ Defines the function `split_and_format_data()` for preparing cohort data for mac
 The function:
 - Loads a Parquet dataset
 - Optionally filters individuals by sex
-- Separates ID and outcome variables
+- Separates ID and outcome variables from feature set
 - Splits data into training and test sets (default 70/30), optionally stratified by outcome and calendar year
 
 Variable types are automatically detected and preprocessing is applied as follows:
@@ -82,13 +83,13 @@ Variable types are automatically detected and preprocessing is applied as follow
   - Imputed with the constant value `"missing"`
   - One-hot encoded (unknown categories ignored)
 - **Numeric variables**:
-  - Passed through without transformation. Numeric variables are intentionally not scaled or imputed, allowing XGBoost to handle missingness and feature scaling internally.
+  - Passed through without transformation. (Numeric variables are intentionally not scaled or imputed, allowing XGBoost to handle missingness and feature scaling internally.)
 
 The function returns:
 - Training and test feature matrices
 - Training and test outcome vectors
-- ID columns for train and test sets
-- A fitted preprocessing pipeline (`ColumnTransformer`) for use in modeling
+- ID columns for train and test sets  
+- A preprocessing specification (`ColumnTransformer`) used in the modeling pipeline
 
 ---
 
@@ -98,16 +99,15 @@ Implements `train_xgboost_model_random()` for training an XGBoost classifier usi
 
 Key features:
 - Uses a scikit-learn `Pipeline` combining preprocessing and an `XGBClassifier`
-- Trains models using **RandomizedSearchCV**
+- Tunes hyperparameters using **RandomizedSearchCV**
 - Employs **Stratified K-fold cross-validation**
 - Supports multi-metric evaluation with refitting based on a user-specified metric:
   - `f1`, `f2`, `recall`, `precision`, `roc_auc`, or `pr_auc`
-- Handles class imbalance via the `scale_pos_weight` argument
+- Supports class imbalance handling via the `scale_pos_weight` argument
 
 The function returns:
 - The best fitted model
 - The selected hyperparameters
-- A default classification threshold (0.5)
 
 ---
 
@@ -119,7 +119,7 @@ The notebook performs the following steps:
 
 1. **Data loading and splitting**
    - Loads a cohort-specific Parquet dataset
-   - Use the split format functtion to filter by sex and split data into training and test sets stratified by outcome and year
+   - Use the split_and_format_data() function to filter by sex and split data into training and test sets stratified by outcome and year
 
 2. **Class imbalance handling**
    - Computes `scale_pos_weight` from the training data.
@@ -132,30 +132,186 @@ The notebook performs the following steps:
 4. **Threshold selection**
    - Computes precision–recall curves on the training data
    - Selects the classification threshold that maximizes **F2-score**
-   - Restricts the threshold to the interval **[0.3, 0.7]**
 
 5. **Evaluation**
    - Evaluates performance on the test set using:
      - F1 and F2 scores
      - Precision and recall
+     - MCC
      - ROC-AUC and PR-AUC
      - Accuracy and balanced accuracy
      - Confusion matrix and specificity
 
 6. **Predicted probability gap**
-   - Computes mean predicted mortality risk among:
+   - Computes mean predicted mortality probability among:
      - survivors (`y = 0`)
      - deaths (`y = 1`)
    - Reports the difference as a model-implied risk gap
+  
+7. **Saving artifacts for downstream analyses**
+
+   - Saves the trained XGBoost model as a JSON file
+   - Applies the fitted preprocessing pipeline to `X_test`
+   - Saves the processed test feature matrix (`X_test_processed`)
+   - Saves the corresponding test outcomes (`y_test`)
+
+   These files are used in later analyses.
 
 ---
 
+### 5. `05_compute_shap_values.py`
+
+Computes SHAP values for a trained XGBoost model and stores the results for later decomposition analyses.
+
+The script performs the following steps:
+
+1. **Load trained model and test data**
+   - Loads the trained XGBoost model from a JSON file
+   - Loads the processed test feature matrix (`X_test`)
+   - Loads the corresponding test outcomes (`y_test`)
+
+2. **Split test data by outcome**
+   - Separates individuals into:
+     - early deaths (`y = 1`)
+     - survivors (`y = 0`)
+
+3. **Compute predicted probabilities**
+   - Computes predicted mortality probabilities for both groups
+   - Reports:
+     - mean predicted probability among early deaths
+     - mean predicted probability among survivors
+     - the resulting probability gap
+
+4. **Define SHAP baseline**
+   - Randomly samples up to **500 survivors** to form a SHAP background dataset
+   - This baseline represents the reference population used for interventional SHAP calculations
+
+5. **Compute SHAP values**
+   - Uses `shap.TreeExplainer`
+   - Configuration:
+     - `feature_perturbation="interventional"`
+     - `model_output="probability"`
+
+   SHAP values are computed separately for:
+   - early deaths
+   - survivors
+
+6. **Save SHAP results**
+   - Stores SHAP values together with:
+     - predicted probabilities (`pred`)
+     - outcome label (`y`)
+     - SHAP baseline value
+
+
+---
+
+### 6. `06_shap_gap_decomposition.R`
+
+Aggregates SHAP values across cohorts and decomposes the predicted mortality gap into feature contributions.
+
+The script performs the following steps:
+
+1. **Load SHAP values**
+   - Reads `shap_values.csv` for each cohort:
+     - Female_50–54
+     - Female_55–59
+     - Female_60–64
+     - Female_65–69
+     - Male_50–54
+     - Male_55–59
+     - Male_60–64
+     - Male_65–69
+
+2. **Reshape SHAP data**
+   - Converts the dataset to long format
+   - Computes summary statistics by:
+     - feature
+     - outcome group (`y`)
+     - SHAP baseline
+
+   For each feature the script computes:
+
+   - mean SHAP value
+   - mean predicted probability
+   - observation counts
+
+3. **Compute SHAP gap contributions**
+
+   For each feature:
+SHAP gap = mean(SHAP | deaths) − mean(SHAP | survivors)
+
+
+This represents the contribution of that feature to the **predicted mortality probability gap**.
+
+4. **Assign feature groups**
+
+Features are grouped into interpretable domains:
+
+- Healthcare costs & utilization
+- Healthcare diagnoses
+- Psychiatric medications
+- Economic characteristics
+- Year & month of birth
+- Sex
+- Marital status
+- Immigration status
+- Family characteristics
+- Immigration
+- Parish characteristics
+- Residual
+
+5. **Assign temporal feature groups**
+
+Variables are additionally categorized by time window:
+
+- Immediate
+- Proximal
+- Distal
+- Residual
+
+6. **Compute mortality rate**
+
+The script calculates the empirical mortality rate within each cohort.
+
+7. **Combine cohorts**
+
+Results are merged across all cohorts and saved.
+
+
+
 ## Outputs
 
-- Trained XGBoost models
-- Performance metrics 
-- Confusion matrix and derived statistics
-- Estimated predicted mortality risk gaps
+
+The pipeline produces the following outputs:
+
+- **Trained XGBoost models**
+  - Saved as JSON files for each cohort
+
+- **Processed test datasets**
+  - `X_test_<cohort>.csv`
+  - `y_test_<cohort>.csv`
+
+- **Performance metrics**
+  - F1, F2, precision, recall
+  - ROC-AUC and PR-AUC
+  - Accuracy and balanced accuracy
+  - Matthews correlation coefficient (MCC)
+
+- **Confusion matrix and derived statistics**
+  - True/false positives and negatives
+  - Specificity
+
+- **Predicted mortality probability gap**
+  - Mean predicted probability among deaths
+  - Mean predicted probability among survivors
+  - Difference between the two
+
+- **SHAP values**
+  - `shap_values.csv` for each cohort
+
+- **SHAP gap decomposition results**
+  - Combined SHAP decomposition across cohorts
+  - Saved as `shap_results_all.csv`
 
 ---
 
