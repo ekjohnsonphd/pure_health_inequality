@@ -2,7 +2,7 @@
 
 This repository contains code for constructing cohorts of Danish adults aged 50–69 and training machine learning models to predict early mortality using linked national register data.
 
-The project integrates **R** (cohort construction and feature aggregation) and **Python** (model training, threshold selection, and evaluation)
+The project integrates **R** and **Python** 
 
 ---
 
@@ -11,8 +11,8 @@ The project integrates **R** (cohort construction and feature aggregation) and *
 **Objective**  
 To predict mortality among Danish adults aged 50–69 and to evaluate model performance under strong class imbalance, with particular emphasis on recall-oriented metrics.
 
-**Current scope**  
-The repository currently supports:
+**Scope**  
+The repository supports:
 - Cohort construction and feature aggregation
 - XGBoost model training using randomized hyperparameter search
 - Threshold selection based on F2-score
@@ -327,10 +327,6 @@ The script performs the following steps:
 
 Creates a cumulative contribution plot showing how much of the predicted mortality gap is explained by the top-ranked features within each sex and age group.
 
-**Required packages**
-- `data.table`
-- `ggplot2`
-- `scales`
 
 The script performs the following steps:
 
