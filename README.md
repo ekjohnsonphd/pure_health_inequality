@@ -34,7 +34,13 @@ Model interpretation (e.g. SHAP, decomposition) is not yet included in this vers
 - Outcome: `early_death`  
   (1 if death occurs within the age band, 0 otherwise)
 
-Cohorts are constructed separately.
+Cohorts are constructed separately for each age band.
+
+
+A detailed overview of variables, descriptions, and data structure is available in:
+`Danish_study1_data_dictionary.xlsx`
+
+Because the project uses restricted Danish register data, the raw data are not publicly available.
 
 ---
 
