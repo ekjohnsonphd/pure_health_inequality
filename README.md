@@ -1,15 +1,15 @@
 # Pure Health Project Code
 
-This repository contains code for constructing cohorts of Danish adults aged 50–69 and training machine learning models to predict early mortality using linked national register data.
+This repository contains code for constructing cohorts of Danish adults aged 50–69, training machine learning models to predict early mortality, and decomposing the predicted mortality gap between early deaths and survivors using SHAP-based methods.
 
-The project integrates **R** and **Python** 
+The project integrates R and Python across data preparation, modeling, and interpretation.
 
 ---
 
 ## Overview
 
 **Objective**  
-To predict mortality among Danish adults aged 50–69 and to evaluate model performance under strong class imbalance, with particular emphasis on recall-oriented metrics.
+To predict early mortality among Danish adults aged 50–69, evaluate model performance under strong class imbalance, and explain the predicted probability gap between early deaths and survivors using SHAP-based decomposition.
 
 **Scope**  
 The repository supports:
@@ -17,9 +17,9 @@ The repository supports:
 - XGBoost model training using randomized hyperparameter search
 - Threshold selection based on F2-score
 - Evaluation on held-out test data
-
-The repository also includes SHAP-based model interpretation, decomposition of the predicted mortality gap, and plotting scripts for visualizing feature contributions.
-
+- SHAP-based model interpretation
+- Decomposition of the predicted mortality probability gap
+- Plotting scripts for visualizing feature contributions
 ---
 
 ## Data and Cohort Design
@@ -35,7 +35,6 @@ The repository also includes SHAP-based model interpretation, decomposition of t
   (1 if death occurs within the age band, 0 otherwise)
 
 Cohorts are constructed separately for each age band.
-
 
 A detailed overview of variables, descriptions, and data structure is available in:
 `Danish_study1_data_dictionary.xlsx`
@@ -55,7 +54,7 @@ Builds the analysis cohorts of Danish adults aged **50–69**, stratified into f
 - **60–64**
 - **65–69**
 
-The script loads yearly Danish panel data (**1995–2023**) and constructs cohort datasets for each age band.
+The script loads yearly Danish panel data (**1995–2023**) containing all features and constructs cohort datasets for each age band.
 
 For each cohort, the script:
 
@@ -64,7 +63,7 @@ For each cohort, the script:
 - defines the outcome variable `early_death`
 - generates historical features using rolling time windows  
   (**2–6 years** and **7–15 years before index age**)
-- merges rolling variables with index variables
+- merges rolling variables with index age variables
 
 The **index age** corresponds to the year immediately preceding the outcome window.
 
@@ -101,10 +100,10 @@ The function returns:
 
 ### 3. `03_train_xgboost_function.py`
 
-Implements `train_xgboost_model_random()` for training an XGBoost classifier using **randomized hyperparameter search**.
+Defines the function `train_xgboost_model_random()` for training an XGBoost classifier using **randomized hyperparameter search**.
 
 Key features:
-- Uses a scikit-learn `Pipeline` combining preprocessing and an `XGBClassifier`
+- Uses the scikit-learn`XGBClassifier`
 - Tunes hyperparameters using **RandomizedSearchCV**
 - Employs **Stratified K-fold cross-validation**
 - Supports multi-metric evaluation with refitting based on a user-specified metric:
@@ -253,8 +252,6 @@ This represents the contribution of that feature to the **predicted mortality pr
 
 Features are grouped into interpretable domains:
 
-Features are grouped into interpretable domains:
-
 - Healthcare costs & utilization
 - Disease history
 - Psychiatric medications
@@ -279,7 +276,7 @@ The script calculates the empirical mortality rate within each cohort.
 
 7. **Combine cohorts**
 
-Results are merged across all cohorts and saved.
+Results are merged across all cohorts and saved into a CSV: `shap_results_all.csv`
 
 ---
 
@@ -294,7 +291,7 @@ The script performs the following steps:
 
 2. **Clean and harmonize group labels**
    - Recodes selected feature-group labels for plotting
-   - Extracts sex and age-group labels from `age_bin`
+   - Extracts sex and age-group labels from `age_bin` for example `Female_65-69` etc.
 
 3. **Compute total predicted mortality gap**
    - Calculates the gap as:
@@ -334,7 +331,7 @@ The script performs the following steps:
    - Reads `shap_results_all.csv`
 
 2. **Prepare age and sex labels**
-   - Extracts sex and age-group labels from `age_bin`
+   - Extracts sex and age-group labels from `age_bin` for example `Female_65-69`etc.
 
 3. **Compute feature-level contributions**
    - Keeps feature-level SHAP contributions and predicted probabilities
