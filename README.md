@@ -37,7 +37,7 @@ The repository supports:
 Cohorts are constructed separately for each age band.
 
 A detailed overview of variables, descriptions, and data structure is available in:
-`Danish_study1_data_dictionary.xlsx`
+`data_dictionary.xlsx`
 
 Because the project uses restricted Danish register data, the raw data are not publicly available.
 
