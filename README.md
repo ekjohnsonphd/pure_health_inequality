@@ -54,7 +54,7 @@ Builds the analysis cohorts of Danish adults aged **50–69**, stratified into f
 - **60–64**
 - **65–69**
 
-The script loads yearly Danish panel data (**1995–2023**) containing all features and constructs cohort datasets for each age band.
+The script loads yearly Danish panel data (**1995–2023**) containing all features and constructs cohort datasets for each age band. It calls the function `generate_rolling_variables.R` to create historical features across predefined rolling time windows.
 
 For each cohort, the script:
 
@@ -70,6 +70,12 @@ The **index age** corresponds to the year immediately preceding the outcome wind
 The final output is a **cohort dataset with one row per individual at index age**, containing all features and the outcome variable.
 
 Datasets are saved in **Parquet format** and used for machine learning modelling.
+
+---
+
+### `generate_rolling_variables.R`
+
+Helper script used by `01_cohort_data_prep.R` to generate rolling historical variables across predefined time windows.
 
 ---
 
