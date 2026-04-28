@@ -22,11 +22,12 @@ cohort_name <-"60_to_64"
 data_path <- "/data_panel2/"
 
 ## Years we use:
-data_years <- 1995:2023
+data_years <- 2000:2023
 
 time_periods <- list(
-  c(2, 6), #Proximal 
-  c(7, 15) # Distal
+  c(1, 5), #Proximal 
+  c(6, 10) # Distal
+  c(11-15) # Distal 
 )
 
 max_back <- max(sapply(time_periods, function(x) x[2]))
