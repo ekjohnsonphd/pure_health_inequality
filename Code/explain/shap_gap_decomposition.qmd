@@ -1,0 +1,170 @@
+---
+title: "Untitled"
+format: html
+---
+
+
+```{r}
+library(data.table)
+library(arrow)
+library(tidyverse)
+```
+
+
+```{r}
+
+### Raw XGBoost model SHAP
+
+age_bins <- c("Female_50-59","Female_60-69",
+"Male_50-59","Male_60-69")
+
+shap <- lapply(age_bins, function(age){
+    shap <- fread(file.path("/data/XBoost_results/",age,"shap_values.csv"))
+
+
+    # shap <- fread(paste0("results/20251205/65_to_69/shap_values_",age,".csv"))
+    shap <- melt(shap, id.vars = c("pred","y","baseline"))
+    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline")]
+
+    shap <- dcast(shap, variable + baseline ~ y, value.var = c("shap_val","mean_pred","count"))
+    shap[, shap := shap_val_1 - shap_val_0]
+
+    setorder(shap, -shap)
+
+    shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
+    shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
+    shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
+    shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
+    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
+    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
+    shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
+    shap[str_detect(variable, "sex"), group1 := "Sex"]
+    shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
+    shap[variable == "de_imigration_status", group1 := "Immigration status"]
+    shap[str_detect(variable, "fa_num_child|fa_hh_size|_died"), group1 := "Family characteristics"]
+    shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
+    shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
+    shap[variable == "Residual", group1 := "Residual"]
+    shap[is.na(group1)]$variable
+
+    shap[, group2 := "Immediate"]
+    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[variable == "Residual", group2 := "Residual"]
+    shap[, age_bin := age]
+    shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    return(shap)
+}) %>% rbindlist()
+
+print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
+
+ fwrite(shap, "/data/XBoost_results/shap_results_all.csv")
+```
+
+```{r}
+
+### Calibrated model
+
+
+age_bins <- c("female_50-54","female_55-59","female_60-64","female_65-69",
+"male_50-54","male_55-59","male_60-64","male_65-69")
+
+
+shap <- lapply(age_bins, function(age){
+    shap <- fread(file.path("/data/XBoost_results/",age,"calibrated_shap_values.csv"))
+
+    print(age)
+    print(names(shap))
+
+    shap <- melt(shap, id.vars = c("pred","y","baseline"))
+    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline")]
+
+    shap <- dcast(shap, variable + baseline ~ y, value.var = c("shap_val","mean_pred","count"))
+    shap[, shap := shap_val_1 - shap_val_0]
+
+    setorder(shap, -shap)
+
+    shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
+    shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
+    shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
+    shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
+    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
+    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
+    shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
+    shap[str_detect(variable, "sex"), group1 := "Sex"]
+    shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
+    shap[variable == "de_imigration_status", group1 := "Immigration status"]
+    shap[str_detect(variable, "fa_num_child|fa_hh_size|_died"), group1 := "Family characteristics"]
+    shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
+    shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
+    shap[variable == "Residual", group1 := "Residual"]
+    shap[is.na(group1)]$variable
+
+    shap[, group2 := "Immediate"]
+    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[variable == "Residual", group2 := "Residual"]
+    shap[, age_bin := age]
+    #shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    return(shap)
+}) %>% rbindlist()
+
+print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
+
+ fwrite(shap, "/dataXBoost_results3/calibrated_shap_results_all.csv")
+```
+
+
+```{r}
+
+## Baseline sensitivity SHAP
+
+baseline_sizes <- c(500,1000,5000,10000,30000)
+
+shap <- lapply(baseline_sizes, function(bs){
+    shap <- fread(file.path("/data//XBoost_results/Female_65-69",paste0(bs,"_shap_values.csv")))
+
+    shap <- melt(shap, id.vars = c("pred","y","base_value", "baseline_size"))
+    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline_size", "base_value")]
+
+    shap <- dcast(shap, variable + baseline_size + base_value ~ y, value.var = c("shap_val","mean_pred","count"))
+    shap[, shap := shap_val_1 - shap_val_0]
+
+    setorder(shap, -shap)
+
+    shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
+    shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
+    shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
+    shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
+    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
+    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
+    shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
+    shap[str_detect(variable, "sex"), group1 := "Sex"]
+    shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
+    shap[variable == "de_imigration_status", group1 := "Immigration status"]
+    shap[str_detect(variable, "fa_num_child|fa_hh_size|_died"), group1 := "Family characteristics"]
+    shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
+    shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
+    shap[variable == "Residual", group1 := "Residual"]
+    shap[is.na(group1)]$variable
+
+    shap[, group2 := "Immediate"]
+    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[variable == "Residual", group2 := "Residual"]
+    shap[, cohort := "Female_50-59"]
+    shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    return(shap)
+}) %>% rbindlist()
+
+print(unique(shap[,.(baseline_size, base_value, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
+
+ fwrite(shap, "data/XBoost_results/shap_results_baseline_sensitivity.csv")
+
+
+```
+
+
