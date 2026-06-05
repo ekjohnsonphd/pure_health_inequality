@@ -19,7 +19,7 @@ index_age <- min_age
 cohort_name <- paste0(min_age, "_to_", max_age)
 
 # Yearly panel files including parish variables from 2002
-data_path <- "/Data_files/data_panel2/"
+data_path <- "/Data_files/data_panel/"
 
 ## Years we use:
 data_years <- 2000:2023
@@ -35,14 +35,14 @@ max_back <- max(sapply(time_periods, function(x) x[2]))
 min_age_needed <- index_age - max_back # Needed for raw + rolling variables
 
 # read in a single year of panel data so I can get the colnames for config list later
-tdf <- open_dataset(paste0(data_path, "data_panel2018_with_parish.parquet")) 
+tdf <- open_dataset(paste0(data_path, "data_panel2018.parquet")) 
 colnames_tdf <- names(tdf)
 
 
 # Read panel files and build dt for the age band
 message("Step 1: reading panel file and buiding dt")
 
-panel_files <- paste0(data_path, "data_panel", data_years, "_with_parish.parquet")
+panel_files <- paste0(data_path, "data_panel", data_years, ".parquet")
 
 # This data set is for defining the cohort
 dt_band <- lapply(panel_files, function(file) {
@@ -92,7 +92,7 @@ population <- population[
 ]
 
 # Ensure the fill age window fits inside the data range: removes left and right cencoring. 
-# We keep people who turn 65 2005-2014. 
+ 
 population <- population[
   year_max >= min(data_years) + (max_age - min_age)]
 population <- population[
@@ -141,14 +141,10 @@ for (col in hosp_cols) {
 }
 # Remove temporary entry_year column
 dt_feat[, entry_year := NULL]
-# Restrict to individuals in cohort
-dt_feat <- dt_feat[pnr %in% population$pnr]
-message("Step 2b: : dt_feat restricted by pnr has: ", nrow(dt_feat))
-message(" Step 3: Writing population panel files")
-out_path <- paste0("/Anne/Data_files/population_panel_",cohort_name, "/")
-dir.create(out_path, showWarnings = FALSE, recursive = TRUE)
 
-panel_files <- paste0(data_path, "data_panel", data_years, "_with_parish.parquet")
+message(" Step 3: Writing population panel files")
+out_path <- paste0("/Data_files/population_panel_",cohort_name, "/")
+dir.create(out_path, showWarnings = FALSE, recursive = TRUE)
 
 lapply(seq_along(data_years), function(i) {
   yr <- data_years[i]
