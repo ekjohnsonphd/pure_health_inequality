@@ -25,14 +25,14 @@ for cohort_dir in sorted([p for p in BASE_DIR.iterdir() if p.is_dir() and p.name
     # find X_test CSV
     possible_csv = list(cohort_dir.glob("X_test_*.csv"))
     if not possible_csv:
-        print(f"⚠️ No X_test CSV found in {cohort_dir}, skipping")
+        print(f" No X_test CSV found in {cohort_dir}, skipping")
         continue
     test_csv = possible_csv[0]
 
     # find y_test CSV
     y_test_candidates = list(cohort_dir.glob("y_test_*.csv"))
     if not y_test_candidates:
-        print(f"⚠️ No y_test CSV found in {cohort_dir}, skipping")
+        print(f" No y_test CSV found in {cohort_dir}, skipping")
         continue
     y_test_file = y_test_candidates[0]
 
@@ -40,7 +40,7 @@ for cohort_dir in sorted([p for p in BASE_DIR.iterdir() if p.is_dir() and p.name
     model_json_candidates = list(cohort_dir.glob("model5_best_model_*json"))
     metrics_json_candidates = list(cohort_dir.glob("Model_5_*.json"))
     if not model_json_candidates:
-        print(f"⚠️ No model JSON found in {cohort_dir}, skipping")
+        print(f" No model JSON found in {cohort_dir}, skipping")
         continue
     model_json_path = model_json_candidates[0]
     metrics_json_path = metrics_json_candidates[0] if metrics_json_candidates else None
