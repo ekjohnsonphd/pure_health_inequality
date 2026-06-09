@@ -1,18 +1,19 @@
 library(data.table)
 library(arrow)
 
-
-#Config
+# ── Config ────────────────────────────────────────────────────────────────────
+COHORT_NAME <- "65_to_69"
+SEX         <- "Female"   # "Female" or "Male"
 
 cohort_file <- "/cohort_data/cohort65_to_69.parquet"
-pred_file <-"/XBoost_results/Female_65-69/prediction/predictions.parquet"
-death_file <-"/data/Nicolai/ExpBoD-data/rawdata2/Grunddata/dodsaasg2022.parquet"
+pred_file   <- "/XBoost_results/Female_65-69/prediction/predictions.parquet"
+death_file  <- "/data/Nicolai/ExpBoD-data/rawdata2/Grunddata/dodsaasg2022.parquet"
 
 dex_icd_map <- "/data/DEX_ICD_map_v148.csv"
-dex_causes <- "/data/DEX_causelist_v148.csv"
+dex_causes  <- "/data/DEX_causelist_v148.csv"
 
-out_dir <- "/data/XBoost_results/Female_65-69/prediction"
-
+out_dir     <- "/data/XBoost_results/Female_65-69/prediction"
+# ─────────────────────────────────────────────────────────────────────────────
 
 
 
@@ -66,7 +67,7 @@ cohort <- read_parquet(cohort_file, as_data_frame = TRUE)
 setDT(cohort)
 
 
-cohort_dead <- cohort[de_sex=="Female" & early_death ==1,.(pnr)]
+cohort_dead <- cohort[de_sex == SEX & early_death == 1, .(pnr)]
 cohort_dead <- unique(cohort_dead[!is.na(pnr)])
 
 # load death and restrict to cohort deaths only
