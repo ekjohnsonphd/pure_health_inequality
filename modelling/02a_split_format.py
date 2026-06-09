@@ -1,3 +1,4 @@
+
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
@@ -38,6 +39,7 @@ def split_and_format_data(
     else:
         strata = y
 
+    # First split: train/test
     X_train_full, X_test, y_train_full, y_test, id_train_full, id_test = train_test_split(
         X, y, ids,
         test_size=test_size,
@@ -45,24 +47,38 @@ def split_and_format_data(
         random_state=random_state
     )
 
-    if stratify_on_year:
-        if year_col not in X_train_full.columns:
-            raise ValueError("Year column not in training data")
-        strata_train = y_train_full.astype(str) + "_" + X_train_full[year_col].astype(str)
-    else:
-        strata_train = y_train_full
+    # Second split: fit/calibration
+    # If cal_size_within_train = 0, no calibration set is created.
+    if cal_size_within_train is not None and cal_size_within_train > 0:
 
-    X_fit, X_cal, y_fit, y_cal, id_fit, id_cal = train_test_split(
-        X_train_full, y_train_full, id_train_full,
-        test_size=cal_size_within_train,
-        stratify=strata_train,
-        random_state=random_state
-    )
+        if stratify_on_year:
+            if year_col not in X_train_full.columns:
+                raise ValueError("Year column not in training data")
+            strata_train = y_train_full.astype(str) + "_" + X_train_full[year_col].astype(str)
+        else:
+            strata_train = y_train_full
+
+        X_fit, X_cal, y_fit, y_cal, id_fit, id_cal = train_test_split(
+            X_train_full, y_train_full, id_train_full,
+            test_size=cal_size_within_train,
+            stratify=strata_train,
+            random_state=random_state
+        )
+
+    else:
+        X_fit = X_train_full
+        y_fit = y_train_full
+        id_fit = id_train_full
+
+        X_cal = None
+        y_cal = None
+        id_cal = None
 
     categorical_vars = [
         col for col in X_fit.columns
         if X_fit[col].dtype == "object" or str(X_fit[col].dtype) == "category"
     ]
+
     numeric_vars = [
         col for col in X_fit.columns
         if col not in categorical_vars
@@ -91,7 +107,8 @@ def split_and_format_data(
         y_cal,
         y_test,
         id_fit.reset_index(drop=True),
-        id_cal.reset_index(drop=True),
+        None if id_cal is None else id_cal.reset_index(drop=True),
         id_test.reset_index(drop=True),
         preprocessor
     )
+
