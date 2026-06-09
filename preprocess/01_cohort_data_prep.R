@@ -14,7 +14,6 @@ cohort_name <- paste0(min_age, "_to_", max_age)
 data_path <- "/Data_files/data_panel/"
 out_path  <- paste0("/Data_files/population_panel_", cohort_name, "/")
 time_periods <- list(c(1,5), c(6,10), c(11,15))
-# time_periods <- list(c(0,5))
 
 
 # read in a single year of panel data so I can get the colnames 
@@ -25,7 +24,6 @@ panel_files <- Sys.glob(paste0(data_path,"data_panel*.parquet"))
 dt <- lapply(panel_files, function(file){
   data <- open_dataset(file) %>%
     filter(in_dk == 1 & de_age %in% min_age:max_age) %>%
-    select(-contains("rank")) %>%
     collect() %>% setDT()
   return(data)
 }) %>% rbindlist(fill = TRUE)
@@ -44,8 +42,8 @@ dt <- dt[pnr %in% population$pnr]
 
 population_ids <- unique(dt$pnr)
 
-# generate rolling vars for the 69-year olds for each year
-lapply(1986:2023, function(yr){
+# create yearly population panel files for the selected age cohort
+lapply(2000:2023, function(yr){
   file <- paste0(data_path, "data_panel", yr, ".parquet")
   data <- open_dataset(file) %>%
     filter(pnr %in% population$pnr) %>%
@@ -57,13 +55,6 @@ icd_columns <- lapply(grep("^hc_icd10_2_(?!.*NA)", names(tdf), value = TRUE, per
   list(var_name = variable, value = "1", periods = time_periods, stats = "max", dataset = "population_panel")
 })
 
-cci_columns <- lapply(grep("^hc_charlson_(?!.*NA)", names(tdf), value = TRUE, perl = TRUE), function(variable){
-  list(var_name = variable, value = "1", periods = time_periods, stats = "max", dataset = "population_panel")
-})
-
-elix_columns <- lapply(grep("^hc_elixhauser_(?!.*NA)", names(tdf), value = TRUE, perl = TRUE), function(variable){
-  list(var_name = variable, value = "1", periods = time_periods, stats = "max",  dataset = "population_panel")
-})
 
 numeric_variables <- c(#grep("^hc_util_", names(tdf), value = TRUE),
   grep("^hc_cost_", names(tdf), value = TRUE),
