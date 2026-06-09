@@ -3,7 +3,7 @@
 
 This repository contains code for constructing cohorts of Danish adults aged 50–69, training machine-learning models to predict early mortality, and decomposing the predicted mortality-probability gap between early deaths and survivors using SHAP-based methods.
 
-The project combines **R** for cohort construction, rolling-window feature aggregation, descriptive analyses, and selected figures, and **Python** for model training, probability calibration, SHAP computation, evaluation plots, and supplementary analyses.
+The project combines R for cohort construction, rolling-window feature aggregation, descriptive analyses, and selected figures, and Python for model training, probability calibration, SHAP computation, evaluation plots, and supplementary analyses.
 
 ---
 
