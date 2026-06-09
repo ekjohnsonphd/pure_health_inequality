@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "SHAP gap decomposition"
 format: html
 ---
 
@@ -15,14 +15,13 @@ library(tidyverse)
 
 ### Raw XGBoost model SHAP
 
-age_bins <- c("Female_50-59","Female_60-69",
-"Male_50-59","Male_60-69")
+age_bins <- c("female_50-54","female_55-59","female_60-64","female_65-69",
+"male_50-54","male_55-59","male_60-64","male_65-69")
 
 shap <- lapply(age_bins, function(age){
-    shap <- fread(file.path("/data/XBoost_results/",age,"shap_values.csv"))
+    shap <- fread(file.path("/XBoost_results/",age,"shap_values.csv"))
 
 
-    # shap <- fread(paste0("results/20251205/65_to_69/shap_values_",age,".csv"))
     shap <- melt(shap, id.vars = c("pred","y","baseline"))
     shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline")]
 
@@ -45,7 +44,7 @@ shap <- lapply(age_bins, function(age){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
-    shap[is.na(group1)]$variable
+    print(shap[is.na(group1)]$variable)
 
     shap[, group2 := "Immediate"]
     shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
@@ -59,7 +58,7 @@ shap <- lapply(age_bins, function(age){
 
 print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
 
- fwrite(shap, "/data/XBoost_results/shap_results_all.csv")
+ fwrite(shap, "/XBoost_results/shap_results_all.csv")
 ```
 
 ```{r}
@@ -72,7 +71,7 @@ age_bins <- c("female_50-54","female_55-59","female_60-64","female_65-69",
 
 
 shap <- lapply(age_bins, function(age){
-    shap <- fread(file.path("/data/XBoost_results/",age,"calibrated_shap_values.csv"))
+    shap <- fread(file.path("/XBoost_results/",age,"calibrated_shap_values.csv"))
 
     print(age)
     print(names(shap))
@@ -99,7 +98,7 @@ shap <- lapply(age_bins, function(age){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
-    shap[is.na(group1)]$variable
+    print(shap[is.na(group1)]$variable)
 
     shap[, group2 := "Immediate"]
     shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
@@ -113,7 +112,7 @@ shap <- lapply(age_bins, function(age){
 
 print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
 
- fwrite(shap, "/dataXBoost_results3/calibrated_shap_results_all.csv")
+ fwrite(shap, "/XBoost_results/calibrated_shap_results_all.csv")
 ```
 
 
@@ -124,7 +123,7 @@ print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
 baseline_sizes <- c(500,1000,5000,10000,30000)
 
 shap <- lapply(baseline_sizes, function(bs){
-    shap <- fread(file.path("/data//XBoost_results/Female_65-69",paste0(bs,"_shap_values.csv")))
+    shap <- fread(file.path("/XBoost_results/female_65-69",paste0(bs,"_shap_values.csv")))
 
     shap <- melt(shap, id.vars = c("pred","y","base_value", "baseline_size"))
     shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline_size", "base_value")]
@@ -148,13 +147,13 @@ shap <- lapply(baseline_sizes, function(bs){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
-    shap[is.na(group1)]$variable
+    print(shap[is.na(group1)]$variable)
 
     shap[, group2 := "Immediate"]
     shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
     shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
     shap[variable == "Residual", group2 := "Residual"]
-    shap[, cohort := "Female_50-59"]
+    shap[, cohort := "female_65-69"]
     shap[, mort_rate := count_1/(count_1 + count_0)]
 
     return(shap)
@@ -162,7 +161,7 @@ shap <- lapply(baseline_sizes, function(bs){
 
 print(unique(shap[,.(baseline_size, base_value, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
 
- fwrite(shap, "data/XBoost_results/shap_results_baseline_sensitivity.csv")
+ fwrite(shap, "/XBoost_results/shap_results_baseline_sensitivity.csv")
 
 
 ```

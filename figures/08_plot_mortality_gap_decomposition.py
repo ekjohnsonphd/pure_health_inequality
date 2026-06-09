@@ -10,7 +10,7 @@ plt.rcParams["axes.spines.top"] = False
 plt.rcParams["axes.spines.right"] = False
 
 # --- Load data ---
-shap = pd.read_csv("data/20260212/shap_results_all.csv")
+shap = pd.read_csv("/XBoost_results/shap_results_all.csv")
 
 # --- Minimal cleaning (match your R logic) ---
 shap["group1"] = shap["group1"].replace({
@@ -21,8 +21,8 @@ shap["group1"] = shap["group1"].replace({
     "Family characteristics": "Demographics and household",
 })
 
-shap["sex"] = shap["age_bin"].str.extract(r"^(Male|Female)")
-shap["age_label"] = shap["age_bin"].str.replace(r"^(Male|Female)_", "", regex=True)
+shap["sex"] = shap["age_bin"].str.extract(r"^(male|female)").str.capitalize()
+shap["age_label"] = shap["age_bin"].str.replace(r"^(male|female)_", "", regex=True)
 
 # --- Orders (as in your R code) ---
 age_order = ["50-54", "55-59", "60-64", "65-69"]
@@ -204,6 +204,6 @@ stacked_panel(
     ymax=shared_ymax,
 )
 
-out_path = "paper/figures/figure1_mortality_gap_decomposition.png"
+out_path = "figures/figure1_mortality_gap_decomposition.png"
 plt.savefig(out_path, dpi=300, bbox_inches="tight", transparent=True)
 plt.show()

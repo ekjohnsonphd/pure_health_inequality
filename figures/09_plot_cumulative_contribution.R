@@ -5,11 +5,11 @@ library(scales)
 # Figure 2: cumulative contribution of top features to the predicted mortality gap
 
 # --- Load data ---
-shap <- fread("data/20260212/shap_results_all.csv")
+shap <- fread("/XBoost_results/shap_results_all.csv")
 
 # --- Minimal cleaning ---
-shap[, sex := fifelse(grepl("^Male", age_bin), "Male", "Female")]
-shap[, age_label := sub("^(Male|Female)_", "", age_bin)]
+shap[, sex := fifelse(grepl("^male", age_bin), "Male", "Female")]
+shap[, age_label := sub("^(male|female)_", "", age_bin)]
 
 # --- Calculate cumulative contribution for each age-sex group ---
 concentration_data <- shap[, .(
@@ -76,7 +76,7 @@ p_cumulative <- ggplot(
 
 # --- Save figure ---
 ggsave(
-  "paper/figures/figure2_cumulative_contribution.png",
+  "figures/figure2_cumulative_contribution.png",
   plot = p_cumulative,
   width = 12,
   height = 7,

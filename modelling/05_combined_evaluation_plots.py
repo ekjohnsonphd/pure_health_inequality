@@ -7,19 +7,19 @@ Creates ROC and PR curves aggregated across cohorts.
 import json
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import xgboost as xgb
 from sklearn.metrics import roc_curve, precision_recall_curve, roc_auc_score, average_precision_score
 
-BASE_DIR = Path("/data/XBoost_results")
+BASE_DIR = Path("/XBoost_results")
 PLOTS_DIR = BASE_DIR / "evaluation" / "plots"
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 all_roc = []   # list of dicts with keys: fpr, tpr, auc, cohort
 all_pr = []    # list of dicts with keys: recall, precision, ap, cohort
 
-for cohort_dir in sorted([p for p in BASE_DIR.iterdir() if p.is_dir() and p.name.startswith(("Female_", "Male_"))]):
+for cohort_dir in sorted([p for p in BASE_DIR.iterdir() if p.is_dir() and p.name.startswith(("female_", "male_"))]):
     cohort_name = cohort_dir.name
 
     # find X_test CSV
@@ -45,7 +45,6 @@ for cohort_dir in sorted([p for p in BASE_DIR.iterdir() if p.is_dir() and p.name
     model_json_path = model_json_candidates[0]
     metrics_json_path = metrics_json_candidates[0] if metrics_json_candidates else None
 
-    import xgboost as xgb
     model = xgb.XGBClassifier()
     model.load_model(model_json_path)
 
