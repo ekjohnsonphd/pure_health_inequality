@@ -1,3 +1,4 @@
+
 ---
 title: "SHAP gap decomposition"
 format: html
@@ -5,37 +6,63 @@ format: html
 
 
 ```{r}
+# Load packages
 library(data.table)
 library(arrow)
 library(tidyverse)
-```
-
+````
 
 ```{r}
 
 ### Raw XGBoost model SHAP
 
-age_bins <- c("female_50-54","female_55-59","female_60-64","female_65-69",
-"male_50-54","male_55-59","male_60-64","male_65-69")
+# Define all cohorts/age-sex groups to process
+age_bins <- c(
+  "female_50-54","female_55-59","female_60-64","female_65-69",
+  "male_50-54","male_55-59","male_60-64","male_65-69"
+)
 
+# Loop over each cohort and process the raw SHAP values
 shap <- lapply(age_bins, function(age){
-    shap <- fread(file.path("/XBoost_results/",age,"shap_values.csv"))
+    
+    # Read SHAP values for this cohort
+    shap <- fread(file.path("/XBoost_results/", age, "shap_values.csv"))
 
+    # Convert from wide format to long format:
+    # one row per person-feature combination
+    shap <- melt(shap, id.vars = c("pred", "y", "baseline"))
 
-    shap <- melt(shap, id.vars = c("pred","y","baseline"))
-    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline")]
+    # Calculate mean SHAP value, mean prediction, and count
+    # separately for deaths (y=1) and survivors (y=0)
+    shap <- shap[
+      ,
+      .(
+        shap_val = mean(value),
+        mean_pred = mean(pred),
+        count = .N
+      ),
+      by = c("y", "variable", "baseline")
+    ]
 
-    shap <- dcast(shap, variable + baseline ~ y, value.var = c("shap_val","mean_pred","count"))
+    # Convert back to wide format so deaths and survivors are side by side
+    shap <- dcast(
+      shap,
+      variable + baseline ~ y,
+      value.var = c("shap_val", "mean_pred", "count")
+    )
+
+    # Difference in mean SHAP values:
+    # deaths minus survivors
     shap[, shap := shap_val_1 - shap_val_0]
 
+    # Sort by largest positive contribution to the gap
     setorder(shap, -shap)
 
+    # Group variables into broader categories
     shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
     shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
     shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
     shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
-    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
-    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
     shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
     shap[str_detect(variable, "sex"), group1 := "Sex"]
     shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
@@ -44,52 +71,85 @@ shap <- lapply(age_bins, function(age){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
+
+    # Print variables that were not assigned to a group
     print(shap[is.na(group1)]$variable)
 
+    # Group variables by timing window
     shap[, group2 := "Immediate"]
-    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
-    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[str_detect(variable, "_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable, "_6_10$|_11_15$"), group2 := "Distal"]
     shap[variable == "Residual", group2 := "Residual"]
+
+    # Add cohort label
     shap[, age_bin := age]
-    shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    # Calculate mortality rate in the SHAP sample
+    shap[, mort_rate := count_1 / (count_1 + count_0)]
 
     return(shap)
-}) %>% rbindlist()
+}) %>% 
+  rbindlist()
 
-print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
+# Print summary by cohort
+print(unique(shap[, .(age_bin, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
 
- fwrite(shap, "/XBoost_results/shap_results_all.csv")
+# Save combined raw SHAP results
+fwrite(shap, "/XBoost_results/shap_results_all.csv")
 ```
 
 ```{r}
 
-### Calibrated model
+### Calibrated model SHAP
 
+# Define all cohorts/age-sex groups to process
+age_bins <- c(
+  "female_50-54","female_55-59","female_60-64","female_65-69",
+  "male_50-54","male_55-59","male_60-64","male_65-69"
+)
 
-age_bins <- c("female_50-54","female_55-59","female_60-64","female_65-69",
-"male_50-54","male_55-59","male_60-64","male_65-69")
-
-
+# Loop over each cohort and process calibrated SHAP values
 shap <- lapply(age_bins, function(age){
-    shap <- fread(file.path("/XBoost_results/",age,"calibrated_shap_values.csv"))
+    
+    # Read calibrated SHAP values for this cohort
+    shap <- fread(file.path("/XBoost_results/", age, "calibrated_shap_values.csv"))
 
+    # Print cohort name and column names as a check
     print(age)
     print(names(shap))
 
-    shap <- melt(shap, id.vars = c("pred","y","baseline"))
-    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline")]
+    # Convert from wide to long format
+    shap <- melt(shap, id.vars = c("pred", "y", "baseline"))
 
-    shap <- dcast(shap, variable + baseline ~ y, value.var = c("shap_val","mean_pred","count"))
+    # Calculate average SHAP value and prediction by outcome group
+    shap <- shap[
+      ,
+      .(
+        shap_val = mean(value),
+        mean_pred = mean(pred),
+        count = .N
+      ),
+      by = c("y", "variable", "baseline")
+    ]
+
+    # Put deaths and survivors side by side
+    shap <- dcast(
+      shap,
+      variable + baseline ~ y,
+      value.var = c("shap_val", "mean_pred", "count")
+    )
+
+    # SHAP gap: deaths minus survivors
     shap[, shap := shap_val_1 - shap_val_0]
 
+    # Sort by contribution to the gap
     setorder(shap, -shap)
 
+    # Group variables into broader categories
     shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
     shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
     shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
     shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
-    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
-    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
     shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
     shap[str_detect(variable, "sex"), group1 := "Sex"]
     shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
@@ -98,47 +158,84 @@ shap <- lapply(age_bins, function(age){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
+
+    # Print variables without group
     print(shap[is.na(group1)]$variable)
 
+    # Group variables by timing window
     shap[, group2 := "Immediate"]
-    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
-    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[str_detect(variable, "_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable, "_6_10$|_11_15$"), group2 := "Distal"]
     shap[variable == "Residual", group2 := "Residual"]
+
+    # Add cohort label
     shap[, age_bin := age]
-    #shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    # Mortality rate not calculated here because calibrated SHAP sample may be balanced
+    # shap[, mort_rate := count_1 / (count_1 + count_0)]
 
     return(shap)
-}) %>% rbindlist()
+}) %>% 
+  rbindlist()
 
-print(unique(shap[,.(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
+# Print summary by cohort
+print(unique(shap[, .(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
 
- fwrite(shap, "/XBoost_results/calibrated_shap_results_all.csv")
+# Save combined calibrated SHAP results
+fwrite(shap, "/XBoost_results/calibrated_shap_results_all.csv")
 ```
-
 
 ```{r}
 
-## Baseline sensitivity SHAP
+### Baseline sensitivity SHAP
 
-baseline_sizes <- c(500,1000,5000,10000,30000)
+# Different baseline sample sizes to compare
+baseline_sizes <- c(500, 1000, 5000, 10000, 30000)
 
+# Loop over each baseline size
 shap <- lapply(baseline_sizes, function(bs){
-    shap <- fread(file.path("/XBoost_results/female_65-69",paste0(bs,"_shap_values.csv")))
+    
+    # Read SHAP values for this baseline size
+    shap <- fread(file.path(
+      "/XBoost_results/female_65-69",
+      paste0(bs, "_shap_values.csv")
+    ))
 
-    shap <- melt(shap, id.vars = c("pred","y","base_value", "baseline_size"))
-    shap <- shap[,.(shap_val = mean(value), mean_pred = mean(pred), count = .N), by = c("y","variable","baseline_size", "base_value")]
+    # Convert from wide to long format
+    shap <- melt(
+      shap,
+      id.vars = c("pred", "y", "base_value", "baseline_size")
+    )
 
-    shap <- dcast(shap, variable + baseline_size + base_value ~ y, value.var = c("shap_val","mean_pred","count"))
+    # Calculate average SHAP values by outcome and feature
+    shap <- shap[
+      ,
+      .(
+        shap_val = mean(value),
+        mean_pred = mean(pred),
+        count = .N
+      ),
+      by = c("y", "variable", "baseline_size", "base_value")
+    ]
+
+    # Put deaths and survivors side by side
+    shap <- dcast(
+      shap,
+      variable + baseline_size + base_value ~ y,
+      value.var = c("shap_val", "mean_pred", "count")
+    )
+
+    # SHAP gap: deaths minus survivors
     shap[, shap := shap_val_1 - shap_val_0]
 
+    # Sort by contribution to the gap
     setorder(shap, -shap)
 
+    # Group variables into broader categories
     shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
     shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
     shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
     shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
-    # shap[str_detect(variable, "se_pers"), group1 := "Personal economic characteristics"]
-    # shap[str_detect(variable, "se_long_term"), group1 := "Long term sickness absense"]
     shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
     shap[str_detect(variable, "sex"), group1 := "Sex"]
     shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
@@ -147,23 +244,40 @@ shap <- lapply(baseline_sizes, function(bs){
     shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
     shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
     shap[variable == "Residual", group1 := "Residual"]
+
+    # Print variables without group
     print(shap[is.na(group1)]$variable)
 
+    # Group variables by timing window
     shap[, group2 := "Immediate"]
-    shap[str_detect(variable,"_1_5$"), group2 := "Proximal"]
-    shap[str_detect(variable,"_6_10$|_11_15$"), group2 := "Distal"]
+    shap[str_detect(variable, "_1_5$"), group2 := "Proximal"]
+    shap[str_detect(variable, "_6_10$|_11_15$"), group2 := "Distal"]
     shap[variable == "Residual", group2 := "Residual"]
+
+    # Add cohort label
     shap[, cohort := "female_65-69"]
-    shap[, mort_rate := count_1/(count_1 + count_0)]
+
+    # Calculate mortality rate in the SHAP sample
+    shap[, mort_rate := count_1 / (count_1 + count_0)]
 
     return(shap)
-}) %>% rbindlist()
+}) %>% 
+  rbindlist()
 
-print(unique(shap[,.(baseline_size, base_value, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
+# Print summary for each baseline size
+print(unique(shap[, .(
+  baseline_size,
+  base_value,
+  mean_pred_0,
+  mean_pred_1,
+  count_0,
+  count_1,
+  mort_rate
+)]))
 
- fwrite(shap, "/XBoost_results/shap_results_baseline_sensitivity.csv")
-
-
+# Save baseline sensitivity results
+fwrite(shap, "/XBoost_results/shap_results_baseline_sensitivity.csv")
 ```
 
 
+```
