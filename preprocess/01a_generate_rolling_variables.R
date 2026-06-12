@@ -1,3 +1,6 @@
+# Function used in the script "cohort_data_prep.R"
+
+
 #' Generate rolling statistics for specified time periods and variables
 #'
 #' @param var_config List of variable configurations with the following structure

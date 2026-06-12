@@ -1,3 +1,5 @@
+# Extended features, allowing for index age = min_age -1 and exclude immidiate hospitalisations
+
 library(data.table)
 library(tidyverse)
 library(arrow)

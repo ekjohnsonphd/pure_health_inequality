@@ -1,3 +1,6 @@
+# Example. Not used in our process.
+
+
 ###############################################################################
 ### Calculate comorbidities
 ### Version: 1.0
