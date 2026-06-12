@@ -4,6 +4,8 @@ library(arrow)
 library(parallel)
 library(duckdb)
 
+## Allows for index_age = min_age - 1
+
 
 # source Nicolai's functions
 source("/generate_rolling_variables.R")

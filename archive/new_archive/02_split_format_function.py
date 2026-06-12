@@ -7,7 +7,10 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 
+# No calibration data split
+
 DEFAULT_DROP_COLS = []
+
 
 
 def split_and_format_data(

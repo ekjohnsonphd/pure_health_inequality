@@ -20,7 +20,6 @@ def train_xgboost_model_random(
     n_iter: int =60, # Numer of combinations 
     n_jobs=3,
     scale_pos_weight=None,
-    max_bin =256,
 ):
     X=X.copy()
     y=np.asarray(y).astype(int)

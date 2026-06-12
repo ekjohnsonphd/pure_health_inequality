@@ -4,6 +4,8 @@ import pandas as pd
 import xgboost as xgb
 import shap
 
+# From raw xgboost model
+
 # Paths
 RESULTS_DIR = Path("XBoost_results/Female_50-54")
 
