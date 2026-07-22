@@ -1,3 +1,9 @@
+# ============================================================================
+# DEPRECATED (archived 2026-07-21). Was modelling/03a_resample.py
+# Up/down-sampling helpers for the resampling model variant. The primary model
+# handles class imbalance with scale_pos_weight (no resampling), so this and its
+# runner (archive/resample_run.ipynb) are not part of the analysis. Reference only.
+# ============================================================================
 
 import pandas as pd
 from sklearn.utils import resample

@@ -10,93 +10,14 @@ format: html
 library(data.table)
 library(arrow)
 library(tidyverse)
-````
-
-```{r}
-
-### Raw XGBoost model SHAP
-
-# Define all cohorts/age-sex groups to process
-age_bins <- c(
-  "female_50-54","female_55-59","female_60-64","female_65-69",
-  "male_50-54","male_55-59","male_60-64","male_65-69"
-)
-
-# Loop over each cohort and process the raw SHAP values
-shap <- lapply(age_bins, function(age){
-    
-    # Read SHAP values for this cohort
-    shap <- fread(file.path("/XBoost_results/", age, "shap_values.csv"))
-
-    # Convert from wide format to long format:
-    # one row per person-feature combination
-    shap <- melt(shap, id.vars = c("pred", "y", "baseline"))
-
-    # Calculate mean SHAP value, mean prediction, and count
-    # separately for deaths (y=1) and survivors (y=0)
-    shap <- shap[
-      ,
-      .(
-        shap_val = mean(value),
-        mean_pred = mean(pred),
-        count = .N
-      ),
-      by = c("y", "variable", "baseline")
-    ]
-
-    # Convert back to wide format so deaths and survivors are side by side
-    shap <- dcast(
-      shap,
-      variable + baseline ~ y,
-      value.var = c("shap_val", "mean_pred", "count")
-    )
-
-    # Difference in mean SHAP values:
-    # deaths minus survivors
-    shap[, shap := shap_val_1 - shap_val_0]
-
-    # Sort by largest positive contribution to the gap
-    setorder(shap, -shap)
-
-    # Group variables into broader categories
-    shap[str_detect(variable, "hc_cost|hc_util|hc_hospitalizations|se_long_term"), group1 := "Healthcare costs & utilization"]
-    shap[str_detect(variable, "hc_di|hc_charlson|hc_elix"), group1 := "Heathcare dx"]
-    shap[str_detect(variable, "med_|medication_count"), group1 := "Psychiatric medications"]
-    shap[str_detect(variable, "se_hh|se_pers|se_educ"), group1 := "Economic characteristics"]
-    shap[str_detect(variable, "year|month"), group1 := "Year & month of birth"]
-    shap[str_detect(variable, "sex"), group1 := "Sex"]
-    shap[str_detect(variable, "de_marital"), group1 := "Marital status"]
-    shap[variable == "de_imigration_status", group1 := "Immigration status"]
-    shap[str_detect(variable, "fa_num_child|fa_hh_size|_died"), group1 := "Family characteristics"]
-    shap[str_detect(variable, "imigration|ethnicity"), group1 := "Immigration"]
-    shap[str_detect(variable, "parish|region"), group1 := "Parish characteristics"]
-    shap[variable == "Residual", group1 := "Residual"]
-
-    # Print variables that were not assigned to a group
-    print(shap[is.na(group1)]$variable)
-
-    # Group variables by timing window
-    shap[, group2 := "Immediate"]
-    shap[str_detect(variable, "_1_5$"), group2 := "Proximal"]
-    shap[str_detect(variable, "_6_10$|_11_15$"), group2 := "Distal"]
-    shap[variable == "Residual", group2 := "Residual"]
-
-    # Add cohort label
-    shap[, age_bin := age]
-
-    # Calculate mortality rate in the SHAP sample
-    shap[, mort_rate := count_1 / (count_1 + count_0)]
-
-    return(shap)
-}) %>% 
-  rbindlist()
-
-# Print summary by cohort
-print(unique(shap[, .(age_bin, mean_pred_0, mean_pred_1, count_0, count_1, mort_rate)]))
-
-# Save combined raw SHAP results
-fwrite(shap, "/XBoost_results/shap_results_all.csv")
 ```
+
+<!--
+NOTE (2026-07-21): The raw (uncalibrated) XGBoost SHAP block was removed.
+Raw-model SHAP is deprecated; its generating script now lives at
+`archive/shap_raw.py`, and its output `shap_results_all.csv` is no longer
+produced here. The primary decomposition below uses the calibrated model.
+-->
 
 ```{r}
 
@@ -110,7 +31,7 @@ age_bins <- c(
 
 # Loop over each cohort and process calibrated SHAP values
 shap <- lapply(age_bins, function(age){
-    
+
     # Read calibrated SHAP values for this cohort
     shap <- fread(file.path("/XBoost_results/", age, "calibrated_shap_values.csv"))
 
@@ -175,7 +96,7 @@ shap <- lapply(age_bins, function(age){
     # shap[, mort_rate := count_1 / (count_1 + count_0)]
 
     return(shap)
-}) %>% 
+}) %>%
   rbindlist()
 
 # Print summary by cohort
@@ -194,7 +115,7 @@ baseline_sizes <- c(500, 1000, 5000, 10000, 30000)
 
 # Loop over each baseline size
 shap <- lapply(baseline_sizes, function(bs){
-    
+
     # Read SHAP values for this baseline size
     shap <- fread(file.path(
       "/XBoost_results/female_65-69",
@@ -261,7 +182,7 @@ shap <- lapply(baseline_sizes, function(bs){
     shap[, mort_rate := count_1 / (count_1 + count_0)]
 
     return(shap)
-}) %>% 
+}) %>%
   rbindlist()
 
 # Print summary for each baseline size
@@ -277,7 +198,4 @@ print(unique(shap[, .(
 
 # Save baseline sensitivity results
 fwrite(shap, "/XBoost_results/shap_results_baseline_sensitivity.csv")
-```
-
-
 ```

@@ -8,7 +8,10 @@ import joblib
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Configuration
-# Define cohort, random seed, input paths, and output path.
+# Define cohort, random seed, input paths, output path, and sampling sizes.
+#
+# SHAP is computed on the TEST set (held out from both training and calibration),
+# using the calibrated model.
 # ─────────────────────────────────────────────────────────────────────────────
 
 cohort      = "female_50-54"
@@ -16,33 +19,42 @@ RANDOM_SEED = 42
 
 RESULTS_DIR           = Path(f"/XBoost_results/{cohort}")
 CALIBRATED_MODEL_PATH = RESULTS_DIR / f"model5_calibrated_model_{cohort}.joblib"
-X_CAL_PATH            = RESULTS_DIR / f"X_cal_raw_{cohort}.parquet"
-Y_CAL_PATH            = RESULTS_DIR / f"y_cal_raw_{cohort}.parquet"
+X_TEST_PATH           = RESULTS_DIR / f"X_test_raw_{cohort}.parquet"
+Y_TEST_PATH           = RESULTS_DIR / f"y_test_raw_{cohort}.parquet"
 OUT_PATH              = RESULTS_DIR / "calibrated_shap_values.csv"
+
+# Sampling for the explained set.
+# The calibrated model uses model-agnostic (permutation) SHAP, which is too
+# expensive to run on the whole test set (~200k+ rows). The decomposition only
+# needs stable group means (deaths vs survivors), and deaths are rare, so we
+# explain ALL deaths plus a random survivor sample of equal size.
+# N_SURVIVORS = None  -> match the number of deaths.
+N_SURVIVORS   = None   # or an int to fix the survivor sample size
+BACKGROUND_N  = 100    # survivor reference (background) size for SHAP
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Load calibrated model and calibration data
+# Load calibrated model and test data
 # The calibrated model is saved as a joblib file.
-# X_cal contains features, and y_cal contains the true outcome.
+# X_test contains features, and y_test contains the true outcome.
 # ─────────────────────────────────────────────────────────────────────────────
 
 calibrated_model = joblib.load(CALIBRATED_MODEL_PATH)
 
-X_cal    = pd.read_parquet(X_CAL_PATH)
-y_cal_df = pd.read_parquet(Y_CAL_PATH)
+X_test    = pd.read_parquet(X_TEST_PATH)
+y_test_df = pd.read_parquet(Y_TEST_PATH)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Extract outcome column
-# y_cal = 1 means early death.
-# y_cal = 0 means survivor.
+# y_test = 1 means early death.
+# y_test = 0 means survivor.
 # ─────────────────────────────────────────────────────────────────────────────
 
-if "y_cal" in y_cal_df.columns:
-    y_cal = y_cal_df["y_cal"].to_numpy().astype(int)
+if "y_test" in y_test_df.columns:
+    y_test = y_test_df["y_test"].to_numpy().astype(int)
 else:
-    y_cal = y_cal_df.iloc[:, 0].to_numpy().astype(int)
+    y_test = y_test_df.iloc[:, 0].to_numpy().astype(int)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -51,12 +63,12 @@ else:
 # The original categories are saved so we can decode them again before prediction.
 # ─────────────────────────────────────────────────────────────────────────────
 
-cat_cols     = X_cal.select_dtypes(include=["object", "category"]).columns.tolist()
+cat_cols     = X_test.select_dtypes(include=["object", "category"]).columns.tolist()
 cat_mappings = {}
 
 for col in cat_cols:
-    X_cal[col]        = X_cal[col].astype("category")
-    cat_mappings[col] = X_cal[col].cat.categories
+    X_test[col]       = X_test[col].astype("category")
+    cat_mappings[col] = X_test[col].cat.categories
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -73,7 +85,7 @@ def encode(df):
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Decode numeric category codes back to the original categories.
-# This is needed because the calibrated model may expect categorical variables.
+# This is needed because the calibrated model expects the original values.
 # ─────────────────────────────────────────────────────────────────────────────
 
 def decode(df):
@@ -87,12 +99,12 @@ def decode(df):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Split calibration data by outcome
+# Split test data by outcome
 # This separates deaths and survivors.
 # ─────────────────────────────────────────────────────────────────────────────
 
-X_deaths    = X_cal[y_cal == 1].copy()
-X_survivors = X_cal[y_cal == 0].copy()
+X_deaths    = X_test[y_test == 1].copy()
+X_survivors = X_test[y_test == 0].copy()
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -108,29 +120,30 @@ rng = np.random.default_rng(RANDOM_SEED)
 # The baseline is sampled from survivors and used as the SHAP reference group.
 # ─────────────────────────────────────────────────────────────────────────────
 
-baseline_n   = min(500, X_survivors.shape[0])
+baseline_n   = min(BACKGROUND_N, X_survivors.shape[0])
 baseline_idx = rng.choice(X_survivors.index, size=baseline_n, replace=False)
 baseline     = X_survivors.loc[baseline_idx]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Sample people to explain
-# Up to 100 deaths and 100 survivors are selected.
+# Select people to explain
+# ALL deaths are explained (they are rare). Survivors are randomly sampled to a
+# matched size so the death and survivor group means are both stable.
 # ─────────────────────────────────────────────────────────────────────────────
 
-n_deaths     = min(100, X_deaths.shape[0])
-n_survivors  = min(100, X_survivors.shape[0])
+n_deaths    = X_deaths.shape[0]
+n_survivors = n_deaths if N_SURVIVORS is None else N_SURVIVORS
+n_survivors = min(n_survivors, X_survivors.shape[0])
 
-death_idx    = rng.choice(X_deaths.index, size=n_deaths, replace=False)
 survivor_idx = rng.choice(X_survivors.index, size=n_survivors, replace=False)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Combine sampled deaths and survivors into one dataset.
+# Combine all deaths and the sampled survivors into one dataset.
 # ─────────────────────────────────────────────────────────────────────────────
 
 X_explain = pd.concat([
-    X_deaths.loc[death_idx],
+    X_deaths,
     X_survivors.loc[survivor_idx],
 ], axis=0)
 
@@ -144,6 +157,9 @@ y_explain = np.concatenate([
     np.ones(n_deaths, dtype=int),
     np.zeros(n_survivors, dtype=int),
 ])
+
+print(f"Explaining {n_deaths} deaths + {n_survivors} survivors "
+      f"(background {baseline_n}) for cohort {cohort}")
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -163,12 +179,12 @@ X_explain_enc = encode(X_explain)
 # ─────────────────────────────────────────────────────────────────────────────
 
 def predict_death_probability(X):
-    X_df = pd.DataFrame(X, columns=X_cal.columns)
+    X_df = pd.DataFrame(X, columns=X_test.columns)
     X_df = decode(X_df)
-    
+
     for col in cat_cols:
         X_df[col] = X_df[col].astype("category")
-    
+
     return calibrated_model.predict_proba(X_df)[:, 1]
 
 
@@ -186,7 +202,9 @@ explainer = shap.Explainer(
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Compute SHAP values
-# max_evals controls how many model evaluations SHAP can use.
+# max_evals controls how many model evaluations SHAP can use per person
+# (one permutation). Runtime scales with the number of people explained, so the
+# sampling above keeps this tractable on the full test set.
 # ─────────────────────────────────────────────────────────────────────────────
 
 max_evals = 2 * X_explain_enc.shape[1] + 1
@@ -199,13 +217,13 @@ shap_exp = explainer(
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Create output dataframe
-# Each row is one sampled person.
+# Each row is one explained person.
 # Each feature column contains that feature's SHAP value.
 # ─────────────────────────────────────────────────────────────────────────────
 
 df_shap = pd.DataFrame(
     shap_exp.values,
-    columns=X_cal.columns
+    columns=X_test.columns
 )
 
 
@@ -239,4 +257,3 @@ df_check = pd.read_csv(OUT_PATH)
 
 print(df_check[["y", "pred", "baseline"]].head())
 print(df_check.shape)
-

@@ -1,3 +1,9 @@
+# ============================================================================
+# DEPRECATED (archived 2026-07-21). Was shap_analysis/06a_compute_shap_values_raw_model.py
+# Raw (uncalibrated) model SHAP is no longer part of the analysis. The primary
+# SHAP decomposition uses the calibrated model — see shap_analysis/05_shap_calibrated.py.
+# Kept for reference only; not run in the pipeline.
+# ============================================================================
 
 from pathlib import Path
 import pandas as pd
