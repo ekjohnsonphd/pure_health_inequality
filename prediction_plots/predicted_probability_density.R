@@ -10,8 +10,12 @@ library(ggplot2)
 # out_dir is where the plot will be saved.
 # ─────────────────────────────────────────────────────────────────────────────
 
-pred_file <- "/XBoost_results/Female_65-69/predictions.parquet"
-out_dir   <- "/XBoost_results/Female_65-69"
+# Project data root — set to your server data path when replicating.
+data_dir <- "../data"
+cohort   <- "female_65-69"
+
+pred_file <- file.path(data_dir, cohort, "calibrated_predictions.parquet")
+out_dir   <- file.path(data_dir, cohort)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -19,7 +23,7 @@ out_dir   <- "/XBoost_results/Female_65-69"
 # The prediction file should contain:
 # - y_test: true outcome
 # - y_proba: predicted probability of early death
-# - threshold: classification threshold
+# - calibrated_threshold: classification threshold
 # ─────────────────────────────────────────────────────────────────────────────
 
 pred <- read_parquet(pred_file, as_data_frame = TRUE)
@@ -33,7 +37,7 @@ setDT(pred)
 # vlines stores the median predicted probability for each true outcome group.
 # ─────────────────────────────────────────────────────────────────────────────
 
-thr <- unique(pred$threshold)
+thr <- unique(pred$calibrated_threshold)
 
 vlines <- pred[
   ,

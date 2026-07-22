@@ -11,9 +11,13 @@ library(ggplot2)
 # out_dir is where the plot will be saved.
 # ─────────────────────────────────────────────────────────────────────────────
 
-pred_file   <- "/XBoost_results/Female_65-69/predictions.parquet"
-cohort_file <- "/Data_files/cohort_data/cohort65_to_69.parquet"
-out_dir     <- "/XBoost_results/Female_65-69"
+# Project data root — set to your server data path when replicating.
+data_dir <- "../data"
+cohort   <- "female_65-69"
+
+pred_file   <- file.path(data_dir, cohort, "calibrated_predictions.parquet")
+cohort_file <- "/Data_files/cohort_data/cohort65_to_69.parquet"   # raw cohort input (server register path)
+out_dir     <- file.path(data_dir, cohort)
 
 
 # ─────────────────────────────────────────────────────────────────────────────

@@ -10,14 +10,18 @@ library(arrow)
 COHORT_NAME <- "65_to_69"
 SEX         <- "Female"   # "Female" or "Male"
 
-cohort_file <- "/cohort_data/cohort65_to_69.parquet"
-pred_file   <- "/XBoost_results/Female_65-69/prediction/predictions.parquet"
+# Project data root — set to your server data path when replicating.
+data_dir <- "../data"
+cohort   <- "female_65-69"
+
+cohort_file <- "/cohort_data/cohort65_to_69.parquet"   # raw cohort input (server register path)
+pred_file   <- file.path(data_dir, cohort, "calibrated_predictions.parquet")
 death_file  <- "/data/Nicolai/ExpBoD-data/rawdata2/Grunddata/dodsaasg2022.parquet"
 
 dex_icd_map <- "/data/DEX_ICD_map_v148.csv"
 dex_causes  <- "/data/DEX_causelist_v148.csv"
 
-out_dir     <- "/data/XBoost_results/Female_65-69/prediction"
+out_dir     <- file.path(data_dir, cohort)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
