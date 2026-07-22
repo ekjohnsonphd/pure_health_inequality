@@ -1,15 +1,15 @@
 
 """
 Combined evaluation of all XGBoost models.
-Creates ROC and PR curves aggregated across cohorts.
+Creates ROC and PR curves aggregated across cohorts, using the calibrated model.
 """
 
 import json
 from pathlib import Path
 
 import pandas as pd
+import joblib
 import matplotlib.pyplot as plt
-import xgboost as xgb
 
 from sklearn.metrics import (
     roc_curve,
@@ -21,14 +21,14 @@ from sklearn.metrics import (
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Define paths
-# BASE_DIR contains all cohort-specific model result folders.
-# PLOTS_DIR is where the combined evaluation plots will be saved.
+# DATA_DIR contains one folder per cohort (plus _combined/ for cross-cohort output).
+# Set DATA_DIR to your server data path when replicating.
 # ─────────────────────────────────────────────────────────────────────────────
 
-BASE_DIR = Path("/XBoost_results")
-PLOTS_DIR = BASE_DIR / "evaluation" / "plots"
+DATA_DIR = Path("../data")
+PLOTS_DIR = DATA_DIR / "_combined"
 
-# Create plots folder if it does not already exist
+# Create the combined-output folder if it does not already exist
 PLOTS_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -43,80 +43,48 @@ all_pr = []    # stores recall, precision, average precision, cohort
 # ─────────────────────────────────────────────────────────────────────────────
 # Loop through all cohort folders
 #
-# Only folders starting with "female_" or "male_" are included.
-# Example:
-# female_50-54
-# male_65-69
+# Only folders starting with "female_" or "male_" are included
+# (this also excludes the _combined/ output folder).
 # ─────────────────────────────────────────────────────────────────────────────
 
 for cohort_dir in sorted([
-    p for p in BASE_DIR.iterdir()
+    p for p in DATA_DIR.iterdir()
     if p.is_dir() and p.name.startswith(("female_", "male_"))
 ]):
     cohort_name = cohort_dir.name
 
+    model_path = cohort_dir / "calibrated_model.joblib"
+    x_test_path = cohort_dir / "X_test_raw.parquet"
+    y_test_path = cohort_dir / "y_test_raw.parquet"
+    metrics_path = cohort_dir / "metrics.json"
+
 
     # ─────────────────────────────────────────────────────────────────────────
-    # Find X_test file for this cohort
+    # Skip cohorts that are missing the calibrated model or the raw test set
     # ─────────────────────────────────────────────────────────────────────────
 
-    possible_csv = list(cohort_dir.glob("X_test_*.csv"))
-    
-    if not possible_csv:
-        print(f" No X_test CSV found in {cohort_dir}, skipping")
+    if not model_path.exists():
+        print(f" No calibrated model in {cohort_dir}, skipping")
         continue
-    
-    test_csv = possible_csv[0]
 
-
-    # ─────────────────────────────────────────────────────────────────────────
-    # Find y_test file for this cohort
-    # ─────────────────────────────────────────────────────────────────────────
-
-    y_test_candidates = list(cohort_dir.glob("y_test_*.csv"))
-    
-    if not y_test_candidates:
-        print(f" No y_test CSV found in {cohort_dir}, skipping")
+    if not (x_test_path.exists() and y_test_path.exists()):
+        print(f" No raw test parquet in {cohort_dir}, skipping")
         continue
-    
-    y_test_file = y_test_candidates[0]
 
 
     # ─────────────────────────────────────────────────────────────────────────
-    # Find model file and metrics file
+    # Load the calibrated pipeline
     #
-    # model5_best_model_*.json contains the trained XGBoost model.
-    # Model_5_*.json contain saved evaluation metrics and threshold.
+    # This is the full estimator saved by 03 (preprocessing + XGBoost +
+    # isotonic calibrator). It takes RAW features and returns calibrated
+    # probabilities — the same inputs the SHAP step uses.
     # ─────────────────────────────────────────────────────────────────────────
 
-    model_json_candidates = list(cohort_dir.glob("model5_best_model_*json"))
-    metrics_json_candidates = list(cohort_dir.glob("Model_5_*.json"))
+    calibrated_model = joblib.load(model_path)
 
-    if not model_json_candidates:
-        print(f" No model JSON found in {cohort_dir}, skipping")
-        continue
-
-    model_json_path = model_json_candidates[0]
-    metrics_json_path = metrics_json_candidates[0] if metrics_json_candidates else None
-
-
-    # ─────────────────────────────────────────────────────────────────────────
-    # Load XGBoost model
-    # ─────────────────────────────────────────────────────────────────────────
-
-    model = xgb.XGBClassifier()
-    model.load_model(model_json_path)
-
-
-    # ─────────────────────────────────────────────────────────────────────────
-    # Load test data
-    #
-    # X_test contains features.
-    # y_test contains true outcome labels.
-    # ─────────────────────────────────────────────────────────────────────────
-
-    X_test = pd.read_csv(test_csv)
-    y_test = pd.read_csv(y_test_file)["y_test"]
+    X_test = pd.read_parquet(x_test_path)
+    y_test_df = pd.read_parquet(y_test_path)
+    y_test = y_test_df["y_test"] if "y_test" in y_test_df.columns else y_test_df.iloc[:, 0]
 
 
     # ─────────────────────────────────────────────────────────────────────────
@@ -129,24 +97,24 @@ for cohort_dir in sorted([
 
     thr = 0.5
 
-    if metrics_json_path is not None:
-        with open(metrics_json_path) as fp:
+    if metrics_path.exists():
+        with open(metrics_path) as fp:
             metrics_json = json.load(fp)
-        
-        thr = metrics_json.get("test_metrics", {}).get("threshold_used", 0.5)
-        
+
+        thr = metrics_json.get("metrics", {}).get("threshold_used", 0.5)
+
         if not isinstance(thr, (float, int)):
             thr = 0.5
 
 
     # ─────────────────────────────────────────────────────────────────────────
-    # Predict probability of early death
+    # Predict calibrated probability of early death
     #
     # predict_proba() returns probabilities for class 0 and class 1.
     # [:, 1] selects the probability of class 1 = early death.
     # ─────────────────────────────────────────────────────────────────────────
 
-    y_prob = model.predict_proba(X_test)[:, 1]
+    y_prob = calibrated_model.predict_proba(X_test)[:, 1]
 
 
     # ─────────────────────────────────────────────────────────────────────────
@@ -262,4 +230,3 @@ plt.close()
 # ─────────────────────────────────────────────────────────────────────────────
 
 print(f"Combined evaluation plots saved to {PLOTS_DIR}")
-

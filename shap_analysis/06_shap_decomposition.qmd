@@ -10,6 +10,11 @@ format: html
 library(data.table)
 library(arrow)
 library(tidyverse)
+
+# Project data root — set to your server data path when replicating.
+data_dir     <- "../data"
+combined_dir <- file.path(data_dir, "_combined")
+dir.create(combined_dir, recursive = TRUE, showWarnings = FALSE)
 ```
 
 <!--
@@ -33,7 +38,7 @@ age_bins <- c(
 shap <- lapply(age_bins, function(age){
 
     # Read calibrated SHAP values for this cohort
-    shap <- fread(file.path("/XBoost_results/", age, "calibrated_shap_values.csv"))
+    shap <- fread(file.path(data_dir, age, "calibrated_shap_values.csv"))
 
     # Print cohort name and column names as a check
     print(age)
@@ -103,7 +108,7 @@ shap <- lapply(age_bins, function(age){
 print(unique(shap[, .(age_bin, mean_pred_0, mean_pred_1, count_0, count_1)]))
 
 # Save combined calibrated SHAP results
-fwrite(shap, "/XBoost_results/calibrated_shap_results_all.csv")
+fwrite(shap, file.path(combined_dir, "calibrated_shap_results_all.csv"))
 ```
 
 ```{r}
@@ -118,7 +123,7 @@ shap <- lapply(baseline_sizes, function(bs){
 
     # Read SHAP values for this baseline size
     shap <- fread(file.path(
-      "/XBoost_results/female_65-69",
+      data_dir, "female_65-69",
       paste0(bs, "_shap_values.csv")
     ))
 
@@ -197,5 +202,5 @@ print(unique(shap[, .(
 )]))
 
 # Save baseline sensitivity results
-fwrite(shap, "/XBoost_results/shap_results_baseline_sensitivity.csv")
+fwrite(shap, file.path(combined_dir, "shap_results_baseline_sensitivity.csv"))
 ```

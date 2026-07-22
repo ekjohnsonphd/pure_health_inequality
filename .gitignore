@@ -1,0 +1,6 @@
+# Model outputs and derived data — regenerated on the server, not tracked
+data/
+
+# Python bytecode
+__pycache__/
+*.pyc

@@ -17,10 +17,12 @@ import joblib
 cohort      = "female_50-54"
 RANDOM_SEED = 42
 
-RESULTS_DIR           = Path(f"/XBoost_results/{cohort}")
-CALIBRATED_MODEL_PATH = RESULTS_DIR / f"model5_calibrated_model_{cohort}.joblib"
-X_TEST_PATH           = RESULTS_DIR / f"X_test_raw_{cohort}.parquet"
-Y_TEST_PATH           = RESULTS_DIR / f"y_test_raw_{cohort}.parquet"
+# Project data root — set to your server data path when replicating.
+DATA_DIR              = Path("../data")
+RESULTS_DIR           = DATA_DIR / cohort
+CALIBRATED_MODEL_PATH = RESULTS_DIR / "calibrated_model.joblib"
+X_TEST_PATH           = RESULTS_DIR / "X_test_raw.parquet"
+Y_TEST_PATH           = RESULTS_DIR / "y_test_raw.parquet"
 OUT_PATH              = RESULTS_DIR / "calibrated_shap_values.csv"
 
 # Sampling for the explained set.

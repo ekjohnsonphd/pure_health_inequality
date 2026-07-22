@@ -1,6 +1,11 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
+
+# Project data root — set to your server data path when replicating.
+DATA_DIR = Path("../data")
+COMBINED_DIR = DATA_DIR / "_combined"
 
 # Creates a 2x2 stacked bar figure showing how SHAP contributions explain
 # the mortality risk gap between deceased and surviving individuals.
@@ -16,7 +21,7 @@ plt.rcParams["axes.spines.top"] = False
 plt.rcParams["axes.spines.right"] = False
 
 # --- Load SHAP decomposition data ---
-shap = pd.read_csv("/XBoost_results/shap_results_all.csv")
+shap = pd.read_csv(COMBINED_DIR / "calibrated_shap_results_all.csv")
 
 # --- Clean group labels ---
 shap["group1"] = shap["group1"].replace({
@@ -244,6 +249,6 @@ stacked_panel(
 )
 
 # Save and show figure
-out_path = "figures/figure1_mortality_gap_decomposition.png"
+out_path = COMBINED_DIR / "figure1_mortality_gap_decomposition.png"
 plt.savefig(out_path, dpi=300, bbox_inches="tight", transparent=True)
 plt.show()

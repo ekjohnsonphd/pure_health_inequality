@@ -8,8 +8,12 @@ library(scales)
 # Each line shows one sex-age group.
 # Steeper lines mean fewer features explain more of the gap.
 
+# Project data root — set to your server data path when replicating.
+data_dir     <- "../data"
+combined_dir <- file.path(data_dir, "_combined")
+
 # --- Load SHAP decomposition data ---
-shap <- fread("/XBoost_results/shap_results_all.csv")
+shap <- fread(file.path(combined_dir, "calibrated_shap_results_all.csv"))
 
 # --- Extract sex and age group ---
 shap[, sex := fifelse(grepl("^male", age_bin), "Male", "Female")]
@@ -94,7 +98,7 @@ p_cumulative <- ggplot(
 
 # --- Save figure ---
 ggsave(
-  "figures/figure2_cumulative_contribution.png",
+  file.path(combined_dir, "figure2_cumulative_contribution.png"),
   plot = p_cumulative,
   width = 12,
   height = 7,
