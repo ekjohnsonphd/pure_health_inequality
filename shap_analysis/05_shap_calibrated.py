@@ -1,4 +1,5 @@
 
+import sys
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -14,7 +15,9 @@ import joblib
 # using the calibrated model.
 # ─────────────────────────────────────────────────────────────────────────────
 
-cohort      = "female_50-54"
+# Cohort to explain — pass as a CLI arg for parallel runs, e.g.
+#   python 05_shap_calibrated.py male_60-64
+cohort      = sys.argv[1] if len(sys.argv) > 1 else "female_50-54"
 RANDOM_SEED = 42
 
 # Project data root — set to your server data path when replicating.

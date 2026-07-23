@@ -4,3 +4,6 @@ data/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Local server-replication changeset log
+CHANGES.md
