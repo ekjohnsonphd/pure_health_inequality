@@ -54,8 +54,8 @@ for cohort_dir in sorted([
     cohort_name = cohort_dir.name
 
     model_path = cohort_dir / "calibrated_model.joblib"
-    x_test_path = cohort_dir / "X_test_raw.parquet"
-    y_test_path = cohort_dir / "y_test_raw.parquet"
+    x_test_path = cohort_dir / "X_test.parquet"
+    y_test_path = cohort_dir / "y_test.parquet"
     metrics_path = cohort_dir / "metrics.json"
 
 
