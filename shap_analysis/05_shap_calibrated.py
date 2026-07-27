@@ -24,8 +24,8 @@ RANDOM_SEED = 42
 DATA_DIR              = Path("../data")
 RESULTS_DIR           = DATA_DIR / cohort
 CALIBRATED_MODEL_PATH = RESULTS_DIR / "calibrated_model.joblib"
-X_TEST_PATH           = RESULTS_DIR / "X_test_raw.parquet"
-Y_TEST_PATH           = RESULTS_DIR / "y_test_raw.parquet"
+X_TEST_PATH           = RESULTS_DIR / "X_test.parquet"
+Y_TEST_PATH           = RESULTS_DIR / "y_test.parquet"
 OUT_PATH              = RESULTS_DIR / "calibrated_shap_values.csv"
 
 # Sampling for the explained set.
