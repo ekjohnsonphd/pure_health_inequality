@@ -115,8 +115,10 @@ fwrite(shap, file.path(combined_dir, "calibrated_shap_results_all.csv"))
 
 ### Baseline sensitivity SHAP
 
-# Different baseline sample sizes to compare
-baseline_sizes <- c(500, 1000, 5000, 10000, 30000)
+# Different baseline sample sizes to compare.
+# Must match BASELINE_SIZES in 05b_shap_baseline_sensitivity.py, which writes
+# one <size>_shap_values.csv per size for the female 65-69 cohort.
+baseline_sizes <- c(100, 500, 1000, 5000, 10000)
 
 # Loop over each baseline size
 shap <- lapply(baseline_sizes, function(bs){
