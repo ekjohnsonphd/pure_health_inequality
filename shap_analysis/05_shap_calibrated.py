@@ -34,8 +34,8 @@ OUT_PATH              = RESULTS_DIR / "calibrated_shap_values.csv"
 # needs stable group means (deaths vs survivors), and deaths are rare, so we
 # explain ALL deaths plus a random survivor sample of equal size.
 # N_SURVIVORS = None  -> match the number of deaths.
-N_SURVIVORS   = None   # or an int to fix the survivor sample size
-BACKGROUND_N  = 100    # survivor reference (background) size for SHAP
+N_SURVIVORS   = 1000   # survivor sample explained (None = match the number of deaths)
+BACKGROUND_N  = 500    # survivor reference (background) size for SHAP
 
 
 # ─────────────────────────────────────────────────────────────────────────────
