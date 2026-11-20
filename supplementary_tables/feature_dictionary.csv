@@ -1,0 +1,1632 @@
+Characteristic specification,Domain,Characteristic,Observation window,Transformation
+hc_di_glomerulo_1_11_15,Health,Acute glomerulonephritis,11–15 years before baseline,lagged binary
+hc_di_glomerulo_1_1_5,Health,Acute glomerulonephritis,1–5 years before baseline,lagged binary
+hc_di_glomerulo_1_6_10,Health,Acute glomerulonephritis,6–10 years before baseline,lagged binary
+hc_di_glomerulo,Health,Acute glomerulonephritis,Current,raw
+hc_di_hepatitis_c_1_11_15,Health,Acute hepatitis C,11–15 years before baseline,lagged binary
+hc_di_hepatitis_c_1_1_5,Health,Acute hepatitis C,1–5 years before baseline,lagged binary
+hc_di_hepatitis_c_1_6_10,Health,Acute hepatitis C,6–10 years before baseline,lagged binary
+hc_di_hepatitis_c,Health,Acute hepatitis C,Current,raw
+hc_di_renal_failure_1_11_15,Health,Acute renal failure,11–15 years before baseline,lagged binary
+hc_di_renal_failure_1_1_5,Health,Acute renal failure,1–5 years before baseline,lagged binary
+hc_di_renal_failure_1_6_10,Health,Acute renal failure,6–10 years before baseline,lagged binary
+hc_di_renal_failure,Health,Acute renal failure,Current,raw
+hc_di_sense_hearing_1_11_15,Health,Age-related and other hearing loss,11–15 years before baseline,lagged binary
+hc_di_sense_hearing_1_1_5,Health,Age-related and other hearing loss,1–5 years before baseline,lagged binary
+hc_di_sense_hearing_1_6_10,Health,Age-related and other hearing loss,6–10 years before baseline,lagged binary
+hc_di_sense_hearing,Health,Age-related and other hearing loss,Current,raw
+hc_di_mental_alcohol_1_11_15,Health,Alcohol use disorders,11–15 years before baseline,lagged binary
+hc_di_mental_alcohol_1_1_5,Health,Alcohol use disorders,1–5 years before baseline,lagged binary
+hc_di_mental_alcohol_1_6_10,Health,Alcohol use disorders,6–10 years before baseline,lagged binary
+hc_di_mental_alcohol,Health,Alcohol use disorders,Current,raw
+hc_di_neuro_dementia_1_11_15,Health,Alzheimer's disease and other dementias,11–15 years before baseline,lagged binary
+hc_di_neuro_dementia_1_1_5,Health,Alzheimer's disease and other dementias,1–5 years before baseline,lagged binary
+hc_di_neuro_dementia_1_6_10,Health,Alzheimer's disease and other dementias,6–10 years before baseline,lagged binary
+hc_di_neuro_dementia,Health,Alzheimer's disease and other dementias,Current,raw
+hc_di_mental_anxiety_1_11_15,Health,Anxiety disorders,11–15 years before baseline,lagged binary
+hc_di_mental_anxiety_1_1_5,Health,Anxiety disorders,1–5 years before baseline,lagged binary
+hc_di_mental_anxiety_1_6_10,Health,Anxiety disorders,6–10 years before baseline,lagged binary
+hc_di_mental_anxiety,Health,Anxiety disorders,Current,raw
+hc_di_cvd_aortic_1_11_15,Health,Aortic aneurysm,11–15 years before baseline,lagged binary
+hc_di_cvd_aortic_1_1_5,Health,Aortic aneurysm,1–5 years before baseline,lagged binary
+hc_di_cvd_aortic_1_6_10,Health,Aortic aneurysm,6–10 years before baseline,lagged binary
+hc_di_cvd_aortic,Health,Aortic aneurysm,Current,raw
+hc_di_digest_appendicitis_1_11_15,Health,Appendicitis,11–15 years before baseline,lagged binary
+hc_di_digest_appendicitis_1_1_5,Health,Appendicitis,1–5 years before baseline,lagged binary
+hc_di_digest_appendicitis_1_6_10,Health,Appendicitis,6–10 years before baseline,lagged binary
+hc_di_digest_appendicitis,Health,Appendicitis,Current,raw
+hc_di_resp_asthma_1_11_15,Health,Asthma,11–15 years before baseline,lagged binary
+hc_di_resp_asthma_1_1_5,Health,Asthma,1–5 years before baseline,lagged binary
+hc_di_resp_asthma_1_6_10,Health,Asthma,6–10 years before baseline,lagged binary
+hc_di_resp_asthma,Health,Asthma,Current,raw
+hc_di_cvd_afib_1_11_15,Health,Atrial fibrillation and flutter,11–15 years before baseline,lagged binary
+hc_di_cvd_afib_1_1_5,Health,Atrial fibrillation and flutter,1–5 years before baseline,lagged binary
+hc_di_cvd_afib_1_6_10,Health,Atrial fibrillation and flutter,6–10 years before baseline,lagged binary
+hc_di_cvd_afib,Health,Atrial fibrillation and flutter,Current,raw
+hc_di_mental_adhd_1_11_15,Health,Attention-deficit/hyperactivity disorder,11–15 years before baseline,lagged binary
+hc_di_mental_adhd_1_1_5,Health,Attention-deficit/hyperactivity disorder,1–5 years before baseline,lagged binary
+hc_di_mental_adhd_1_6_10,Health,Attention-deficit/hyperactivity disorder,6–10 years before baseline,lagged binary
+hc_di_mental_adhd,Health,Attention-deficit/hyperactivity disorder,Current,raw
+hc_di_mental_pdd_1_11_15,Health,Autism spectrum disorders,11–15 years before baseline,lagged binary
+hc_di_mental_pdd_1_1_5,Health,Autism spectrum disorders,1–5 years before baseline,lagged binary
+hc_di_mental_pdd_1_6_10,Health,Autism spectrum disorders,6–10 years before baseline,lagged binary
+hc_di_mental_pdd,Health,Autism spectrum disorders,Current,raw
+hc_di_mental_bipolar_1_11_15,Health,Bipolar disorder,11–15 years before baseline,lagged binary
+hc_di_mental_bipolar_1_1_5,Health,Bipolar disorder,1–5 years before baseline,lagged binary
+hc_di_mental_bipolar_1_6_10,Health,Bipolar disorder,6–10 years before baseline,lagged binary
+hc_di_mental_bipolar,Health,Bipolar disorder,Current,raw
+hc_di_neo_bladder_1_11_15,Health,Bladder cancer,11–15 years before baseline,lagged binary
+hc_di_neo_bladder_1_1_5,Health,Bladder cancer,1–5 years before baseline,lagged binary
+hc_di_neo_bladder_1_6_10,Health,Bladder cancer,6–10 years before baseline,lagged binary
+hc_di_neo_bladder,Health,Bladder cancer,Current,raw
+hc_di_sense_visionlos_1_11_15,Health,Blindness and vision loss,11–15 years before baseline,lagged binary
+hc_di_sense_visionlos_1_1_5,Health,Blindness and vision loss,1–5 years before baseline,lagged binary
+hc_di_sense_visionlos_1_6_10,Health,Blindness and vision loss,6–10 years before baseline,lagged binary
+hc_di_sense_visionlos,Health,Blindness and vision loss,Current,raw
+hc_di_neo_brain_1_11_15,Health,Brain and central nervous system cancer,11–15 years before baseline,lagged binary
+hc_di_neo_brain_1_1_5,Health,Brain and central nervous system cancer,1–5 years before baseline,lagged binary
+hc_di_neo_brain_1_6_10,Health,Brain and central nervous system cancer,6–10 years before baseline,lagged binary
+hc_di_neo_brain,Health,Brain and central nervous system cancer,Current,raw
+hc_di_neo_breast_1_11_15,Health,Breast cancer,11–15 years before baseline,lagged binary
+hc_di_neo_breast_1_1_5,Health,Breast cancer,1–5 years before baseline,lagged binary
+hc_di_neo_breast_1_6_10,Health,Breast cancer,6–10 years before baseline,lagged binary
+hc_di_neo_breast,Health,Breast cancer,Current,raw
+hc_di_lri_corona_1_11_15,Health,COVID-19,11–15 years before baseline,lagged binary
+hc_di_lri_corona_1_1_5,Health,COVID-19,1–5 years before baseline,lagged binary
+hc_di_lri_corona_1_6_10,Health,COVID-19,6–10 years before baseline,lagged binary
+hc_di_lri_corona,Health,COVID-19,Current,raw
+hc_di_cvd_cmp_1_11_15,Health,Cardiomyopathy and myocarditis,11–15 years before baseline,lagged binary
+hc_di_cvd_cmp_1_1_5,Health,Cardiomyopathy and myocarditis,1–5 years before baseline,lagged binary
+hc_di_cvd_cmp_1_6_10,Health,Cardiomyopathy and myocarditis,6–10 years before baseline,lagged binary
+hc_di_cvd_cmp,Health,Cardiomyopathy and myocarditis,Current,raw
+hc_di_cvd_NEC_1_11_15,Health,"Cardiovascular diseases, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_cvd_NEC_1_1_5,Health,"Cardiovascular diseases, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_cvd_NEC_1_6_10,Health,"Cardiovascular diseases, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_cvd_NEC,Health,"Cardiovascular diseases, not elsewhere classified",Current,raw
+hc_di_neo_cervical_1_11_15,Health,Cervical cancer,11–15 years before baseline,lagged binary
+hc_di_neo_cervical_1_1_5,Health,Cervical cancer,1–5 years before baseline,lagged binary
+hc_di_neo_cervical_1_6_10,Health,Cervical cancer,6–10 years before baseline,lagged binary
+hc_di_neo_cervical,Health,Cervical cancer,Current,raw
+hc_di_ckd_1_11_15,Health,Chronic kidney disease,11–15 years before baseline,lagged binary
+hc_di_ckd_1_1_5,Health,Chronic kidney disease,1–5 years before baseline,lagged binary
+hc_di_ckd_1_6_10,Health,Chronic kidney disease,6–10 years before baseline,lagged binary
+hc_di_ckd,Health,Chronic kidney disease,Current,raw
+hc_di_resp_copd_1_11_15,Health,Chronic obstructive pulmonary disease,11–15 years before baseline,lagged binary
+hc_di_resp_copd_1_1_5,Health,Chronic obstructive pulmonary disease,1–5 years before baseline,lagged binary
+hc_di_resp_copd_1_6_10,Health,Chronic obstructive pulmonary disease,6–10 years before baseline,lagged binary
+hc_di_resp_copd,Health,Chronic obstructive pulmonary disease,Current,raw
+hc_di_resp_NEC_1_11_15,Health,"Chronic respiratory diseases, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_resp_NEC_1_1_5,Health,"Chronic respiratory diseases, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_resp_NEC_1_6_10,Health,"Chronic respiratory diseases, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_resp_NEC,Health,"Chronic respiratory diseases, not elsewhere classified",Current,raw
+hc_di_cirrhosis_1_11_15,Health,Cirrhosis and other chronic liver diseases,11–15 years before baseline,lagged binary
+hc_di_cirrhosis_1_1_5,Health,Cirrhosis and other chronic liver diseases,1–5 years before baseline,lagged binary
+hc_di_cirrhosis_1_6_10,Health,Cirrhosis and other chronic liver diseases,6–10 years before baseline,lagged binary
+hc_di_cirrhosis,Health,Cirrhosis and other chronic liver diseases,Current,raw
+hc_di_neo_colorectal_1_11_15,Health,Colon and rectum cancer,11–15 years before baseline,lagged binary
+hc_di_neo_colorectal_1_1_5,Health,Colon and rectum cancer,1–5 years before baseline,lagged binary
+hc_di_neo_colorectal_1_6_10,Health,Colon and rectum cancer,6–10 years before baseline,lagged binary
+hc_di_neo_colorectal,Health,Colon and rectum cancer,Current,raw
+hc_di_mental_conduct_1_11_15,Health,Conduct disorder,11–15 years before baseline,lagged binary
+hc_di_mental_conduct_1_1_5,Health,Conduct disorder,1–5 years before baseline,lagged binary
+hc_di_mental_conduct_1_6_10,Health,Conduct disorder,6–10 years before baseline,lagged binary
+hc_di_mental_conduct,Health,Conduct disorder,Current,raw
+hc_di_cong_1_11_15,Health,Congenital birth defects,11–15 years before baseline,lagged binary
+hc_di_cong_1_1_5,Health,Congenital birth defects,1–5 years before baseline,lagged binary
+hc_di_cong_1_6_10,Health,Congenital birth defects,6–10 years before baseline,lagged binary
+hc_di_cong,Health,Congenital birth defects,Current,raw
+hc_di_mental_unipolar_1_11_15,Health,Depressive disorders,11–15 years before baseline,lagged binary
+hc_di_mental_unipolar_1_1_5,Health,Depressive disorders,1–5 years before baseline,lagged binary
+hc_di_mental_unipolar_1_6_10,Health,Depressive disorders,6–10 years before baseline,lagged binary
+hc_di_mental_unipolar,Health,Depressive disorders,Current,raw
+hc_di_diabetes_typ1_1_11_15,Health,Diabetes mellitus type 1,11–15 years before baseline,lagged binary
+hc_di_diabetes_typ1_1_1_5,Health,Diabetes mellitus type 1,1–5 years before baseline,lagged binary
+hc_di_diabetes_typ1_1_6_10,Health,Diabetes mellitus type 1,6–10 years before baseline,lagged binary
+hc_di_diabetes_typ1,Health,Diabetes mellitus type 1,Current,raw
+hc_di_diabetes_typ2_1_11_15,Health,Diabetes mellitus type 2,11–15 years before baseline,lagged binary
+hc_di_diabetes_typ2_1_1_5,Health,Diabetes mellitus type 2,1–5 years before baseline,lagged binary
+hc_di_diabetes_typ2_1_6_10,Health,Diabetes mellitus type 2,6–10 years before baseline,lagged binary
+hc_di_diabetes_typ2,Health,Diabetes mellitus type 2,Current,raw
+hc_di_diabetes_NEC_1_11_15,Health,"Diabetes, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_diabetes_NEC_1_1_5,Health,"Diabetes, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_diabetes_NEC_1_6_10,Health,"Diabetes, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_diabetes_NEC,Health,"Diabetes, not elsewhere classified",Current,raw
+hc_di_digest_NEC_1_11_15,Health,"Digestive diseases, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_digest_NEC_1_1_5,Health,"Digestive diseases, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_digest_NEC_1_6_10,Health,"Digestive diseases, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_digest_NEC,Health,"Digestive diseases, not elsewhere classified",Current,raw
+hc_di_exp_donor_1_11_15,Health,Donor,11–15 years before baseline,lagged binary
+hc_di_exp_donor_1_1_5,Health,Donor,1–5 years before baseline,lagged binary
+hc_di_exp_donor_1_6_10,Health,Donor,6–10 years before baseline,lagged binary
+hc_di_exp_donor,Health,Donor,Current,raw
+hc_di_mental_eating_1_11_15,Health,Eating disorders,11–15 years before baseline,lagged binary
+hc_di_mental_eating_1_1_5,Health,Eating disorders,1–5 years before baseline,lagged binary
+hc_di_mental_eating_1_6_10,Health,Eating disorders,6–10 years before baseline,lagged binary
+hc_di_mental_eating,Health,Eating disorders,Current,raw
+hc_di_maternal_abort_ectopic_1_11_15,Health,Ectopic pregnancy,11–15 years before baseline,lagged binary
+hc_di_maternal_abort_ectopic_1_1_5,Health,Ectopic pregnancy,1–5 years before baseline,lagged binary
+hc_di_maternal_abort_ectopic_1_6_10,Health,Ectopic pregnancy,6–10 years before baseline,lagged binary
+hc_di_maternal_abort_ectopic,Health,Ectopic pregnancy,Current,raw
+hc_di_cvd_endo_1_11_15,Health,Endocarditis,11–15 years before baseline,lagged binary
+hc_di_cvd_endo_1_1_5,Health,Endocarditis,1–5 years before baseline,lagged binary
+hc_di_cvd_endo_1_6_10,Health,Endocarditis,6–10 years before baseline,lagged binary
+hc_di_cvd_endo,Health,Endocarditis,Current,raw
+hc_di_endo_1_11_15,Health,"Endocrine, metabolic, blood, and immune disorders",11–15 years before baseline,lagged binary
+hc_di_endo_1_1_5,Health,"Endocrine, metabolic, blood, and immune disorders",1–5 years before baseline,lagged binary
+hc_di_endo_1_6_10,Health,"Endocrine, metabolic, blood, and immune disorders",6–10 years before baseline,lagged binary
+hc_di_endo,Health,"Endocrine, metabolic, blood, and immune disorders",Current,raw
+hc_di__enteric_all_1_11_15,Health,Enteric infections,11–15 years before baseline,lagged binary
+hc_di__enteric_all_1_1_5,Health,Enteric infections,1–5 years before baseline,lagged binary
+hc_di__enteric_all_1_6_10,Health,Enteric infections,6–10 years before baseline,lagged binary
+hc_di__enteric_all,Health,Enteric infections,Current,raw
+hc_di_neo_esophageal_1_11_15,Health,Esophageal cancer,11–15 years before baseline,lagged binary
+hc_di_neo_esophageal_1_1_5,Health,Esophageal cancer,1–5 years before baseline,lagged binary
+hc_di_neo_esophageal_1_6_10,Health,Esophageal cancer,6–10 years before baseline,lagged binary
+hc_di_neo_esophageal,Health,Esophageal cancer,Current,raw
+hc_di_inj_mech_1_11_15,Health,Exposure to mechanical forces,11–15 years before baseline,lagged binary
+hc_di_inj_mech_1_1_5,Health,Exposure to mechanical forces,1–5 years before baseline,lagged binary
+hc_di_inj_mech_1_6_10,Health,Exposure to mechanical forces,6–10 years before baseline,lagged binary
+hc_di_inj_mech,Health,Exposure to mechanical forces,Current,raw
+hc_di_neo_eye_1_11_15,Health,Eye cancer,11–15 years before baseline,lagged binary
+hc_di_neo_eye_1_1_5,Health,Eye cancer,1–5 years before baseline,lagged binary
+hc_di_neo_eye_1_6_10,Health,Eye cancer,6–10 years before baseline,lagged binary
+hc_di_neo_eye,Health,Eye cancer,Current,raw
+hc_di_inj_falls_1_11_15,Health,Falls,11–15 years before baseline,lagged binary
+hc_di_inj_falls_1_1_5,Health,Falls,1–5 years before baseline,lagged binary
+hc_di_inj_falls_1_6_10,Health,Falls,6–10 years before baseline,lagged binary
+hc_di_inj_falls,Health,Falls,Current,raw
+hc_di_exp_family_planning_1_11_15,Health,Family planning,11–15 years before baseline,lagged binary
+hc_di_exp_family_planning_1_1_5,Health,Family planning,1–5 years before baseline,lagged binary
+hc_di_exp_family_planning_1_6_10,Health,Family planning,6–10 years before baseline,lagged binary
+hc_di_exp_family_planning,Health,Family planning,Current,raw
+hc_cost_gp_roll_sd_11_15,Health,GP case complexity,11–15 years before baseline,rolling SD
+hc_cost_gp_roll_avg_11_15,Health,GP case complexity,11–15 years before baseline,rolling mean
+hc_cost_gp_roll_sd_1_5,Health,GP case complexity,1–5 years before baseline,rolling SD
+hc_cost_gp_roll_avg_1_5,Health,GP case complexity,1–5 years before baseline,rolling mean
+hc_cost_gp_roll_sd_6_10,Health,GP case complexity,6–10 years before baseline,rolling SD
+hc_cost_gp_roll_avg_6_10,Health,GP case complexity,6–10 years before baseline,rolling mean
+hc_cost_gp,Health,GP case complexity,Current,raw
+hc_util_gp_visits_roll_sd_11_15,Health,GP visits,11–15 years before baseline,rolling SD
+hc_util_gp_visits_roll_avg_11_15,Health,GP visits,11–15 years before baseline,rolling mean
+hc_util_gp_visits_roll_sd_1_5,Health,GP visits,1–5 years before baseline,rolling SD
+hc_util_gp_visits_roll_avg_1_5,Health,GP visits,1–5 years before baseline,rolling mean
+hc_util_gp_visits_roll_sd_6_10,Health,GP visits,6–10 years before baseline,rolling SD
+hc_util_gp_visits_roll_avg_6_10,Health,GP visits,6–10 years before baseline,rolling mean
+hc_util_gp_visits,Health,GP visits,Current,raw
+hc_di_digest_bile_1_11_15,Health,Gallbladder and biliary diseases,11–15 years before baseline,lagged binary
+hc_di_digest_bile_1_1_5,Health,Gallbladder and biliary diseases,1–5 years before baseline,lagged binary
+hc_di_digest_bile_1_6_10,Health,Gallbladder and biliary diseases,6–10 years before baseline,lagged binary
+hc_di_digest_bile,Health,Gallbladder and biliary diseases,Current,raw
+hc_di_neo_gallbladder_1_11_15,Health,Gallbladder and biliary tract cancer,11–15 years before baseline,lagged binary
+hc_di_neo_gallbladder_1_1_5,Health,Gallbladder and biliary tract cancer,1–5 years before baseline,lagged binary
+hc_di_neo_gallbladder_1_6_10,Health,Gallbladder and biliary tract cancer,6–10 years before baseline,lagged binary
+hc_di_neo_gallbladder,Health,Gallbladder and biliary tract cancer,Current,raw
+hc_di_msk_gout_1_11_15,Health,Gout,11–15 years before baseline,lagged binary
+hc_di_msk_gout_1_1_5,Health,Gout,1–5 years before baseline,lagged binary
+hc_di_msk_gout_1_6_10,Health,Gout,6–10 years before baseline,lagged binary
+hc_di_msk_gout,Health,Gout,Current,raw
+hc_di_gyne_1_11_15,Health,Gynecological diseases,11–15 years before baseline,lagged binary
+hc_di_gyne_1_1_5,Health,Gynecological diseases,1–5 years before baseline,lagged binary
+hc_di_gyne_1_6_10,Health,Gynecological diseases,6–10 years before baseline,lagged binary
+hc_di_gyne,Health,Gynecological diseases,Current,raw
+hc_di_hiv_1_11_15,Health,HIV/AIDS,11–15 years before baseline,lagged binary
+hc_di_hiv_1_1_5,Health,HIV/AIDS,1–5 years before baseline,lagged binary
+hc_di_hiv_1_6_10,Health,HIV/AIDS,6–10 years before baseline,lagged binary
+hc_di_hiv,Health,HIV/AIDS,Current,raw
+hc_di_neuro_headach_1_11_15,Health,Headache disorders,11–15 years before baseline,lagged binary
+hc_di_neuro_headach_1_1_5,Health,Headache disorders,1–5 years before baseline,lagged binary
+hc_di_neuro_headach_1_6_10,Health,Headache disorders,6–10 years before baseline,lagged binary
+hc_di_neuro_headach,Health,Headache disorders,Current,raw
+hc_util_home_care_physical_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_home_care_practical_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_home_care_practical_vis_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_home_nurse_visits_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_lived_in_nursing_home_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_maintenance_training_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_nursing_home_days_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_preventive_home_visits_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_rehabilitation_months_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_rehabilitation_visits_roll_sd_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling SD
+hc_util_home_care_physical_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_home_care_practical_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_home_care_practical_vis_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_home_nurse_visits_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_lived_in_nursing_home_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_maintenance_training_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_nursing_home_days_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_preventive_home_visits_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_rehabilitation_months_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_rehabilitation_visits_roll_avg_11_15,Health,Healthcare utilization (other),11–15 years before baseline,rolling mean
+hc_util_home_care_physical_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_home_care_practical_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_home_care_practical_vis_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_home_nurse_visits_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_lived_in_nursing_home_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_maintenance_training_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_nursing_home_days_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_preventive_home_visits_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_rehabilitation_months_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_rehabilitation_visits_roll_sd_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling SD
+hc_util_home_care_physical_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_home_care_practical_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_home_care_practical_vis_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_home_nurse_visits_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_lived_in_nursing_home_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_maintenance_training_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_nursing_home_days_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_preventive_home_visits_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_rehabilitation_months_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_rehabilitation_visits_roll_avg_1_5,Health,Healthcare utilization (other),1–5 years before baseline,rolling mean
+hc_util_home_care_physical_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_home_care_practical_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_home_care_practical_vis_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_home_nurse_visits_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_lived_in_nursing_home_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_maintenance_training_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_nursing_home_days_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_preventive_home_visits_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_rehabilitation_months_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_rehabilitation_visits_roll_sd_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling SD
+hc_util_home_care_physical_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_home_care_practical_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_home_care_practical_vis_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_home_nurse_visits_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_lived_in_nursing_home_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_maintenance_training_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_nursing_home_days_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_preventive_home_visits_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_rehabilitation_months_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_rehabilitation_visits_roll_avg_6_10,Health,Healthcare utilization (other),6–10 years before baseline,rolling mean
+hc_util_home_care_physical,Health,Healthcare utilization (other),Current,raw
+hc_util_home_care_practical,Health,Healthcare utilization (other),Current,raw
+hc_util_home_care_practical_vis,Health,Healthcare utilization (other),Current,raw
+hc_util_home_nurse_visits,Health,Healthcare utilization (other),Current,raw
+hc_util_lived_in_nursing_home,Health,Healthcare utilization (other),Current,raw
+hc_util_maintenance_training,Health,Healthcare utilization (other),Current,raw
+hc_util_nursing_home_days,Health,Healthcare utilization (other),Current,raw
+hc_util_preventive_home_visits,Health,Healthcare utilization (other),Current,raw
+hc_util_rehabilitation_months,Health,Healthcare utilization (other),Current,raw
+hc_util_rehabilitation_visits,Health,Healthcare utilization (other),Current,raw
+hc_di_cvd_hf_1_11_15,Health,Heart Failure,11–15 years before baseline,lagged binary
+hc_di_cvd_hf_1_1_5,Health,Heart Failure,1–5 years before baseline,lagged binary
+hc_di_cvd_hf_1_6_10,Health,Heart Failure,6–10 years before baseline,lagged binary
+hc_di_cvd_hf,Health,Heart Failure,Current,raw
+hc_di_hemog_1_11_15,Health,Hemoglobinopathies and hemolytic anemias,11–15 years before baseline,lagged binary
+hc_di_hemog_1_1_5,Health,Hemoglobinopathies and hemolytic anemias,1–5 years before baseline,lagged binary
+hc_di_hemog_1_6_10,Health,Hemoglobinopathies and hemolytic anemias,6–10 years before baseline,lagged binary
+hc_di_hemog,Health,Hemoglobinopathies and hemolytic anemias,Current,raw
+hc_di_neonatal_hemolytic_1_11_15,Health,Hemolytic disease and other neonatal jaundice,11–15 years before baseline,lagged binary
+hc_di_neonatal_hemolytic_1_1_5,Health,Hemolytic disease and other neonatal jaundice,1–5 years before baseline,lagged binary
+hc_di_neonatal_hemolytic_1_6_10,Health,Hemolytic disease and other neonatal jaundice,6–10 years before baseline,lagged binary
+hc_di_neonatal_hemolytic,Health,Hemolytic disease and other neonatal jaundice,Current,raw
+hc_di_neo_hodgkins_1_11_15,Health,Hodgkin lymphoma,11–15 years before baseline,lagged binary
+hc_di_neo_hodgkins_1_1_5,Health,Hodgkin lymphoma,1–5 years before baseline,lagged binary
+hc_di_neo_hodgkins_1_6_10,Health,Hodgkin lymphoma,6–10 years before baseline,lagged binary
+hc_di_neo_hodgkins,Health,Hodgkin lymphoma,Current,raw
+hc_util_home_care_physical_vis_roll_sd_11_15,Health,Home care visits,11–15 years before baseline,rolling SD
+hc_util_home_care_physical_vis_roll_avg_11_15,Health,Home care visits,11–15 years before baseline,rolling mean
+hc_util_home_care_physical_vis_roll_sd_1_5,Health,Home care visits,1–5 years before baseline,rolling SD
+hc_util_home_care_physical_vis_roll_avg_1_5,Health,Home care visits,1–5 years before baseline,rolling mean
+hc_util_home_care_physical_vis_roll_sd_6_10,Health,Home care visits,6–10 years before baseline,rolling SD
+hc_util_home_care_physical_vis_roll_avg_6_10,Health,Home care visits,6–10 years before baseline,rolling mean
+hc_util_home_care_physical_vis,Health,Home care visits,Current,raw
+hc_di_cvd_htn_1_11_15,Health,Hypertensive heart disease,11–15 years before baseline,lagged binary
+hc_di_cvd_htn_1_1_5,Health,Hypertensive heart disease,1–5 years before baseline,lagged binary
+hc_di_cvd_htn_1_6_10,Health,Hypertensive heart disease,6–10 years before baseline,lagged binary
+hc_di_cvd_htn,Health,Hypertensive heart disease,Current,raw
+hc_di_mental_id_1_11_15,Health,Idiopathic developmental intellectual disability,11–15 years before baseline,lagged binary
+hc_di_mental_id_1_1_5,Health,Idiopathic developmental intellectual disability,1–5 years before baseline,lagged binary
+hc_di_mental_id_1_6_10,Health,Idiopathic developmental intellectual disability,6–10 years before baseline,lagged binary
+hc_di_mental_id,Health,Idiopathic developmental intellectual disability,Current,raw
+hc_di_neuro_epilepsy_1_11_15,Health,Idiopathic epilepsy,11–15 years before baseline,lagged binary
+hc_di_neuro_epilepsy_1_1_5,Health,Idiopathic epilepsy,1–5 years before baseline,lagged binary
+hc_di_neuro_epilepsy_1_6_10,Health,Idiopathic epilepsy,6–10 years before baseline,lagged binary
+hc_di_neuro_epilepsy,Health,Idiopathic epilepsy,Current,raw
+hc_di_maternal_indirect_1_11_15,Health,Indirect maternal deaths,11–15 years before baseline,lagged binary
+hc_di_maternal_indirect_1_1_5,Health,Indirect maternal deaths,1–5 years before baseline,lagged binary
+hc_di_maternal_indirect_1_6_10,Health,Indirect maternal deaths,6–10 years before baseline,lagged binary
+hc_di_maternal_indirect,Health,Indirect maternal deaths,Current,raw
+hc_di_digest_ibd_1_11_15,Health,Inflammatory bowel disease,11–15 years before baseline,lagged binary
+hc_di_digest_ibd_1_1_5,Health,Inflammatory bowel disease,1–5 years before baseline,lagged binary
+hc_di_digest_ibd_1_6_10,Health,Inflammatory bowel disease,6–10 years before baseline,lagged binary
+hc_di_digest_ibd,Health,Inflammatory bowel disease,Current,raw
+hc_di_digest_hernia_1_11_15,Health,"Inguinal, femoral, and abdominal hernia",11–15 years before baseline,lagged binary
+hc_di_digest_hernia_1_1_5,Health,"Inguinal, femoral, and abdominal hernia",1–5 years before baseline,lagged binary
+hc_di_digest_hernia_1_6_10,Health,"Inguinal, femoral, and abdominal hernia",6–10 years before baseline,lagged binary
+hc_di_digest_hernia,Health,"Inguinal, femoral, and abdominal hernia",Current,raw
+hc_di_inj_NEC_1_11_15,Health,"Injuries, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_inj_NEC_1_1_5,Health,"Injuries, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_inj_NEC_1_6_10,Health,"Injuries, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_inj_NEC,Health,"Injuries, not elsewhere classified",Current,raw
+hc_di__intent_agg_1_11_15,Health,Interpersonal violence,11–15 years before baseline,lagged binary
+hc_di__intent_agg_1_1_5,Health,Interpersonal violence,1–5 years before baseline,lagged binary
+hc_di__intent_agg_1_6_10,Health,Interpersonal violence,6–10 years before baseline,lagged binary
+hc_di__intent_agg,Health,Interpersonal violence,Current,raw
+hc_di_resp_interstitial_1_11_15,Health,Interstitial lung disease and pulmonary sarcoidosis,11–15 years before baseline,lagged binary
+hc_di_resp_interstitial_1_1_5,Health,Interstitial lung disease and pulmonary sarcoidosis,1–5 years before baseline,lagged binary
+hc_di_resp_interstitial_1_6_10,Health,Interstitial lung disease and pulmonary sarcoidosis,6–10 years before baseline,lagged binary
+hc_di_resp_interstitial,Health,Interstitial lung disease and pulmonary sarcoidosis,Current,raw
+hc_di_cvd_ihd_1_11_15,Health,Ischemic heart disease,11–15 years before baseline,lagged binary
+hc_di_cvd_ihd_1_1_5,Health,Ischemic heart disease,1–5 years before baseline,lagged binary
+hc_di_cvd_ihd_1_6_10,Health,Ischemic heart disease,6–10 years before baseline,lagged binary
+hc_di_cvd_ihd,Health,Ischemic heart disease,Current,raw
+hc_di_neo_kidney_1_11_15,Health,Kidney cancer,11–15 years before baseline,lagged binary
+hc_di_neo_kidney_1_1_5,Health,Kidney cancer,1–5 years before baseline,lagged binary
+hc_di_neo_kidney_1_6_10,Health,Kidney cancer,6–10 years before baseline,lagged binary
+hc_di_neo_kidney,Health,Kidney cancer,Current,raw
+hc_di_neo_larynx_1_11_15,Health,Larynx cancer,11–15 years before baseline,lagged binary
+hc_di_neo_larynx_1_1_5,Health,Larynx cancer,1–5 years before baseline,lagged binary
+hc_di_neo_larynx_1_6_10,Health,Larynx cancer,6–10 years before baseline,lagged binary
+hc_di_neo_larynx,Health,Larynx cancer,Current,raw
+hc_di_maternal_late_1_11_15,Health,Late maternal deaths,11–15 years before baseline,lagged binary
+hc_di_maternal_late_1_1_5,Health,Late maternal deaths,1–5 years before baseline,lagged binary
+hc_di_maternal_late_1_6_10,Health,Late maternal deaths,6–10 years before baseline,lagged binary
+hc_di_maternal_late,Health,Late maternal deaths,Current,raw
+hc_di_neo_leukemia_1_11_15,Health,Leukemia,11–15 years before baseline,lagged binary
+hc_di_neo_leukemia_1_1_5,Health,Leukemia,1–5 years before baseline,lagged binary
+hc_di_neo_leukemia_1_6_10,Health,Leukemia,6–10 years before baseline,lagged binary
+hc_di_neo_leukemia,Health,Leukemia,Current,raw
+hc_di_neo_mouth_1_11_15,Health,Lip and oral cavity cancer,11–15 years before baseline,lagged binary
+hc_di_neo_mouth_1_1_5,Health,Lip and oral cavity cancer,1–5 years before baseline,lagged binary
+hc_di_neo_mouth_1_6_10,Health,Lip and oral cavity cancer,6–10 years before baseline,lagged binary
+hc_di_neo_mouth,Health,Lip and oral cavity cancer,Current,raw
+hc_di_neo_liver_1_11_15,Health,Liver cancer,11–15 years before baseline,lagged binary
+hc_di_neo_liver_1_1_5,Health,Liver cancer,1–5 years before baseline,lagged binary
+hc_di_neo_liver_1_6_10,Health,Liver cancer,6–10 years before baseline,lagged binary
+hc_di_neo_liver,Health,Liver cancer,Current,raw
+se_long_term_sick_leave_weeks_roll_sd_11_15,Health,Long-term sick leave,11–15 years before baseline,rolling SD
+se_long_term_sick_leave_weeks_roll_avg_11_15,Health,Long-term sick leave,11–15 years before baseline,rolling mean
+se_long_term_sick_leave_weeks_roll_sd_1_5,Health,Long-term sick leave,1–5 years before baseline,rolling SD
+se_long_term_sick_leave_weeks_roll_avg_1_5,Health,Long-term sick leave,1–5 years before baseline,rolling mean
+se_long_term_sick_leave_weeks_roll_sd_6_10,Health,Long-term sick leave,6–10 years before baseline,rolling SD
+se_long_term_sick_leave_weeks_roll_avg_6_10,Health,Long-term sick leave,6–10 years before baseline,rolling mean
+se_long_term_sick_leave_weeks,Health,Long-term sick leave,Current,raw
+hc_di_msk_pain_lowback_1_11_15,Health,Low back pain,11–15 years before baseline,lagged binary
+hc_di_msk_pain_lowback_1_1_5,Health,Low back pain,1–5 years before baseline,lagged binary
+hc_di_msk_pain_lowback_1_6_10,Health,Low back pain,6–10 years before baseline,lagged binary
+hc_di_msk_pain_lowback,Health,Low back pain,Current,raw
+hc_di_cvd_pvd_1_11_15,Health,Lower extremity peripheral arterial disease,11–15 years before baseline,lagged binary
+hc_di_cvd_pvd_1_1_5,Health,Lower extremity peripheral arterial disease,1–5 years before baseline,lagged binary
+hc_di_cvd_pvd_1_6_10,Health,Lower extremity peripheral arterial disease,6–10 years before baseline,lagged binary
+hc_di_cvd_pvd,Health,Lower extremity peripheral arterial disease,Current,raw
+hc_di_lri_1_11_15,Health,Lower respiratory infections,11–15 years before baseline,lagged binary
+hc_di_lri_1_1_5,Health,Lower respiratory infections,1–5 years before baseline,lagged binary
+hc_di_lri_1_6_10,Health,Lower respiratory infections,6–10 years before baseline,lagged binary
+hc_di_lri,Health,Lower respiratory infections,Current,raw
+hc_di_neo_bone_1_11_15,Health,Malignant neoplasm of bone and articular cartilage,11–15 years before baseline,lagged binary
+hc_di_neo_bone_1_1_5,Health,Malignant neoplasm of bone and articular cartilage,1–5 years before baseline,lagged binary
+hc_di_neo_bone_1_6_10,Health,Malignant neoplasm of bone and articular cartilage,6–10 years before baseline,lagged binary
+hc_di_neo_bone,Health,Malignant neoplasm of bone and articular cartilage,Current,raw
+hc_di_neo_melanoma_1_11_15,Health,Malignant skin melanoma,11–15 years before baseline,lagged binary
+hc_di_neo_melanoma_1_1_5,Health,Malignant skin melanoma,1–5 years before baseline,lagged binary
+hc_di_neo_melanoma_1_6_10,Health,Malignant skin melanoma,6–10 years before baseline,lagged binary
+hc_di_neo_melanoma,Health,Malignant skin melanoma,Current,raw
+hc_di_maternal_abort_mis_1_11_15,Health,Maternal abortion and miscarriage,11–15 years before baseline,lagged binary
+hc_di_maternal_abort_mis_1_1_5,Health,Maternal abortion and miscarriage,1–5 years before baseline,lagged binary
+hc_di_maternal_abort_mis_1_6_10,Health,Maternal abortion and miscarriage,6–10 years before baseline,lagged binary
+hc_di_maternal_abort_mis,Health,Maternal abortion and miscarriage,Current,raw
+hc_di_maternal_hiv_1_11_15,Health,Maternal deaths aggravated by HIV/AIDS,11–15 years before baseline,lagged binary
+hc_di_maternal_hiv_1_1_5,Health,Maternal deaths aggravated by HIV/AIDS,1–5 years before baseline,lagged binary
+hc_di_maternal_hiv_1_6_10,Health,Maternal deaths aggravated by HIV/AIDS,6–10 years before baseline,lagged binary
+hc_di_maternal_hiv,Health,Maternal deaths aggravated by HIV/AIDS,Current,raw
+hc_di_maternal_NEC_1_11_15,Health,"Maternal disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_maternal_NEC_1_1_5,Health,"Maternal disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_maternal_NEC_1_6_10,Health,"Maternal disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_maternal_NEC,Health,"Maternal disorders, not elsewhere classified",Current,raw
+hc_di_maternal_hem_1_11_15,Health,Maternal hemorrhage,11–15 years before baseline,lagged binary
+hc_di_maternal_hem_1_1_5,Health,Maternal hemorrhage,1–5 years before baseline,lagged binary
+hc_di_maternal_hem_1_6_10,Health,Maternal hemorrhage,6–10 years before baseline,lagged binary
+hc_di_maternal_hem,Health,Maternal hemorrhage,Current,raw
+hc_di_maternal_htn_1_11_15,Health,Maternal hypertensive disorders,11–15 years before baseline,lagged binary
+hc_di_maternal_htn_1_1_5,Health,Maternal hypertensive disorders,1–5 years before baseline,lagged binary
+hc_di_maternal_htn_1_6_10,Health,Maternal hypertensive disorders,6–10 years before baseline,lagged binary
+hc_di_maternal_htn,Health,Maternal hypertensive disorders,Current,raw
+hc_di_maternal_obstruct_1_11_15,Health,Maternal obstructed labor and uterine rupture,11–15 years before baseline,lagged binary
+hc_di_maternal_obstruct_1_1_5,Health,Maternal obstructed labor and uterine rupture,1–5 years before baseline,lagged binary
+hc_di_maternal_obstruct_1_6_10,Health,Maternal obstructed labor and uterine rupture,6–10 years before baseline,lagged binary
+hc_di_maternal_obstruct,Health,Maternal obstructed labor and uterine rupture,Current,raw
+hc_di_maternal_sepsis_1_11_15,Health,Maternal sepsis and other maternal infections,11–15 years before baseline,lagged binary
+hc_di_maternal_sepsis_1_1_5,Health,Maternal sepsis and other maternal infections,1–5 years before baseline,lagged binary
+hc_di_maternal_sepsis_1_6_10,Health,Maternal sepsis and other maternal infections,6–10 years before baseline,lagged binary
+hc_di_maternal_sepsis,Health,Maternal sepsis and other maternal infections,Current,raw
+med_antidepressants_other_1_11_15,Health,Medications: antidepressants_other,11–15 years before baseline,lagged binary
+med_antidepressants_other_1_1_5,Health,Medications: antidepressants_other,1–5 years before baseline,lagged binary
+med_antidepressants_other_1_6_10,Health,Medications: antidepressants_other,6–10 years before baseline,lagged binary
+med_antidepressants_other,Health,Medications: antidepressants_other,Current,raw
+med_antidepressants_ssri_1_11_15,Health,Medications: antidepressants_ssri,11–15 years before baseline,lagged binary
+med_antidepressants_ssri_1_1_5,Health,Medications: antidepressants_ssri,1–5 years before baseline,lagged binary
+med_antidepressants_ssri_1_6_10,Health,Medications: antidepressants_ssri,6–10 years before baseline,lagged binary
+med_antidepressants_ssri,Health,Medications: antidepressants_ssri,Current,raw
+med_antipsychotics_1_11_15,Health,Medications: antipsychotics,11–15 years before baseline,lagged binary
+med_antipsychotics_1_1_5,Health,Medications: antipsychotics,1–5 years before baseline,lagged binary
+med_antipsychotics_1_6_10,Health,Medications: antipsychotics,6–10 years before baseline,lagged binary
+med_antipsychotics,Health,Medications: antipsychotics,Current,raw
+med_benzodiazepines_1_11_15,Health,Medications: benzodiazepines,11–15 years before baseline,lagged binary
+med_benzodiazepines_1_1_5,Health,Medications: benzodiazepines,1–5 years before baseline,lagged binary
+med_benzodiazepines_1_6_10,Health,Medications: benzodiazepines,6–10 years before baseline,lagged binary
+med_benzodiazepines,Health,Medications: benzodiazepines,Current,raw
+med_lithium_1_11_15,Health,Medications: lithium,11–15 years before baseline,lagged binary
+med_lithium_1_1_5,Health,Medications: lithium,1–5 years before baseline,lagged binary
+med_lithium_1_6_10,Health,Medications: lithium,6–10 years before baseline,lagged binary
+med_lithium,Health,Medications: lithium,Current,raw
+med_sleep_medications_1_11_15,Health,Medications: sleep_medications,11–15 years before baseline,lagged binary
+med_sleep_medications_1_1_5,Health,Medications: sleep_medications,1–5 years before baseline,lagged binary
+med_sleep_medications_1_6_10,Health,Medications: sleep_medications,6–10 years before baseline,lagged binary
+med_sleep_medications,Health,Medications: sleep_medications,Current,raw
+med_three_or_more_meds_1_11_15,Health,Medications: three_or_more_meds,11–15 years before baseline,lagged binary
+med_three_or_more_meds_1_1_5,Health,Medications: three_or_more_meds,1–5 years before baseline,lagged binary
+med_three_or_more_meds_1_6_10,Health,Medications: three_or_more_meds,6–10 years before baseline,lagged binary
+med_three_or_more_meds,Health,Medications: three_or_more_meds,Current,raw
+med_two_meds_1_11_15,Health,Medications: two_meds,11–15 years before baseline,lagged binary
+med_two_meds_1_1_5,Health,Medications: two_meds,1–5 years before baseline,lagged binary
+med_two_meds_1_6_10,Health,Medications: two_meds,6–10 years before baseline,lagged binary
+med_two_meds,Health,Medications: two_meds,Current,raw
+hc_di_meningitis_1_11_15,Health,Meningitis,11–15 years before baseline,lagged binary
+hc_di_meningitis_1_1_5,Health,Meningitis,1–5 years before baseline,lagged binary
+hc_di_meningitis_1_6_10,Health,Meningitis,6–10 years before baseline,lagged binary
+hc_di_meningitis,Health,Meningitis,Current,raw
+hc_di_mental_NEC_1_11_15,Health,"Mental disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_mental_NEC_1_1_5,Health,"Mental disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_mental_NEC_1_6_10,Health,"Mental disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_mental_NEC,Health,"Mental disorders, not elsewhere classified",Current,raw
+hc_di_neo_meso_1_11_15,Health,Mesothelioma,11–15 years before baseline,lagged binary
+hc_di_neo_meso_1_1_5,Health,Mesothelioma,1–5 years before baseline,lagged binary
+hc_di_neo_meso_1_6_10,Health,Mesothelioma,6–10 years before baseline,lagged binary
+hc_di_neo_meso,Health,Mesothelioma,Current,raw
+hc_di_neuro_neurone_1_11_15,Health,Motor neuron disease,11–15 years before baseline,lagged binary
+hc_di_neuro_neurone_1_1_5,Health,Motor neuron disease,1–5 years before baseline,lagged binary
+hc_di_neuro_neurone_1_6_10,Health,Motor neuron disease,6–10 years before baseline,lagged binary
+hc_di_neuro_neurone,Health,Motor neuron disease,Current,raw
+hc_di_neo_myeloma_1_11_15,Health,Multiple myeloma,11–15 years before baseline,lagged binary
+hc_di_neo_myeloma_1_1_5,Health,Multiple myeloma,1–5 years before baseline,lagged binary
+hc_di_neo_myeloma_1_6_10,Health,Multiple myeloma,6–10 years before baseline,lagged binary
+hc_di_neo_myeloma,Health,Multiple myeloma,Current,raw
+hc_di_neuro_ms_1_11_15,Health,Multiple sclerosis,11–15 years before baseline,lagged binary
+hc_di_neuro_ms_1_1_5,Health,Multiple sclerosis,1–5 years before baseline,lagged binary
+hc_di_neuro_ms_1_6_10,Health,Multiple sclerosis,6–10 years before baseline,lagged binary
+hc_di_neuro_ms,Health,Multiple sclerosis,Current,raw
+hc_di_msk_NEC_1_11_15,Health,"Musculoskeletal disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_msk_NEC_1_1_5,Health,"Musculoskeletal disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_msk_NEC_1_6_10,Health,"Musculoskeletal disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_msk_NEC,Health,"Musculoskeletal disorders, not elsewhere classified",Current,raw
+hc_di_neo_nasopharynx_1_11_15,Health,Nasopharynx cancer,11–15 years before baseline,lagged binary
+hc_di_neo_nasopharynx_1_1_5,Health,Nasopharynx cancer,1–5 years before baseline,lagged binary
+hc_di_neo_nasopharynx_1_6_10,Health,Nasopharynx cancer,6–10 years before baseline,lagged binary
+hc_di_neo_nasopharynx,Health,Nasopharynx cancer,Current,raw
+hc_di_msk_pain_neck_1_11_15,Health,Neck pain,11–15 years before baseline,lagged binary
+hc_di_msk_pain_neck_1_1_5,Health,Neck pain,1–5 years before baseline,lagged binary
+hc_di_msk_pain_neck_1_6_10,Health,Neck pain,6–10 years before baseline,lagged binary
+hc_di_msk_pain_neck,Health,Neck pain,Current,raw
+hc_di__ntd_1_11_15,Health,Neglected tropical diseases and malaria,11–15 years before baseline,lagged binary
+hc_di__ntd_1_1_5,Health,Neglected tropical diseases and malaria,1–5 years before baseline,lagged binary
+hc_di__ntd_1_6_10,Health,Neglected tropical diseases and malaria,6–10 years before baseline,lagged binary
+hc_di__ntd,Health,Neglected tropical diseases and malaria,Current,raw
+hc_di_neonatal_NEC_1_11_15,Health,"Neonatal disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_neonatal_NEC_1_1_5,Health,"Neonatal disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_neonatal_NEC_1_6_10,Health,"Neonatal disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_neonatal_NEC,Health,"Neonatal disorders, not elsewhere classified",Current,raw
+hc_di_neonatal_enceph_1_11_15,Health,Neonatal encephalopathy due to birth asphyxia and trauma,11–15 years before baseline,lagged binary
+hc_di_neonatal_enceph_1_1_5,Health,Neonatal encephalopathy due to birth asphyxia and trauma,1–5 years before baseline,lagged binary
+hc_di_neonatal_enceph_1_6_10,Health,Neonatal encephalopathy due to birth asphyxia and trauma,6–10 years before baseline,lagged binary
+hc_di_neonatal_enceph,Health,Neonatal encephalopathy due to birth asphyxia and trauma,Current,raw
+hc_di_neonatal_preterm_1_11_15,Health,Neonatal preterm birth,11–15 years before baseline,lagged binary
+hc_di_neonatal_preterm_1_1_5,Health,Neonatal preterm birth,1–5 years before baseline,lagged binary
+hc_di_neonatal_preterm_1_6_10,Health,Neonatal preterm birth,6–10 years before baseline,lagged binary
+hc_di_neonatal_preterm,Health,Neonatal preterm birth,Current,raw
+hc_di_neonatal_sepsis_1_11_15,Health,Neonatal sepsis and other neonatal infections,11–15 years before baseline,lagged binary
+hc_di_neonatal_sepsis_1_1_5,Health,Neonatal sepsis and other neonatal infections,1–5 years before baseline,lagged binary
+hc_di_neonatal_sepsis_1_6_10,Health,Neonatal sepsis and other neonatal infections,6–10 years before baseline,lagged binary
+hc_di_neonatal_sepsis,Health,Neonatal sepsis and other neonatal infections,Current,raw
+hc_di_neo_NEC_1_11_15,Health,"Neoplasms, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_neo_NEC_1_1_5,Health,"Neoplasms, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_neo_NEC_1_6_10,Health,"Neoplasms, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_neo_NEC,Health,"Neoplasms, not elsewhere classified",Current,raw
+hc_di_neo_neuro_1_11_15,Health,Neuroblastoma and other peripheral nervous cell tumors,11–15 years before baseline,lagged binary
+hc_di_neo_neuro_1_1_5,Health,Neuroblastoma and other peripheral nervous cell tumors,1–5 years before baseline,lagged binary
+hc_di_neo_neuro_1_6_10,Health,Neuroblastoma and other peripheral nervous cell tumors,6–10 years before baseline,lagged binary
+hc_di_neo_neuro,Health,Neuroblastoma and other peripheral nervous cell tumors,Current,raw
+hc_di_neuro_NEC_1_11_15,Health,"Neurological disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_neuro_NEC_1_1_5,Health,"Neurological disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_neuro_NEC_1_6_10,Health,"Neurological disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_neuro_NEC,Health,"Neurological disorders, not elsewhere classified",Current,raw
+hc_di_neo_lymphoma_1_11_15,Health,Non-Hodgkin lymphoma,11–15 years before baseline,lagged binary
+hc_di_neo_lymphoma_1_1_5,Health,Non-Hodgkin lymphoma,1–5 years before baseline,lagged binary
+hc_di_neo_lymphoma_1_6_10,Health,Non-Hodgkin lymphoma,6–10 years before baseline,lagged binary
+hc_di_neo_lymphoma,Health,Non-Hodgkin lymphoma,Current,raw
+hc_di_neo_nmsc_1_11_15,Health,Non-melanoma skin cancer,11–15 years before baseline,lagged binary
+hc_di_neo_nmsc_1_1_5,Health,Non-melanoma skin cancer,1–5 years before baseline,lagged binary
+hc_di_neo_nmsc_1_6_10,Health,Non-melanoma skin cancer,6–10 years before baseline,lagged binary
+hc_di_neo_nmsc,Health,Non-melanoma skin cancer,Current,raw
+hc_di_cvd_valvu_1_11_15,Health,Non-rheumatic valvular heart disease,11–15 years before baseline,lagged binary
+hc_di_cvd_valvu_1_1_5,Health,Non-rheumatic valvular heart disease,1–5 years before baseline,lagged binary
+hc_di_cvd_valvu_1_6_10,Health,Non-rheumatic valvular heart disease,6–10 years before baseline,lagged binary
+hc_di_cvd_valvu,Health,Non-rheumatic valvular heart disease,Current,raw
+hc_charlson_comorbidities_roll_sd_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling SD
+hc_di_count_roll_sd_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling SD
+hc_elixhauser_comorbidities_roll_sd_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling SD
+hc_charlson_comorbidities_roll_avg_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling mean
+hc_di_count_roll_avg_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling mean
+hc_elixhauser_comorbidities_roll_avg_11_15,Health,Number of diagnoses,11–15 years before baseline,rolling mean
+hc_charlson_comorbidities_roll_sd_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling SD
+hc_di_count_roll_sd_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling SD
+hc_elixhauser_comorbidities_roll_sd_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling SD
+hc_charlson_comorbidities_roll_avg_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling mean
+hc_di_count_roll_avg_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling mean
+hc_elixhauser_comorbidities_roll_avg_1_5,Health,Number of diagnoses,1–5 years before baseline,rolling mean
+hc_charlson_comorbidities_roll_sd_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling SD
+hc_di_count_roll_sd_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling SD
+hc_elixhauser_comorbidities_roll_sd_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling SD
+hc_charlson_comorbidities_roll_avg_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling mean
+hc_di_count_roll_avg_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling mean
+hc_elixhauser_comorbidities_roll_avg_6_10,Health,Number of diagnoses,6–10 years before baseline,rolling mean
+hc_charlson_comorbidities,Health,Number of diagnoses,Current,raw
+hc_di_count,Health,Number of diagnoses,Current,raw
+hc_elixhauser_comorbidities,Health,Number of diagnoses,Current,raw
+med_num_meds_roll_sd_11_15,Health,Number of medications,11–15 years before baseline,rolling SD
+med_num_meds_roll_avg_11_15,Health,Number of medications,11–15 years before baseline,rolling mean
+med_num_meds_roll_sd_1_5,Health,Number of medications,1–5 years before baseline,rolling SD
+med_num_meds_roll_avg_1_5,Health,Number of medications,1–5 years before baseline,rolling mean
+med_num_meds_roll_sd_6_10,Health,Number of medications,6–10 years before baseline,rolling SD
+med_num_meds_roll_avg_6_10,Health,Number of medications,6–10 years before baseline,rolling mean
+med_num_meds,Health,Number of medications,Current,raw
+hc_hospitalizations_somatic_roll_sd_11_15,Health,Number of somatic hospitalizations,11–15 years before baseline,rolling SD
+hc_hospitalizations_somatic_roll_avg_11_15,Health,Number of somatic hospitalizations,11–15 years before baseline,rolling mean
+hc_hospitalizations_somatic_roll_sd_1_5,Health,Number of somatic hospitalizations,1–5 years before baseline,rolling SD
+hc_hospitalizations_somatic_roll_avg_1_5,Health,Number of somatic hospitalizations,1–5 years before baseline,rolling mean
+hc_hospitalizations_somatic_roll_sd_6_10,Health,Number of somatic hospitalizations,6–10 years before baseline,rolling SD
+hc_hospitalizations_somatic_roll_avg_6_10,Health,Number of somatic hospitalizations,6–10 years before baseline,rolling mean
+hc_hospitalizations_somatic,Health,Number of somatic hospitalizations,Current,raw
+hc_di_nutrition_1_11_15,Health,Nutritional deficiencies,11–15 years before baseline,lagged binary
+hc_di_nutrition_1_1_5,Health,Nutritional deficiencies,1–5 years before baseline,lagged binary
+hc_di_nutrition_1_6_10,Health,Nutritional deficiencies,6–10 years before baseline,lagged binary
+hc_di_nutrition,Health,Nutritional deficiencies,Current,raw
+hc_di_mental_drug_opioids_1_11_15,Health,Opioid use disorders,11–15 years before baseline,lagged binary
+hc_di_mental_drug_opioids_1_1_5,Health,Opioid use disorders,1–5 years before baseline,lagged binary
+hc_di_mental_drug_opioids_1_6_10,Health,Opioid use disorders,6–10 years before baseline,lagged binary
+hc_di_mental_drug_opioids,Health,Opioid use disorders,Current,raw
+hc_di__oral_1_11_15,Health,Oral disorders,11–15 years before baseline,lagged binary
+hc_di__oral_1_1_5,Health,Oral disorders,1–5 years before baseline,lagged binary
+hc_di__oral_1_6_10,Health,Oral disorders,6–10 years before baseline,lagged binary
+hc_di__oral,Health,Oral disorders,Current,raw
+hc_di_msk_osteoarthritis_1_11_15,Health,Osteoarthritis,11–15 years before baseline,lagged binary
+hc_di_msk_osteoarthritis_1_1_5,Health,Osteoarthritis,1–5 years before baseline,lagged binary
+hc_di_msk_osteoarthritis_1_6_10,Health,Osteoarthritis,6–10 years before baseline,lagged binary
+hc_di_msk_osteoarthritis,Health,Osteoarthritis,Current,raw
+hc_di_cvd_other_1_11_15,Health,Other cardiovascular and circulatory diseases,11–15 years before baseline,lagged binary
+hc_di_cvd_other_1_1_5,Health,Other cardiovascular and circulatory diseases,1–5 years before baseline,lagged binary
+hc_di_cvd_other_1_6_10,Health,Other cardiovascular and circulatory diseases,6–10 years before baseline,lagged binary
+hc_di_cvd_other,Health,Other cardiovascular and circulatory diseases,Current,raw
+hc_di_resp_other_1_11_15,Health,Other chronic respiratory diseases,11–15 years before baseline,lagged binary
+hc_di_resp_other_1_1_5,Health,Other chronic respiratory diseases,1–5 years before baseline,lagged binary
+hc_di_resp_other_1_6_10,Health,Other chronic respiratory diseases,6–10 years before baseline,lagged binary
+hc_di_resp_other,Health,Other chronic respiratory diseases,Current,raw
+hc_di_digest_other_1_11_15,Health,Other digestive diseases,11–15 years before baseline,lagged binary
+hc_di_digest_other_1_1_5,Health,Other digestive diseases,1–5 years before baseline,lagged binary
+hc_di_digest_other_1_6_10,Health,Other digestive diseases,6–10 years before baseline,lagged binary
+hc_di_digest_other,Health,Other digestive diseases,Current,raw
+hc_di_maternal_other_1_11_15,Health,Other direct maternal disorders,11–15 years before baseline,lagged binary
+hc_di_maternal_other_1_1_5,Health,Other direct maternal disorders,1–5 years before baseline,lagged binary
+hc_di_maternal_other_1_6_10,Health,Other direct maternal disorders,6–10 years before baseline,lagged binary
+hc_di_maternal_other,Health,Other direct maternal disorders,Current,raw
+hc_cost_other_roll_sd_11_15,Health,Other healthcare case complexity,11–15 years before baseline,rolling SD
+hc_cost_other_roll_avg_11_15,Health,Other healthcare case complexity,11–15 years before baseline,rolling mean
+hc_cost_other_roll_sd_1_5,Health,Other healthcare case complexity,1–5 years before baseline,rolling SD
+hc_cost_other_roll_avg_1_5,Health,Other healthcare case complexity,1–5 years before baseline,rolling mean
+hc_cost_other_roll_sd_6_10,Health,Other healthcare case complexity,6–10 years before baseline,rolling SD
+hc_cost_other_roll_avg_6_10,Health,Other healthcare case complexity,6–10 years before baseline,rolling mean
+hc_cost_other,Health,Other healthcare case complexity,Current,raw
+hc_di__infect_agg_1_11_15,Health,Other infectious diseases,11–15 years before baseline,lagged binary
+hc_di__infect_agg_1_1_5,Health,Other infectious diseases,1–5 years before baseline,lagged binary
+hc_di__infect_agg_1_6_10,Health,Other infectious diseases,6–10 years before baseline,lagged binary
+hc_di__infect_agg,Health,Other infectious diseases,Current,raw
+hc_di_infect_NEC_1_11_15,Health,"Other infectious diseases, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_infect_NEC_1_1_5,Health,"Other infectious diseases, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_infect_NEC_1_6_10,Health,"Other infectious diseases, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_infect_NEC,Health,"Other infectious diseases, not elsewhere classified",Current,raw
+hc_di_neo_other_cancer_1_11_15,Health,Other malignant neoplasms,11–15 years before baseline,lagged binary
+hc_di_neo_other_cancer_1_1_5,Health,Other malignant neoplasms,1–5 years before baseline,lagged binary
+hc_di_neo_other_cancer_1_6_10,Health,Other malignant neoplasms,6–10 years before baseline,lagged binary
+hc_di_neo_other_cancer,Health,Other malignant neoplasms,Current,raw
+hc_di_mental_other_1_11_15,Health,Other mental disorders,11–15 years before baseline,lagged binary
+hc_di_mental_other_1_1_5,Health,Other mental disorders,1–5 years before baseline,lagged binary
+hc_di_mental_other_1_6_10,Health,Other mental disorders,6–10 years before baseline,lagged binary
+hc_di_mental_other,Health,Other mental disorders,Current,raw
+hc_di_msk_other_1_11_15,Health,Other musculoskeletal disorders,11–15 years before baseline,lagged binary
+hc_di_msk_other_1_1_5,Health,Other musculoskeletal disorders,1–5 years before baseline,lagged binary
+hc_di_msk_other_1_6_10,Health,Other musculoskeletal disorders,6–10 years before baseline,lagged binary
+hc_di_msk_other,Health,Other musculoskeletal disorders,Current,raw
+hc_di_neonatal_other_1_11_15,Health,Other neonatal disorders,11–15 years before baseline,lagged binary
+hc_di_neonatal_other_1_1_5,Health,Other neonatal disorders,1–5 years before baseline,lagged binary
+hc_di_neonatal_other_1_6_10,Health,Other neonatal disorders,6–10 years before baseline,lagged binary
+hc_di_neonatal_other,Health,Other neonatal disorders,Current,raw
+hc_di_neo_other_benign_1_11_15,Health,Other neoplasms,11–15 years before baseline,lagged binary
+hc_di_neo_other_benign_1_1_5,Health,Other neoplasms,1–5 years before baseline,lagged binary
+hc_di_neo_other_benign_1_6_10,Health,Other neoplasms,6–10 years before baseline,lagged binary
+hc_di_neo_other_benign,Health,Other neoplasms,Current,raw
+hc_di_neuro_other_1_11_15,Health,Other neurological disorders,11–15 years before baseline,lagged binary
+hc_di_neuro_other_1_1_5,Health,Other neurological disorders,1–5 years before baseline,lagged binary
+hc_di_neuro_other_1_6_10,Health,Other neurological disorders,6–10 years before baseline,lagged binary
+hc_di_neuro_other,Health,Other neurological disorders,Current,raw
+hc_di_neo_otherpharynx_1_11_15,Health,Other pharynx cancer,11–15 years before baseline,lagged binary
+hc_di_neo_otherpharynx_1_1_5,Health,Other pharynx cancer,1–5 years before baseline,lagged binary
+hc_di_neo_otherpharynx_1_6_10,Health,Other pharynx cancer,6–10 years before baseline,lagged binary
+hc_di_neo_otherpharynx,Health,Other pharynx cancer,Current,raw
+hc_di_sense_other_1_11_15,Health,Other sense organ diseases,11–15 years before baseline,lagged binary
+hc_di_sense_other_1_1_5,Health,Other sense organ diseases,1–5 years before baseline,lagged binary
+hc_di_sense_other_1_6_10,Health,Other sense organ diseases,6–10 years before baseline,lagged binary
+hc_di_sense_other,Health,Other sense organ diseases,Current,raw
+hc_di_mental_drug_agg_1_11_15,Health,Other substance use disorders,11–15 years before baseline,lagged binary
+hc_di_mental_drug_agg_1_1_5,Health,Other substance use disorders,1–5 years before baseline,lagged binary
+hc_di_mental_drug_agg_1_6_10,Health,Other substance use disorders,6–10 years before baseline,lagged binary
+hc_di_mental_drug_agg,Health,Other substance use disorders,Current,raw
+hc_di__unintent_agg_1_11_15,Health,Other unintentional injuries,11–15 years before baseline,lagged binary
+hc_di__unintent_agg_1_1_5,Health,Other unintentional injuries,1–5 years before baseline,lagged binary
+hc_di__unintent_agg_1_6_10,Health,Other unintentional injuries,6–10 years before baseline,lagged binary
+hc_di__unintent_agg,Health,Other unintentional injuries,Current,raw
+hc_di_otitis_1_11_15,Health,Otitis media,11–15 years before baseline,lagged binary
+hc_di_otitis_1_1_5,Health,Otitis media,1–5 years before baseline,lagged binary
+hc_di_otitis_1_6_10,Health,Otitis media,6–10 years before baseline,lagged binary
+hc_di_otitis,Health,Otitis media,Current,raw
+hc_di_neo_ovarian_1_11_15,Health,Ovarian cancer,11–15 years before baseline,lagged binary
+hc_di_neo_ovarian_1_1_5,Health,Ovarian cancer,1–5 years before baseline,lagged binary
+hc_di_neo_ovarian_1_6_10,Health,Ovarian cancer,6–10 years before baseline,lagged binary
+hc_di_neo_ovarian,Health,Ovarian cancer,Current,raw
+hc_di_neo_pancreas_1_11_15,Health,Pancreatic cancer,11–15 years before baseline,lagged binary
+hc_di_neo_pancreas_1_1_5,Health,Pancreatic cancer,1–5 years before baseline,lagged binary
+hc_di_neo_pancreas_1_6_10,Health,Pancreatic cancer,6–10 years before baseline,lagged binary
+hc_di_neo_pancreas,Health,Pancreatic cancer,Current,raw
+hc_di_digest_pancreatitis_1_11_15,Health,Pancreatitis,11–15 years before baseline,lagged binary
+hc_di_digest_pancreatitis_1_1_5,Health,Pancreatitis,1–5 years before baseline,lagged binary
+hc_di_digest_pancreatitis_1_6_10,Health,Pancreatitis,6–10 years before baseline,lagged binary
+hc_di_digest_pancreatitis,Health,Pancreatitis,Current,raw
+hc_di_digest_ileus_1_11_15,Health,Paralytic ileus and intestinal obstruction,11–15 years before baseline,lagged binary
+hc_di_digest_ileus_1_1_5,Health,Paralytic ileus and intestinal obstruction,1–5 years before baseline,lagged binary
+hc_di_digest_ileus_1_6_10,Health,Paralytic ileus and intestinal obstruction,6–10 years before baseline,lagged binary
+hc_di_digest_ileus,Health,Paralytic ileus and intestinal obstruction,Current,raw
+hc_di_neuro_parkinsons_1_11_15,Health,Parkinson's disease,11–15 years before baseline,lagged binary
+hc_di_neuro_parkinsons_1_1_5,Health,Parkinson's disease,1–5 years before baseline,lagged binary
+hc_di_neuro_parkinsons_1_6_10,Health,Parkinson's disease,6–10 years before baseline,lagged binary
+hc_di_neuro_parkinsons,Health,Parkinson's disease,Current,raw
+hc_di_resp_pneum_1_11_15,Health,Pneumoconiosis,11–15 years before baseline,lagged binary
+hc_di_resp_pneum_1_1_5,Health,Pneumoconiosis,1–5 years before baseline,lagged binary
+hc_di_resp_pneum_1_6_10,Health,Pneumoconiosis,6–10 years before baseline,lagged binary
+hc_di_resp_pneum,Health,Pneumoconiosis,Current,raw
+hc_di_exp_well_pregnancy_1_11_15,Health,Pregnancy and postpartum care,11–15 years before baseline,lagged binary
+hc_di_exp_well_pregnancy_1_1_5,Health,Pregnancy and postpartum care,1–5 years before baseline,lagged binary
+hc_di_exp_well_pregnancy_1_6_10,Health,Pregnancy and postpartum care,6–10 years before baseline,lagged binary
+hc_di_exp_well_pregnancy,Health,Pregnancy and postpartum care,Current,raw
+hc_cost_prescription_drug_oop_roll_sd_11_15,Health,Prescription costs,11–15 years before baseline,rolling SD
+hc_cost_prescription_drug_roll_sd_11_15,Health,Prescription costs,11–15 years before baseline,rolling SD
+hc_cost_prescription_drug_oop_roll_avg_11_15,Health,Prescription costs,11–15 years before baseline,rolling mean
+hc_cost_prescription_drug_roll_avg_11_15,Health,Prescription costs,11–15 years before baseline,rolling mean
+hc_cost_prescription_drug_oop_roll_sd_1_5,Health,Prescription costs,1–5 years before baseline,rolling SD
+hc_cost_prescription_drug_roll_sd_1_5,Health,Prescription costs,1–5 years before baseline,rolling SD
+hc_cost_prescription_drug_oop_roll_avg_1_5,Health,Prescription costs,1–5 years before baseline,rolling mean
+hc_cost_prescription_drug_roll_avg_1_5,Health,Prescription costs,1–5 years before baseline,rolling mean
+hc_cost_prescription_drug_oop_roll_sd_6_10,Health,Prescription costs,6–10 years before baseline,rolling SD
+hc_cost_prescription_drug_roll_sd_6_10,Health,Prescription costs,6–10 years before baseline,rolling SD
+hc_cost_prescription_drug_oop_roll_avg_6_10,Health,Prescription costs,6–10 years before baseline,rolling mean
+hc_cost_prescription_drug_roll_avg_6_10,Health,Prescription costs,6–10 years before baseline,rolling mean
+hc_cost_prescription_drug,Health,Prescription costs,Current,raw
+hc_cost_prescription_drug_oop,Health,Prescription costs,Current,raw
+hc_di_neo_prostate_1_11_15,Health,Prostate cancer,11–15 years before baseline,lagged binary
+hc_di_neo_prostate_1_1_5,Health,Prostate cancer,1–5 years before baseline,lagged binary
+hc_di_neo_prostate_1_6_10,Health,Prostate cancer,6–10 years before baseline,lagged binary
+hc_di_neo_prostate,Health,Prostate cancer,Current,raw
+hc_hospitalizations_psychiatric_roll_sd_11_15,Health,Psychiatric hospitalizations,11–15 years before baseline,rolling SD
+hc_hospitalizations_psychiatric_roll_avg_11_15,Health,Psychiatric hospitalizations,11–15 years before baseline,rolling mean
+hc_hospitalizations_psychiatric_roll_sd_1_5,Health,Psychiatric hospitalizations,1–5 years before baseline,rolling SD
+hc_hospitalizations_psychiatric_roll_avg_1_5,Health,Psychiatric hospitalizations,1–5 years before baseline,rolling mean
+hc_hospitalizations_psychiatric_roll_sd_6_10,Health,Psychiatric hospitalizations,6–10 years before baseline,rolling SD
+hc_hospitalizations_psychiatric_roll_avg_6_10,Health,Psychiatric hospitalizations,6–10 years before baseline,rolling mean
+hc_hospitalizations_psychiatric,Health,Psychiatric hospitalizations,Current,raw
+hc_cost_psychiatric_inpatient_roll_sd_11_15,Health,Psychiatric inpatient case complexity,11–15 years before baseline,rolling SD
+hc_cost_psychiatric_inpatient_roll_avg_11_15,Health,Psychiatric inpatient case complexity,11–15 years before baseline,rolling mean
+hc_cost_psychiatric_inpatient_roll_sd_1_5,Health,Psychiatric inpatient case complexity,1–5 years before baseline,rolling SD
+hc_cost_psychiatric_inpatient_roll_avg_1_5,Health,Psychiatric inpatient case complexity,1–5 years before baseline,rolling mean
+hc_cost_psychiatric_inpatient_roll_sd_6_10,Health,Psychiatric inpatient case complexity,6–10 years before baseline,rolling SD
+hc_cost_psychiatric_inpatient_roll_avg_6_10,Health,Psychiatric inpatient case complexity,6–10 years before baseline,rolling mean
+hc_cost_psychiatric_inpatient,Health,Psychiatric inpatient case complexity,Current,raw
+hc_cost_psychiatric_outpatient_roll_sd_11_15,Health,Psychiatric outpatient case complexity,11–15 years before baseline,rolling SD
+hc_cost_psychiatric_outpatient_roll_avg_11_15,Health,Psychiatric outpatient case complexity,11–15 years before baseline,rolling mean
+hc_cost_psychiatric_outpatient_roll_sd_1_5,Health,Psychiatric outpatient case complexity,1–5 years before baseline,rolling SD
+hc_cost_psychiatric_outpatient_roll_avg_1_5,Health,Psychiatric outpatient case complexity,1–5 years before baseline,rolling mean
+hc_cost_psychiatric_outpatient_roll_sd_6_10,Health,Psychiatric outpatient case complexity,6–10 years before baseline,rolling SD
+hc_cost_psychiatric_outpatient_roll_avg_6_10,Health,Psychiatric outpatient case complexity,6–10 years before baseline,rolling mean
+hc_cost_psychiatric_outpatient,Health,Psychiatric outpatient case complexity,Current,raw
+hc_di_cvd_pah_1_11_15,Health,Pulmonary Arterial Hypertension,11–15 years before baseline,lagged binary
+hc_di_cvd_pah_1_1_5,Health,Pulmonary Arterial Hypertension,1–5 years before baseline,lagged binary
+hc_di_cvd_pah_1_6_10,Health,Pulmonary Arterial Hypertension,6–10 years before baseline,lagged binary
+hc_di_cvd_pah,Health,Pulmonary Arterial Hypertension,Current,raw
+hc_di_cvd_rhd_1_11_15,Health,Rheumatic heart disease,11–15 years before baseline,lagged binary
+hc_di_cvd_rhd_1_1_5,Health,Rheumatic heart disease,1–5 years before baseline,lagged binary
+hc_di_cvd_rhd_1_6_10,Health,Rheumatic heart disease,6–10 years before baseline,lagged binary
+hc_di_cvd_rhd,Health,Rheumatic heart disease,Current,raw
+hc_di_msk_rheumarthritis_1_11_15,Health,Rheumatoid arthritis,11–15 years before baseline,lagged binary
+hc_di_msk_rheumarthritis_1_1_5,Health,Rheumatoid arthritis,1–5 years before baseline,lagged binary
+hc_di_msk_rheumarthritis_1_6_10,Health,Rheumatoid arthritis,6–10 years before baseline,lagged binary
+hc_di_msk_rheumarthritis,Health,Rheumatoid arthritis,Current,raw
+hc_di_mental_schizo_1_11_15,Health,Schizophrenia,11–15 years before baseline,lagged binary
+hc_di_mental_schizo_1_1_5,Health,Schizophrenia,1–5 years before baseline,lagged binary
+hc_di_mental_schizo_1_6_10,Health,Schizophrenia,6–10 years before baseline,lagged binary
+hc_di_mental_schizo,Health,Schizophrenia,Current,raw
+hc_di_inj_suicide_1_11_15,Health,Self-harm,11–15 years before baseline,lagged binary
+hc_di_inj_suicide_1_1_5,Health,Self-harm,1–5 years before baseline,lagged binary
+hc_di_inj_suicide_1_6_10,Health,Self-harm,6–10 years before baseline,lagged binary
+hc_di_inj_suicide,Health,Self-harm,Current,raw
+hc_di_sense_NEC_1_11_15,Health,"Sense organ diseases, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_sense_NEC_1_1_5,Health,"Sense organ diseases, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_sense_NEC_1_6_10,Health,"Sense organ diseases, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_sense_NEC,Health,"Sense organ diseases, not elsewhere classified",Current,raw
+hc_di_septicemia_1_11_15,Health,Septicemia,11–15 years before baseline,lagged binary
+hc_di_septicemia_1_1_5,Health,Septicemia,1–5 years before baseline,lagged binary
+hc_di_septicemia_1_6_10,Health,Septicemia,6–10 years before baseline,lagged binary
+hc_di_septicemia,Health,Septicemia,Current,raw
+hc_di_std_1_11_15,Health,Sexually transmitted infections excluding HIV,11–15 years before baseline,lagged binary
+hc_di_std_1_1_5,Health,Sexually transmitted infections excluding HIV,1–5 years before baseline,lagged binary
+hc_di_std_1_6_10,Health,Sexually transmitted infections excluding HIV,6–10 years before baseline,lagged binary
+hc_di_std,Health,Sexually transmitted infections excluding HIV,Current,raw
+hc_di_skin_1_11_15,Health,Skin and subcutaneous diseases,11–15 years before baseline,lagged binary
+hc_di_skin_1_1_5,Health,Skin and subcutaneous diseases,1–5 years before baseline,lagged binary
+hc_di_skin_1_6_10,Health,Skin and subcutaneous diseases,6–10 years before baseline,lagged binary
+hc_di_skin,Health,Skin and subcutaneous diseases,Current,raw
+hc_di_exp_social_services_1_11_15,Health,Social services,11–15 years before baseline,lagged binary
+hc_di_exp_social_services_1_1_5,Health,Social services,1–5 years before baseline,lagged binary
+hc_di_exp_social_services_1_6_10,Health,Social services,6–10 years before baseline,lagged binary
+hc_di_exp_social_services,Health,Social services,Current,raw
+hc_di_neo_tissue_sarcoma_1_11_15,Health,Soft tissue and other extraosseous sarcomas,11–15 years before baseline,lagged binary
+hc_di_neo_tissue_sarcoma_1_1_5,Health,Soft tissue and other extraosseous sarcomas,1–5 years before baseline,lagged binary
+hc_di_neo_tissue_sarcoma_1_6_10,Health,Soft tissue and other extraosseous sarcomas,6–10 years before baseline,lagged binary
+hc_di_neo_tissue_sarcoma,Health,Soft tissue and other extraosseous sarcomas,Current,raw
+hc_cost_somatic_inpatient_roll_sd_11_15,Health,Somatic inpatient case complexity,11–15 years before baseline,rolling SD
+hc_cost_somatic_inpatient_roll_avg_11_15,Health,Somatic inpatient case complexity,11–15 years before baseline,rolling mean
+hc_cost_somatic_inpatient_roll_sd_1_5,Health,Somatic inpatient case complexity,1–5 years before baseline,rolling SD
+hc_cost_somatic_inpatient_roll_avg_1_5,Health,Somatic inpatient case complexity,1–5 years before baseline,rolling mean
+hc_cost_somatic_inpatient_roll_sd_6_10,Health,Somatic inpatient case complexity,6–10 years before baseline,rolling SD
+hc_cost_somatic_inpatient_roll_avg_6_10,Health,Somatic inpatient case complexity,6–10 years before baseline,rolling mean
+hc_cost_somatic_inpatient,Health,Somatic inpatient case complexity,Current,raw
+hc_cost_somatic_outpatient_roll_sd_11_15,Health,Somatic outpatient case complexity,11–15 years before baseline,rolling SD
+hc_cost_somatic_outpatient_roll_avg_11_15,Health,Somatic outpatient case complexity,11–15 years before baseline,rolling mean
+hc_cost_somatic_outpatient_roll_sd_1_5,Health,Somatic outpatient case complexity,1–5 years before baseline,rolling SD
+hc_cost_somatic_outpatient_roll_avg_1_5,Health,Somatic outpatient case complexity,1–5 years before baseline,rolling mean
+hc_cost_somatic_outpatient_roll_sd_6_10,Health,Somatic outpatient case complexity,6–10 years before baseline,rolling SD
+hc_cost_somatic_outpatient_roll_avg_6_10,Health,Somatic outpatient case complexity,6–10 years before baseline,rolling mean
+hc_cost_somatic_outpatient,Health,Somatic outpatient case complexity,Current,raw
+hc_di_neo_stomach_1_11_15,Health,Stomach cancer,11–15 years before baseline,lagged binary
+hc_di_neo_stomach_1_1_5,Health,Stomach cancer,1–5 years before baseline,lagged binary
+hc_di_neo_stomach_1_6_10,Health,Stomach cancer,6–10 years before baseline,lagged binary
+hc_di_neo_stomach,Health,Stomach cancer,Current,raw
+hc_di_cvd_stroke_1_11_15,Health,Stroke,11–15 years before baseline,lagged binary
+hc_di_cvd_stroke_1_1_5,Health,Stroke,1–5 years before baseline,lagged binary
+hc_di_cvd_stroke_1_6_10,Health,Stroke,6–10 years before baseline,lagged binary
+hc_di_cvd_stroke,Health,Stroke,Current,raw
+hc_di_subs_NEC_1_11_15,Health,"Substance use disorders, not elsewhere classified",11–15 years before baseline,lagged binary
+hc_di_subs_NEC_1_1_5,Health,"Substance use disorders, not elsewhere classified",1–5 years before baseline,lagged binary
+hc_di_subs_NEC_1_6_10,Health,"Substance use disorders, not elsewhere classified",6–10 years before baseline,lagged binary
+hc_di_subs_NEC,Health,"Substance use disorders, not elsewhere classified",Current,raw
+hc_di_neo_testicular_1_11_15,Health,Testicular cancer,11–15 years before baseline,lagged binary
+hc_di_neo_testicular_1_1_5,Health,Testicular cancer,1–5 years before baseline,lagged binary
+hc_di_neo_testicular_1_6_10,Health,Testicular cancer,6–10 years before baseline,lagged binary
+hc_di_neo_testicular,Health,Testicular cancer,Current,raw
+hc_di_neo_thyroid_1_11_15,Health,Thyroid cancer,11–15 years before baseline,lagged binary
+hc_di_neo_thyroid_1_1_5,Health,Thyroid cancer,1–5 years before baseline,lagged binary
+hc_di_neo_thyroid_1_6_10,Health,Thyroid cancer,6–10 years before baseline,lagged binary
+hc_di_neo_thyroid,Health,Thyroid cancer,Current,raw
+hc_di_rf_tobacco_1_11_15,Health,Tobacco intervention,11–15 years before baseline,lagged binary
+hc_di_rf_tobacco_1_1_5,Health,Tobacco intervention,1–5 years before baseline,lagged binary
+hc_di_rf_tobacco_1_6_10,Health,Tobacco intervention,6–10 years before baseline,lagged binary
+hc_di_rf_tobacco,Health,Tobacco intervention,Current,raw
+hc_di_neo_lung_1_11_15,Health,"Tracheal, bronchus, and lung cancer",11–15 years before baseline,lagged binary
+hc_di_neo_lung_1_1_5,Health,"Tracheal, bronchus, and lung cancer",1–5 years before baseline,lagged binary
+hc_di_neo_lung_1_6_10,Health,"Tracheal, bronchus, and lung cancer",6–10 years before baseline,lagged binary
+hc_di_neo_lung,Health,"Tracheal, bronchus, and lung cancer",Current,raw
+hc_di_inj_trans_1_11_15,Health,Transport injuries,11–15 years before baseline,lagged binary
+hc_di_inj_trans_1_1_5,Health,Transport injuries,1–5 years before baseline,lagged binary
+hc_di_inj_trans_1_6_10,Health,Transport injuries,6–10 years before baseline,lagged binary
+hc_di_inj_trans,Health,Transport injuries,Current,raw
+hc_di_rf_hyperlipidemia_1_11_15,Health,Treatment of hyperlipidemia,11–15 years before baseline,lagged binary
+hc_di_rf_hyperlipidemia_1_1_5,Health,Treatment of hyperlipidemia,1–5 years before baseline,lagged binary
+hc_di_rf_hyperlipidemia_1_6_10,Health,Treatment of hyperlipidemia,6–10 years before baseline,lagged binary
+hc_di_rf_hyperlipidemia,Health,Treatment of hyperlipidemia,Current,raw
+hc_di_rf_hypertension_1_11_15,Health,Treatment of hypertension,11–15 years before baseline,lagged binary
+hc_di_rf_hypertension_1_1_5,Health,Treatment of hypertension,1–5 years before baseline,lagged binary
+hc_di_rf_hypertension_1_6_10,Health,Treatment of hypertension,6–10 years before baseline,lagged binary
+hc_di_rf_hypertension,Health,Treatment of hypertension,Current,raw
+hc_di_rf_obesity_1_11_15,Health,Treatment of obesity,11–15 years before baseline,lagged binary
+hc_di_rf_obesity_1_1_5,Health,Treatment of obesity,1–5 years before baseline,lagged binary
+hc_di_rf_obesity_1_6_10,Health,Treatment of obesity,6–10 years before baseline,lagged binary
+hc_di_rf_obesity,Health,Treatment of obesity,Current,raw
+hc_di_tb_1_11_15,Health,Tuberculosis,11–15 years before baseline,lagged binary
+hc_di_tb_1_1_5,Health,Tuberculosis,1–5 years before baseline,lagged binary
+hc_di_tb_1_6_10,Health,Tuberculosis,6–10 years before baseline,lagged binary
+hc_di_tb,Health,Tuberculosis,Current,raw
+hc_di_digest_upper_1_11_15,Health,Upper digestive system diseases,11–15 years before baseline,lagged binary
+hc_di_digest_upper_1_1_5,Health,Upper digestive system diseases,1–5 years before baseline,lagged binary
+hc_di_digest_upper_1_6_10,Health,Upper digestive system diseases,6–10 years before baseline,lagged binary
+hc_di_digest_upper,Health,Upper digestive system diseases,Current,raw
+hc_di_uri_1_11_15,Health,Upper respiratory infections,11–15 years before baseline,lagged binary
+hc_di_uri_1_1_5,Health,Upper respiratory infections,1–5 years before baseline,lagged binary
+hc_di_uri_1_6_10,Health,Upper respiratory infections,6–10 years before baseline,lagged binary
+hc_di_uri,Health,Upper respiratory infections,Current,raw
+hc_di_urinary_1_11_15,Health,Urinary diseases and male infertility,11–15 years before baseline,lagged binary
+hc_di_urinary_1_1_5,Health,Urinary diseases and male infertility,1–5 years before baseline,lagged binary
+hc_di_urinary_1_6_10,Health,Urinary diseases and male infertility,6–10 years before baseline,lagged binary
+hc_di_urinary,Health,Urinary diseases and male infertility,Current,raw
+hc_di_neo_uterine_1_11_15,Health,Uterine cancer,11–15 years before baseline,lagged binary
+hc_di_neo_uterine_1_1_5,Health,Uterine cancer,1–5 years before baseline,lagged binary
+hc_di_neo_uterine_1_6_10,Health,Uterine cancer,6–10 years before baseline,lagged binary
+hc_di_neo_uterine,Health,Uterine cancer,Current,raw
+hc_di_digest_vascular_1_11_15,Health,Vascular intestinal disorders,11–15 years before baseline,lagged binary
+hc_di_digest_vascular_1_1_5,Health,Vascular intestinal disorders,1–5 years before baseline,lagged binary
+hc_di_digest_vascular_1_6_10,Health,Vascular intestinal disorders,6–10 years before baseline,lagged binary
+hc_di_digest_vascular,Health,Vascular intestinal disorders,Current,raw
+hc_di_exp_well_dental_1_11_15,Health,Well dental,11–15 years before baseline,lagged binary
+hc_di_exp_well_dental_1_1_5,Health,Well dental,1–5 years before baseline,lagged binary
+hc_di_exp_well_dental_1_6_10,Health,Well dental,6–10 years before baseline,lagged binary
+hc_di_exp_well_dental,Health,Well dental,Current,raw
+hc_di_exp_well_person_1_11_15,Health,Well person,11–15 years before baseline,lagged binary
+hc_di_exp_well_person_1_1_5,Health,Well person,1–5 years before baseline,lagged binary
+hc_di_exp_well_person_1_6_10,Health,Well person,6–10 years before baseline,lagged binary
+hc_di_exp_well_person,Health,Well person,Current,raw
+de_birth_month,Sociodemographics,Birth month,Current,raw
+year,Sociodemographics,Cohort entry year,Current,raw
+se_educ_rank_roll_sd_11_15,Sociodemographics,Education,11–15 years before baseline,rolling SD (rank)
+se_educ_rank_age_gender_roll_sd_11_15,Sociodemographics,Education,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_educ_rank_roll_avg_11_15,Sociodemographics,Education,11–15 years before baseline,rolling mean (rank)
+se_educ_rank_age_gender_roll_avg_11_15,Sociodemographics,Education,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_educ_rank_roll_sd_1_5,Sociodemographics,Education,1–5 years before baseline,rolling SD (rank)
+se_educ_rank_age_gender_roll_sd_1_5,Sociodemographics,Education,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_educ_rank_roll_avg_1_5,Sociodemographics,Education,1–5 years before baseline,rolling mean (rank)
+se_educ_rank_age_gender_roll_avg_1_5,Sociodemographics,Education,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_educ_rank_roll_sd_6_10,Sociodemographics,Education,6–10 years before baseline,rolling SD (rank)
+se_educ_rank_age_gender_roll_sd_6_10,Sociodemographics,Education,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_educ_rank_roll_avg_6_10,Sociodemographics,Education,6–10 years before baseline,rolling mean (rank)
+se_educ_rank_age_gender_roll_avg_6_10,Sociodemographics,Education,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_educ,Sociodemographics,Education,Current,categorical
+se_educ_rank,Sociodemographics,Education,Current,rank
+se_educ_rank_age_gender,Sociodemographics,Education,Current,rank (age-sex adj.)
+de_ethnicity,Sociodemographics,Ethnicity,Current,categorical
+fa_child_died_1_11_15,Sociodemographics,Family bereavement,11–15 years before baseline,lagged binary
+fa_hh_member_died_1_11_15,Sociodemographics,Family bereavement,11–15 years before baseline,lagged binary
+fa_parent_died_1_11_15,Sociodemographics,Family bereavement,11–15 years before baseline,lagged binary
+fa_partner_died_1_11_15,Sociodemographics,Family bereavement,11–15 years before baseline,lagged binary
+fa_child_died_1_1_5,Sociodemographics,Family bereavement,1–5 years before baseline,lagged binary
+fa_hh_member_died_1_1_5,Sociodemographics,Family bereavement,1–5 years before baseline,lagged binary
+fa_parent_died_1_1_5,Sociodemographics,Family bereavement,1–5 years before baseline,lagged binary
+fa_partner_died_1_1_5,Sociodemographics,Family bereavement,1–5 years before baseline,lagged binary
+fa_child_died_1_6_10,Sociodemographics,Family bereavement,6–10 years before baseline,lagged binary
+fa_hh_member_died_1_6_10,Sociodemographics,Family bereavement,6–10 years before baseline,lagged binary
+fa_parent_died_1_6_10,Sociodemographics,Family bereavement,6–10 years before baseline,lagged binary
+fa_partner_died_1_6_10,Sociodemographics,Family bereavement,6–10 years before baseline,lagged binary
+fa_child_died,Sociodemographics,Family bereavement,Current,raw
+fa_hh_member_died,Sociodemographics,Family bereavement,Current,raw
+fa_parent_died,Sociodemographics,Family bereavement,Current,raw
+fa_partner_died,Sociodemographics,Family bereavement,Current,raw
+se_hh_assets_roll_sd_11_15,Sociodemographics,Household assets,11–15 years before baseline,rolling SD
+se_hh_assets_rank_roll_sd_11_15,Sociodemographics,Household assets,11–15 years before baseline,rolling SD (rank)
+se_hh_assets_rank_age_gender_roll_sd_11_15,Sociodemographics,Household assets,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_assets_roll_avg_11_15,Sociodemographics,Household assets,11–15 years before baseline,rolling mean
+se_hh_assets_rank_roll_avg_11_15,Sociodemographics,Household assets,11–15 years before baseline,rolling mean (rank)
+se_hh_assets_rank_age_gender_roll_avg_11_15,Sociodemographics,Household assets,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_assets_roll_sd_1_5,Sociodemographics,Household assets,1–5 years before baseline,rolling SD
+se_hh_assets_rank_roll_sd_1_5,Sociodemographics,Household assets,1–5 years before baseline,rolling SD (rank)
+se_hh_assets_rank_age_gender_roll_sd_1_5,Sociodemographics,Household assets,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_assets_roll_avg_1_5,Sociodemographics,Household assets,1–5 years before baseline,rolling mean
+se_hh_assets_rank_roll_avg_1_5,Sociodemographics,Household assets,1–5 years before baseline,rolling mean (rank)
+se_hh_assets_rank_age_gender_roll_avg_1_5,Sociodemographics,Household assets,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_assets_roll_sd_6_10,Sociodemographics,Household assets,6–10 years before baseline,rolling SD
+se_hh_assets_rank_roll_sd_6_10,Sociodemographics,Household assets,6–10 years before baseline,rolling SD (rank)
+se_hh_assets_rank_age_gender_roll_sd_6_10,Sociodemographics,Household assets,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_assets_roll_avg_6_10,Sociodemographics,Household assets,6–10 years before baseline,rolling mean
+se_hh_assets_rank_roll_avg_6_10,Sociodemographics,Household assets,6–10 years before baseline,rolling mean (rank)
+se_hh_assets_rank_age_gender_roll_avg_6_10,Sociodemographics,Household assets,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_assets_rank,Sociodemographics,Household assets,Current,rank
+se_hh_assets_rank_age_gender,Sociodemographics,Household assets,Current,rank (age-sex adj.)
+se_hh_assets,Sociodemographics,Household assets,Current,raw
+se_hh_disab_benefits_roll_sd_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,rolling SD
+se_hh_disab_benefits_rank_roll_sd_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,rolling SD (rank)
+se_hh_disab_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_disab_benefits_roll_avg_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,rolling mean
+se_hh_disab_benefits_rank_roll_avg_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,rolling mean (rank)
+se_hh_disab_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Household disability benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_disab_benefits_roll_sd_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,rolling SD
+se_hh_disab_benefits_rank_roll_sd_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,rolling SD (rank)
+se_hh_disab_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_disab_benefits_roll_avg_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,rolling mean
+se_hh_disab_benefits_rank_roll_avg_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,rolling mean (rank)
+se_hh_disab_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Household disability benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_disab_benefits_roll_sd_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,rolling SD
+se_hh_disab_benefits_rank_roll_sd_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,rolling SD (rank)
+se_hh_disab_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_disab_benefits_roll_avg_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,rolling mean
+se_hh_disab_benefits_rank_roll_avg_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,rolling mean (rank)
+se_hh_disab_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Household disability benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_disab_benefits_rank,Sociodemographics,Household disability benefits,Current,rank
+se_hh_disab_benefits_rank_age_gender,Sociodemographics,Household disability benefits,Current,rank (age-sex adj.)
+se_hh_disab_benefits,Sociodemographics,Household disability benefits,Current,raw
+se_hh_employment_status_disab_recipient_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_employed_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_in_school_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_on_leave_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_on_welfare_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_unemployed_11_15,Sociodemographics,Household employment,11–15 years before baseline,lagged binary
+se_hh_employment_status_disab_recipient_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_employed_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_in_school_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_on_leave_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_on_welfare_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_unemployed_1_5,Sociodemographics,Household employment,1–5 years before baseline,lagged binary
+se_hh_employment_status_disab_recipient_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status_employed_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status_in_school_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status_on_leave_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status_on_welfare_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status_unemployed_6_10,Sociodemographics,Household employment,6–10 years before baseline,lagged binary
+se_hh_employment_status,Sociodemographics,Household employment,Current,categorical
+se_hh_financial_wealth_roll_sd_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,rolling SD
+se_hh_financial_wealth_rank_roll_sd_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,rolling SD (rank)
+se_hh_financial_wealth_rank_age_gender_roll_sd_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_financial_wealth_roll_avg_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,rolling mean
+se_hh_financial_wealth_rank_roll_avg_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,rolling mean (rank)
+se_hh_financial_wealth_rank_age_gender_roll_avg_11_15,Sociodemographics,Household financial wealth,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_financial_wealth_roll_sd_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,rolling SD
+se_hh_financial_wealth_rank_roll_sd_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,rolling SD (rank)
+se_hh_financial_wealth_rank_age_gender_roll_sd_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_financial_wealth_roll_avg_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,rolling mean
+se_hh_financial_wealth_rank_roll_avg_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,rolling mean (rank)
+se_hh_financial_wealth_rank_age_gender_roll_avg_1_5,Sociodemographics,Household financial wealth,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_financial_wealth_roll_sd_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,rolling SD
+se_hh_financial_wealth_rank_roll_sd_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,rolling SD (rank)
+se_hh_financial_wealth_rank_age_gender_roll_sd_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_financial_wealth_roll_avg_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,rolling mean
+se_hh_financial_wealth_rank_roll_avg_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,rolling mean (rank)
+se_hh_financial_wealth_rank_age_gender_roll_avg_6_10,Sociodemographics,Household financial wealth,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_financial_wealth_rank,Sociodemographics,Household financial wealth,Current,rank
+se_hh_financial_wealth_rank_age_gender,Sociodemographics,Household financial wealth,Current,rank (age-sex adj.)
+se_hh_financial_wealth,Sociodemographics,Household financial wealth,Current,raw
+se_hh_equiv_disp_income_roll_sd_11_15,Sociodemographics,Household income,11–15 years before baseline,rolling SD
+se_hh_equiv_disp_income_rank_roll_sd_11_15,Sociodemographics,Household income,11–15 years before baseline,rolling SD (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_sd_11_15,Sociodemographics,Household income,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_equiv_disp_income_roll_avg_11_15,Sociodemographics,Household income,11–15 years before baseline,rolling mean
+se_hh_equiv_disp_income_rank_roll_avg_11_15,Sociodemographics,Household income,11–15 years before baseline,rolling mean (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_avg_11_15,Sociodemographics,Household income,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_equiv_disp_income_roll_sd_1_5,Sociodemographics,Household income,1–5 years before baseline,rolling SD
+se_hh_equiv_disp_income_rank_roll_sd_1_5,Sociodemographics,Household income,1–5 years before baseline,rolling SD (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_sd_1_5,Sociodemographics,Household income,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_equiv_disp_income_roll_avg_1_5,Sociodemographics,Household income,1–5 years before baseline,rolling mean
+se_hh_equiv_disp_income_rank_roll_avg_1_5,Sociodemographics,Household income,1–5 years before baseline,rolling mean (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_avg_1_5,Sociodemographics,Household income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_equiv_disp_income_roll_sd_6_10,Sociodemographics,Household income,6–10 years before baseline,rolling SD
+se_hh_equiv_disp_income_rank_roll_sd_6_10,Sociodemographics,Household income,6–10 years before baseline,rolling SD (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_sd_6_10,Sociodemographics,Household income,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_equiv_disp_income_roll_avg_6_10,Sociodemographics,Household income,6–10 years before baseline,rolling mean
+se_hh_equiv_disp_income_rank_roll_avg_6_10,Sociodemographics,Household income,6–10 years before baseline,rolling mean (rank)
+se_hh_equiv_disp_income_rank_age_gender_roll_avg_6_10,Sociodemographics,Household income,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_equiv_disp_income_rank,Sociodemographics,Household income,Current,rank
+se_hh_equiv_disp_income_rank_age_gender,Sociodemographics,Household income,Current,rank (age-sex adj.)
+se_hh_equiv_disp_income,Sociodemographics,Household income,Current,raw
+se_hh_priority_debt_roll_sd_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,rolling SD
+se_hh_priority_debt_rank_roll_sd_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,rolling SD (rank)
+se_hh_priority_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_priority_debt_roll_avg_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,rolling mean
+se_hh_priority_debt_rank_roll_avg_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,rolling mean (rank)
+se_hh_priority_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Household mortgage debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_priority_debt_roll_sd_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,rolling SD
+se_hh_priority_debt_rank_roll_sd_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,rolling SD (rank)
+se_hh_priority_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_priority_debt_roll_avg_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,rolling mean
+se_hh_priority_debt_rank_roll_avg_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,rolling mean (rank)
+se_hh_priority_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Household mortgage debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_priority_debt_roll_sd_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,rolling SD
+se_hh_priority_debt_rank_roll_sd_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,rolling SD (rank)
+se_hh_priority_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_priority_debt_roll_avg_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,rolling mean
+se_hh_priority_debt_rank_roll_avg_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,rolling mean (rank)
+se_hh_priority_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Household mortgage debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_priority_debt_rank,Sociodemographics,Household mortgage debt,Current,rank
+se_hh_priority_debt_rank_age_gender,Sociodemographics,Household mortgage debt,Current,rank (age-sex adj.)
+se_hh_priority_debt,Sociodemographics,Household mortgage debt,Current,raw
+se_hh_pension_roll_sd_11_15,Sociodemographics,Household pension,11–15 years before baseline,rolling SD
+se_hh_pension_rank_roll_sd_11_15,Sociodemographics,Household pension,11–15 years before baseline,rolling SD (rank)
+se_hh_pension_rank_age_gender_roll_sd_11_15,Sociodemographics,Household pension,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_pension_roll_avg_11_15,Sociodemographics,Household pension,11–15 years before baseline,rolling mean
+se_hh_pension_rank_roll_avg_11_15,Sociodemographics,Household pension,11–15 years before baseline,rolling mean (rank)
+se_hh_pension_rank_age_gender_roll_avg_11_15,Sociodemographics,Household pension,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_pension_roll_sd_1_5,Sociodemographics,Household pension,1–5 years before baseline,rolling SD
+se_hh_pension_rank_roll_sd_1_5,Sociodemographics,Household pension,1–5 years before baseline,rolling SD (rank)
+se_hh_pension_rank_age_gender_roll_sd_1_5,Sociodemographics,Household pension,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_pension_roll_avg_1_5,Sociodemographics,Household pension,1–5 years before baseline,rolling mean
+se_hh_pension_rank_roll_avg_1_5,Sociodemographics,Household pension,1–5 years before baseline,rolling mean (rank)
+se_hh_pension_rank_age_gender_roll_avg_1_5,Sociodemographics,Household pension,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_pension_roll_sd_6_10,Sociodemographics,Household pension,6–10 years before baseline,rolling SD
+se_hh_pension_rank_roll_sd_6_10,Sociodemographics,Household pension,6–10 years before baseline,rolling SD (rank)
+se_hh_pension_rank_age_gender_roll_sd_6_10,Sociodemographics,Household pension,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_pension_roll_avg_6_10,Sociodemographics,Household pension,6–10 years before baseline,rolling mean
+se_hh_pension_rank_roll_avg_6_10,Sociodemographics,Household pension,6–10 years before baseline,rolling mean (rank)
+se_hh_pension_rank_age_gender_roll_avg_6_10,Sociodemographics,Household pension,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_pension_rank,Sociodemographics,Household pension,Current,rank
+se_hh_pension_rank_age_gender,Sociodemographics,Household pension,Current,rank (age-sex adj.)
+se_hh_pension,Sociodemographics,Household pension,Current,raw
+se_hh_private_debt_roll_sd_11_15,Sociodemographics,Household private debt,11–15 years before baseline,rolling SD
+se_hh_private_debt_rank_roll_sd_11_15,Sociodemographics,Household private debt,11–15 years before baseline,rolling SD (rank)
+se_hh_private_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Household private debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_private_debt_roll_avg_11_15,Sociodemographics,Household private debt,11–15 years before baseline,rolling mean
+se_hh_private_debt_rank_roll_avg_11_15,Sociodemographics,Household private debt,11–15 years before baseline,rolling mean (rank)
+se_hh_private_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Household private debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_private_debt_roll_sd_1_5,Sociodemographics,Household private debt,1–5 years before baseline,rolling SD
+se_hh_private_debt_rank_roll_sd_1_5,Sociodemographics,Household private debt,1–5 years before baseline,rolling SD (rank)
+se_hh_private_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Household private debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_private_debt_roll_avg_1_5,Sociodemographics,Household private debt,1–5 years before baseline,rolling mean
+se_hh_private_debt_rank_roll_avg_1_5,Sociodemographics,Household private debt,1–5 years before baseline,rolling mean (rank)
+se_hh_private_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Household private debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_private_debt_roll_sd_6_10,Sociodemographics,Household private debt,6–10 years before baseline,rolling SD
+se_hh_private_debt_rank_roll_sd_6_10,Sociodemographics,Household private debt,6–10 years before baseline,rolling SD (rank)
+se_hh_private_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Household private debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_private_debt_roll_avg_6_10,Sociodemographics,Household private debt,6–10 years before baseline,rolling mean
+se_hh_private_debt_rank_roll_avg_6_10,Sociodemographics,Household private debt,6–10 years before baseline,rolling mean (rank)
+se_hh_private_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Household private debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_private_debt_rank,Sociodemographics,Household private debt,Current,rank
+se_hh_private_debt_rank_age_gender,Sociodemographics,Household private debt,Current,rank (age-sex adj.)
+se_hh_private_debt,Sociodemographics,Household private debt,Current,raw
+se_hh_public_debt_roll_sd_11_15,Sociodemographics,Household public debt,11–15 years before baseline,rolling SD
+se_hh_public_debt_rank_roll_sd_11_15,Sociodemographics,Household public debt,11–15 years before baseline,rolling SD (rank)
+se_hh_public_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Household public debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_public_debt_roll_avg_11_15,Sociodemographics,Household public debt,11–15 years before baseline,rolling mean
+se_hh_public_debt_rank_roll_avg_11_15,Sociodemographics,Household public debt,11–15 years before baseline,rolling mean (rank)
+se_hh_public_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Household public debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_public_debt_roll_sd_1_5,Sociodemographics,Household public debt,1–5 years before baseline,rolling SD
+se_hh_public_debt_rank_roll_sd_1_5,Sociodemographics,Household public debt,1–5 years before baseline,rolling SD (rank)
+se_hh_public_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Household public debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_public_debt_roll_avg_1_5,Sociodemographics,Household public debt,1–5 years before baseline,rolling mean
+se_hh_public_debt_rank_roll_avg_1_5,Sociodemographics,Household public debt,1–5 years before baseline,rolling mean (rank)
+se_hh_public_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Household public debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_public_debt_roll_sd_6_10,Sociodemographics,Household public debt,6–10 years before baseline,rolling SD
+se_hh_public_debt_rank_roll_sd_6_10,Sociodemographics,Household public debt,6–10 years before baseline,rolling SD (rank)
+se_hh_public_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Household public debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_public_debt_roll_avg_6_10,Sociodemographics,Household public debt,6–10 years before baseline,rolling mean
+se_hh_public_debt_rank_roll_avg_6_10,Sociodemographics,Household public debt,6–10 years before baseline,rolling mean (rank)
+se_hh_public_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Household public debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_public_debt_rank,Sociodemographics,Household public debt,Current,rank
+se_hh_public_debt_rank_age_gender,Sociodemographics,Household public debt,Current,rank (age-sex adj.)
+se_hh_public_debt,Sociodemographics,Household public debt,Current,raw
+fa_hh_size,Sociodemographics,Household size,Current,raw
+se_hh_unemp_benefits_roll_sd_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,rolling SD
+se_hh_unemp_benefits_rank_roll_sd_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,rolling SD (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_unemp_benefits_roll_avg_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,rolling mean
+se_hh_unemp_benefits_rank_roll_avg_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,rolling mean (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Household unemployment benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_unemp_benefits_roll_sd_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,rolling SD
+se_hh_unemp_benefits_rank_roll_sd_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,rolling SD (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_unemp_benefits_roll_avg_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,rolling mean
+se_hh_unemp_benefits_rank_roll_avg_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,rolling mean (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Household unemployment benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_unemp_benefits_roll_sd_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,rolling SD
+se_hh_unemp_benefits_rank_roll_sd_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,rolling SD (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_unemp_benefits_roll_avg_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,rolling mean
+se_hh_unemp_benefits_rank_roll_avg_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,rolling mean (rank)
+se_hh_unemp_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Household unemployment benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_unemp_benefits_rank,Sociodemographics,Household unemployment benefits,Current,rank
+se_hh_unemp_benefits_rank_age_gender,Sociodemographics,Household unemployment benefits,Current,rank (age-sex adj.)
+se_hh_unemp_benefits,Sociodemographics,Household unemployment benefits,Current,raw
+se_hh_wealth_roll_sd_11_15,Sociodemographics,Household wealth,11–15 years before baseline,rolling SD
+se_hh_wealth_rank_roll_sd_11_15,Sociodemographics,Household wealth,11–15 years before baseline,rolling SD (rank)
+se_hh_wealth_rank_age_gender_roll_sd_11_15,Sociodemographics,Household wealth,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_wealth_roll_avg_11_15,Sociodemographics,Household wealth,11–15 years before baseline,rolling mean
+se_hh_wealth_rank_roll_avg_11_15,Sociodemographics,Household wealth,11–15 years before baseline,rolling mean (rank)
+se_hh_wealth_rank_age_gender_roll_avg_11_15,Sociodemographics,Household wealth,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_wealth_roll_sd_1_5,Sociodemographics,Household wealth,1–5 years before baseline,rolling SD
+se_hh_wealth_rank_roll_sd_1_5,Sociodemographics,Household wealth,1–5 years before baseline,rolling SD (rank)
+se_hh_wealth_rank_age_gender_roll_sd_1_5,Sociodemographics,Household wealth,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_wealth_roll_avg_1_5,Sociodemographics,Household wealth,1–5 years before baseline,rolling mean
+se_hh_wealth_rank_roll_avg_1_5,Sociodemographics,Household wealth,1–5 years before baseline,rolling mean (rank)
+se_hh_wealth_rank_age_gender_roll_avg_1_5,Sociodemographics,Household wealth,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_wealth_roll_sd_6_10,Sociodemographics,Household wealth,6–10 years before baseline,rolling SD
+se_hh_wealth_rank_roll_sd_6_10,Sociodemographics,Household wealth,6–10 years before baseline,rolling SD (rank)
+se_hh_wealth_rank_age_gender_roll_sd_6_10,Sociodemographics,Household wealth,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_wealth_roll_avg_6_10,Sociodemographics,Household wealth,6–10 years before baseline,rolling mean
+se_hh_wealth_rank_roll_avg_6_10,Sociodemographics,Household wealth,6–10 years before baseline,rolling mean (rank)
+se_hh_wealth_rank_age_gender_roll_avg_6_10,Sociodemographics,Household wealth,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_wealth_rank,Sociodemographics,Household wealth,Current,rank
+se_hh_wealth_rank_age_gender,Sociodemographics,Household wealth,Current,rank (age-sex adj.)
+se_hh_wealth,Sociodemographics,Household wealth,Current,raw
+se_hh_welfare_benefits_roll_sd_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,rolling SD
+se_hh_welfare_benefits_rank_roll_sd_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,rolling SD (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_welfare_benefits_roll_avg_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,rolling mean
+se_hh_welfare_benefits_rank_roll_avg_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,rolling mean (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Household welfare benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_welfare_benefits_roll_sd_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,rolling SD
+se_hh_welfare_benefits_rank_roll_sd_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,rolling SD (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_welfare_benefits_roll_avg_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,rolling mean
+se_hh_welfare_benefits_rank_roll_avg_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,rolling mean (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Household welfare benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_welfare_benefits_roll_sd_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,rolling SD
+se_hh_welfare_benefits_rank_roll_sd_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,rolling SD (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_hh_welfare_benefits_roll_avg_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,rolling mean
+se_hh_welfare_benefits_rank_roll_avg_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,rolling mean (rank)
+se_hh_welfare_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Household welfare benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_hh_welfare_benefits_rank,Sociodemographics,Household welfare benefits,Current,rank
+se_hh_welfare_benefits_rank_age_gender,Sociodemographics,Household welfare benefits,Current,rank (age-sex adj.)
+se_hh_welfare_benefits,Sociodemographics,Household welfare benefits,Current,raw
+de_imigration_status,Sociodemographics,Immigration status,Current,categorical
+de_marital_status_Divorced_11_15,Sociodemographics,Marital status,11–15 years before baseline,lagged binary
+de_marital_status_Married_11_15,Sociodemographics,Marital status,11–15 years before baseline,lagged binary
+de_marital_status_Widow_11_15,Sociodemographics,Marital status,11–15 years before baseline,lagged binary
+de_marital_status_Divorced_1_5,Sociodemographics,Marital status,1–5 years before baseline,lagged binary
+de_marital_status_Married_1_5,Sociodemographics,Marital status,1–5 years before baseline,lagged binary
+de_marital_status_Widow_1_5,Sociodemographics,Marital status,1–5 years before baseline,lagged binary
+de_marital_status_Divorced_6_10,Sociodemographics,Marital status,6–10 years before baseline,lagged binary
+de_marital_status_Married_6_10,Sociodemographics,Marital status,6–10 years before baseline,lagged binary
+de_marital_status_Widow_6_10,Sociodemographics,Marital status,6–10 years before baseline,lagged binary
+de_marital_status,Sociodemographics,Marital status,Current,categorical
+fa_num_children,Sociodemographics,Number of children,Current,raw
+fa_num_children_living_home,Sociodemographics,Number of children,Current,raw
+parish_death_rate,Sociodemographics,Parish health characteristics,Current,raw
+parish_mean_num_meds,Sociodemographics,Parish health characteristics,Current,raw
+parish_median_num_meds,Sociodemographics,Parish health characteristics,Current,raw
+parish_mean_educ_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_assets_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_disab_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_employment_status_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_equiv_disp_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_financial_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_priority_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_private_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_public_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_unemp_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_welfare_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_assets_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_cash_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_disab_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_disp_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_employment_status_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_financial_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_priority_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_private_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_public_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_unemp_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_pers_welfare_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_educ_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_assets_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_disab_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_employment_status_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_equiv_disp_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_financial_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_priority_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_private_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_public_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_unemp_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_hh_welfare_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_assets_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_cash_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_disab_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_disp_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_employment_status_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_financial_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_income_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_pension_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_priority_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_private_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_public_debt_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_unemp_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_wealth_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_median_se_pers_welfare_benefits_rank,Sociodemographics,Parish sociodemographic characteristics,Current,rank
+parish_mean_se_hh_assets_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_disab_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_employment_status_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_equiv_disp_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_financial_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_priority_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_private_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_public_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_unemp_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_hh_welfare_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_assets_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_cash_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_disab_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_disp_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_employment_status_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_financial_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_priority_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_private_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_public_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_unemp_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_se_pers_welfare_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_assets_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_disab_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_employment_status_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_equiv_disp_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_financial_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_priority_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_private_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_public_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_unemp_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_hh_welfare_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_assets_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_cash_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_disab_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_disp_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_employment_status_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_financial_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_income_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_pension_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_priority_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_private_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_public_debt_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_unemp_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_wealth_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_median_se_pers_welfare_benefits_rank_age_gender,Sociodemographics,Parish sociodemographic characteristics,Current,rank (age-sex adj.)
+parish_mean_age,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_assets,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_disab_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_employment_status,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_equiv_disp_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_financial_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_priority_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_private_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_public_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_unemp_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_hh_welfare_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_assets,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_cash_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_disab_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_disp_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_employment_status,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_financial_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_priority_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_private_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_public_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_unemp_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_mean_se_pers_welfare_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_age,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_assets,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_disab_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_employment_status,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_equiv_disp_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_financial_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_priority_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_private_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_public_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_unemp_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_hh_welfare_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_assets,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_cash_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_disab_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_disp_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_employment_status,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_financial_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_income,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_pension,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_priority_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_private_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_public_debt,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_unemp_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_wealth,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_median_se_pers_welfare_benefits,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_n_residents,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_danish,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_descendant,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_divorced,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_high_educ,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_immigrant,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_married,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_share_widow,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+parish_year,Sociodemographics,Parish sociodemographic characteristics,Current,raw
+se_pers_assets_roll_sd_11_15,Sociodemographics,Personal assets,11–15 years before baseline,rolling SD
+se_pers_assets_rank_roll_sd_11_15,Sociodemographics,Personal assets,11–15 years before baseline,rolling SD (rank)
+se_pers_assets_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal assets,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_assets_roll_avg_11_15,Sociodemographics,Personal assets,11–15 years before baseline,rolling mean
+se_pers_assets_rank_roll_avg_11_15,Sociodemographics,Personal assets,11–15 years before baseline,rolling mean (rank)
+se_pers_assets_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal assets,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_assets_roll_sd_1_5,Sociodemographics,Personal assets,1–5 years before baseline,rolling SD
+se_pers_assets_rank_roll_sd_1_5,Sociodemographics,Personal assets,1–5 years before baseline,rolling SD (rank)
+se_pers_assets_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal assets,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_assets_roll_avg_1_5,Sociodemographics,Personal assets,1–5 years before baseline,rolling mean
+se_pers_assets_rank_roll_avg_1_5,Sociodemographics,Personal assets,1–5 years before baseline,rolling mean (rank)
+se_pers_assets_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal assets,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_assets_roll_sd_6_10,Sociodemographics,Personal assets,6–10 years before baseline,rolling SD
+se_pers_assets_rank_roll_sd_6_10,Sociodemographics,Personal assets,6–10 years before baseline,rolling SD (rank)
+se_pers_assets_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal assets,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_assets_roll_avg_6_10,Sociodemographics,Personal assets,6–10 years before baseline,rolling mean
+se_pers_assets_rank_roll_avg_6_10,Sociodemographics,Personal assets,6–10 years before baseline,rolling mean (rank)
+se_pers_assets_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal assets,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_assets_rank,Sociodemographics,Personal assets,Current,rank
+se_pers_assets_rank_age_gender,Sociodemographics,Personal assets,Current,rank (age-sex adj.)
+se_pers_assets,Sociodemographics,Personal assets,Current,raw
+se_pers_cash_benefits_roll_sd_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,rolling SD
+se_pers_cash_benefits_rank_roll_sd_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,rolling SD (rank)
+se_pers_cash_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_cash_benefits_roll_avg_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,rolling mean
+se_pers_cash_benefits_rank_roll_avg_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,rolling mean (rank)
+se_pers_cash_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal cash benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_cash_benefits_roll_sd_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,rolling SD
+se_pers_cash_benefits_rank_roll_sd_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,rolling SD (rank)
+se_pers_cash_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_cash_benefits_roll_avg_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,rolling mean
+se_pers_cash_benefits_rank_roll_avg_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,rolling mean (rank)
+se_pers_cash_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal cash benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_cash_benefits_roll_sd_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,rolling SD
+se_pers_cash_benefits_rank_roll_sd_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,rolling SD (rank)
+se_pers_cash_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_cash_benefits_roll_avg_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,rolling mean
+se_pers_cash_benefits_rank_roll_avg_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,rolling mean (rank)
+se_pers_cash_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal cash benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_cash_benefits_rank,Sociodemographics,Personal cash benefits,Current,rank
+se_pers_cash_benefits_rank_age_gender,Sociodemographics,Personal cash benefits,Current,rank (age-sex adj.)
+se_pers_cash_benefits,Sociodemographics,Personal cash benefits,Current,raw
+se_pers_disab_pension_roll_sd_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,rolling SD
+se_pers_disab_pension_rank_roll_sd_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,rolling SD (rank)
+se_pers_disab_pension_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disab_pension_roll_avg_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,rolling mean
+se_pers_disab_pension_rank_roll_avg_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,rolling mean (rank)
+se_pers_disab_pension_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal disability pension,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disab_pension_roll_sd_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,rolling SD
+se_pers_disab_pension_rank_roll_sd_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,rolling SD (rank)
+se_pers_disab_pension_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disab_pension_roll_avg_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,rolling mean
+se_pers_disab_pension_rank_roll_avg_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,rolling mean (rank)
+se_pers_disab_pension_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal disability pension,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disab_pension_roll_sd_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,rolling SD
+se_pers_disab_pension_rank_roll_sd_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,rolling SD (rank)
+se_pers_disab_pension_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disab_pension_roll_avg_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,rolling mean
+se_pers_disab_pension_rank_roll_avg_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,rolling mean (rank)
+se_pers_disab_pension_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal disability pension,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disab_pension_rank,Sociodemographics,Personal disability pension,Current,rank
+se_pers_disab_pension_rank_age_gender,Sociodemographics,Personal disability pension,Current,rank (age-sex adj.)
+se_pers_disab_pension,Sociodemographics,Personal disability pension,Current,raw
+se_pers_employment_status_disab_recipient_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_employed_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_in_school_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_on_leave_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_on_welfare_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_unemployed_11_15,Sociodemographics,Personal employment,11–15 years before baseline,lagged binary
+se_pers_employment_status_disab_recipient_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_employed_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_in_school_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_on_leave_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_on_welfare_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_unemployed_1_5,Sociodemographics,Personal employment,1–5 years before baseline,lagged binary
+se_pers_employment_status_disab_recipient_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status_employed_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status_in_school_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status_on_leave_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status_on_welfare_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status_unemployed_6_10,Sociodemographics,Personal employment,6–10 years before baseline,lagged binary
+se_pers_employment_status,Sociodemographics,Personal employment,Current,categorical
+se_pers_financial_wealth_roll_sd_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,rolling SD
+se_pers_financial_wealth_rank_roll_sd_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,rolling SD (rank)
+se_pers_financial_wealth_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_financial_wealth_roll_avg_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,rolling mean
+se_pers_financial_wealth_rank_roll_avg_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,rolling mean (rank)
+se_pers_financial_wealth_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal financial wealth,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_financial_wealth_roll_sd_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,rolling SD
+se_pers_financial_wealth_rank_roll_sd_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,rolling SD (rank)
+se_pers_financial_wealth_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_financial_wealth_roll_avg_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,rolling mean
+se_pers_financial_wealth_rank_roll_avg_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,rolling mean (rank)
+se_pers_financial_wealth_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal financial wealth,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_financial_wealth_roll_sd_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,rolling SD
+se_pers_financial_wealth_rank_roll_sd_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,rolling SD (rank)
+se_pers_financial_wealth_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_financial_wealth_roll_avg_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,rolling mean
+se_pers_financial_wealth_rank_roll_avg_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,rolling mean (rank)
+se_pers_financial_wealth_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal financial wealth,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_financial_wealth_rank,Sociodemographics,Personal financial wealth,Current,rank
+se_pers_financial_wealth_rank_age_gender,Sociodemographics,Personal financial wealth,Current,rank (age-sex adj.)
+se_pers_financial_wealth,Sociodemographics,Personal financial wealth,Current,raw
+se_pers_disp_income_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling SD
+se_pers_income_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling SD
+se_pers_disp_income_rank_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling SD (rank)
+se_pers_income_rank_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling SD (rank)
+se_pers_disp_income_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal income,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disp_income_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling mean
+se_pers_income_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling mean
+se_pers_disp_income_rank_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling mean (rank)
+se_pers_income_rank_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,rolling mean (rank)
+se_pers_disp_income_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal income,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disp_income_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling SD
+se_pers_income_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling SD
+se_pers_disp_income_rank_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling SD (rank)
+se_pers_income_rank_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling SD (rank)
+se_pers_disp_income_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal income,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disp_income_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling mean
+se_pers_income_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling mean
+se_pers_disp_income_rank_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling mean (rank)
+se_pers_income_rank_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,rolling mean (rank)
+se_pers_disp_income_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disp_income_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling SD
+se_pers_income_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling SD
+se_pers_disp_income_rank_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling SD (rank)
+se_pers_income_rank_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling SD (rank)
+se_pers_disp_income_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal income,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_disp_income_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling mean
+se_pers_income_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling mean
+se_pers_disp_income_rank_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling mean (rank)
+se_pers_income_rank_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,rolling mean (rank)
+se_pers_disp_income_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_income_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal income,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_disp_income_rank,Sociodemographics,Personal income,Current,rank
+se_pers_income_rank,Sociodemographics,Personal income,Current,rank
+se_pers_disp_income_rank_age_gender,Sociodemographics,Personal income,Current,rank (age-sex adj.)
+se_pers_income_rank_age_gender,Sociodemographics,Personal income,Current,rank (age-sex adj.)
+se_pers_disp_income,Sociodemographics,Personal income,Current,raw
+se_pers_income,Sociodemographics,Personal income,Current,raw
+se_pers_priority_debt_roll_sd_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,rolling SD
+se_pers_priority_debt_rank_roll_sd_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,rolling SD (rank)
+se_pers_priority_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_priority_debt_roll_avg_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,rolling mean
+se_pers_priority_debt_rank_roll_avg_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,rolling mean (rank)
+se_pers_priority_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal mortgage debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_priority_debt_roll_sd_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,rolling SD
+se_pers_priority_debt_rank_roll_sd_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,rolling SD (rank)
+se_pers_priority_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_priority_debt_roll_avg_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,rolling mean
+se_pers_priority_debt_rank_roll_avg_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,rolling mean (rank)
+se_pers_priority_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal mortgage debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_priority_debt_roll_sd_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,rolling SD
+se_pers_priority_debt_rank_roll_sd_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,rolling SD (rank)
+se_pers_priority_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_priority_debt_roll_avg_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,rolling mean
+se_pers_priority_debt_rank_roll_avg_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,rolling mean (rank)
+se_pers_priority_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal mortgage debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_priority_debt_rank,Sociodemographics,Personal mortgage debt,Current,rank
+se_pers_priority_debt_rank_age_gender,Sociodemographics,Personal mortgage debt,Current,rank (age-sex adj.)
+se_pers_priority_debt,Sociodemographics,Personal mortgage debt,Current,raw
+se_pers_pension_roll_sd_11_15,Sociodemographics,Personal pension,11–15 years before baseline,rolling SD
+se_pers_pension_rank_roll_sd_11_15,Sociodemographics,Personal pension,11–15 years before baseline,rolling SD (rank)
+se_pers_pension_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal pension,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_pension_roll_avg_11_15,Sociodemographics,Personal pension,11–15 years before baseline,rolling mean
+se_pers_pension_rank_roll_avg_11_15,Sociodemographics,Personal pension,11–15 years before baseline,rolling mean (rank)
+se_pers_pension_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal pension,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_pension_roll_sd_1_5,Sociodemographics,Personal pension,1–5 years before baseline,rolling SD
+se_pers_pension_rank_roll_sd_1_5,Sociodemographics,Personal pension,1–5 years before baseline,rolling SD (rank)
+se_pers_pension_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal pension,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_pension_roll_avg_1_5,Sociodemographics,Personal pension,1–5 years before baseline,rolling mean
+se_pers_pension_rank_roll_avg_1_5,Sociodemographics,Personal pension,1–5 years before baseline,rolling mean (rank)
+se_pers_pension_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal pension,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_pension_roll_sd_6_10,Sociodemographics,Personal pension,6–10 years before baseline,rolling SD
+se_pers_pension_rank_roll_sd_6_10,Sociodemographics,Personal pension,6–10 years before baseline,rolling SD (rank)
+se_pers_pension_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal pension,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_pension_roll_avg_6_10,Sociodemographics,Personal pension,6–10 years before baseline,rolling mean
+se_pers_pension_rank_roll_avg_6_10,Sociodemographics,Personal pension,6–10 years before baseline,rolling mean (rank)
+se_pers_pension_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal pension,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_pension_rank,Sociodemographics,Personal pension,Current,rank
+se_pers_pension_rank_age_gender,Sociodemographics,Personal pension,Current,rank (age-sex adj.)
+se_pers_pension,Sociodemographics,Personal pension,Current,raw
+se_pers_private_debt_roll_sd_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,rolling SD
+se_pers_private_debt_rank_roll_sd_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,rolling SD (rank)
+se_pers_private_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_private_debt_roll_avg_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,rolling mean
+se_pers_private_debt_rank_roll_avg_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,rolling mean (rank)
+se_pers_private_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal private debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_private_debt_roll_sd_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,rolling SD
+se_pers_private_debt_rank_roll_sd_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,rolling SD (rank)
+se_pers_private_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_private_debt_roll_avg_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,rolling mean
+se_pers_private_debt_rank_roll_avg_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,rolling mean (rank)
+se_pers_private_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal private debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_private_debt_roll_sd_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,rolling SD
+se_pers_private_debt_rank_roll_sd_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,rolling SD (rank)
+se_pers_private_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_private_debt_roll_avg_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,rolling mean
+se_pers_private_debt_rank_roll_avg_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,rolling mean (rank)
+se_pers_private_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal private debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_private_debt_rank,Sociodemographics,Personal private debt,Current,rank
+se_pers_private_debt_rank_age_gender,Sociodemographics,Personal private debt,Current,rank (age-sex adj.)
+se_pers_private_debt,Sociodemographics,Personal private debt,Current,raw
+se_pers_public_debt_roll_sd_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,rolling SD
+se_pers_public_debt_rank_roll_sd_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,rolling SD (rank)
+se_pers_public_debt_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_public_debt_roll_avg_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,rolling mean
+se_pers_public_debt_rank_roll_avg_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,rolling mean (rank)
+se_pers_public_debt_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal public debt,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_public_debt_roll_sd_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,rolling SD
+se_pers_public_debt_rank_roll_sd_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,rolling SD (rank)
+se_pers_public_debt_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_public_debt_roll_avg_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,rolling mean
+se_pers_public_debt_rank_roll_avg_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,rolling mean (rank)
+se_pers_public_debt_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal public debt,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_public_debt_roll_sd_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,rolling SD
+se_pers_public_debt_rank_roll_sd_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,rolling SD (rank)
+se_pers_public_debt_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_public_debt_roll_avg_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,rolling mean
+se_pers_public_debt_rank_roll_avg_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,rolling mean (rank)
+se_pers_public_debt_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal public debt,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_public_debt_rank,Sociodemographics,Personal public debt,Current,rank
+se_pers_public_debt_rank_age_gender,Sociodemographics,Personal public debt,Current,rank (age-sex adj.)
+se_pers_public_debt,Sociodemographics,Personal public debt,Current,raw
+se_pers_unemp_benefits_roll_sd_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,rolling SD
+se_pers_unemp_benefits_rank_roll_sd_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,rolling SD (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_unemp_benefits_roll_avg_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,rolling mean
+se_pers_unemp_benefits_rank_roll_avg_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,rolling mean (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal unemployment benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_unemp_benefits_roll_sd_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,rolling SD
+se_pers_unemp_benefits_rank_roll_sd_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,rolling SD (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_unemp_benefits_roll_avg_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,rolling mean
+se_pers_unemp_benefits_rank_roll_avg_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,rolling mean (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal unemployment benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_unemp_benefits_roll_sd_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,rolling SD
+se_pers_unemp_benefits_rank_roll_sd_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,rolling SD (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_unemp_benefits_roll_avg_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,rolling mean
+se_pers_unemp_benefits_rank_roll_avg_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,rolling mean (rank)
+se_pers_unemp_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal unemployment benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_unemp_benefits_rank,Sociodemographics,Personal unemployment benefits,Current,rank
+se_pers_unemp_benefits_rank_age_gender,Sociodemographics,Personal unemployment benefits,Current,rank (age-sex adj.)
+se_pers_unemp_benefits,Sociodemographics,Personal unemployment benefits,Current,raw
+se_pers_wealth_roll_sd_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,rolling SD
+se_pers_wealth_rank_roll_sd_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,rolling SD (rank)
+se_pers_wealth_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_wealth_roll_avg_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,rolling mean
+se_pers_wealth_rank_roll_avg_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,rolling mean (rank)
+se_pers_wealth_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal wealth,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_wealth_roll_sd_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,rolling SD
+se_pers_wealth_rank_roll_sd_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,rolling SD (rank)
+se_pers_wealth_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_wealth_roll_avg_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,rolling mean
+se_pers_wealth_rank_roll_avg_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,rolling mean (rank)
+se_pers_wealth_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal wealth,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_wealth_roll_sd_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,rolling SD
+se_pers_wealth_rank_roll_sd_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,rolling SD (rank)
+se_pers_wealth_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_wealth_roll_avg_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,rolling mean
+se_pers_wealth_rank_roll_avg_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,rolling mean (rank)
+se_pers_wealth_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal wealth,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_wealth_rank,Sociodemographics,Personal wealth,Current,rank
+se_pers_wealth_rank_age_gender,Sociodemographics,Personal wealth,Current,rank (age-sex adj.)
+se_pers_wealth,Sociodemographics,Personal wealth,Current,raw
+se_pers_welfare_benefits_roll_sd_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,rolling SD
+se_pers_welfare_benefits_rank_roll_sd_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,rolling SD (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_sd_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_welfare_benefits_roll_avg_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,rolling mean
+se_pers_welfare_benefits_rank_roll_avg_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,rolling mean (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_avg_11_15,Sociodemographics,Personal welfare benefits,11–15 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_welfare_benefits_roll_sd_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,rolling SD
+se_pers_welfare_benefits_rank_roll_sd_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,rolling SD (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_sd_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_welfare_benefits_roll_avg_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,rolling mean
+se_pers_welfare_benefits_rank_roll_avg_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,rolling mean (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_avg_1_5,Sociodemographics,Personal welfare benefits,1–5 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_welfare_benefits_roll_sd_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,rolling SD
+se_pers_welfare_benefits_rank_roll_sd_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,rolling SD (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_sd_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,"rolling SD (rank, age-sex adj.)"
+se_pers_welfare_benefits_roll_avg_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,rolling mean
+se_pers_welfare_benefits_rank_roll_avg_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,rolling mean (rank)
+se_pers_welfare_benefits_rank_age_gender_roll_avg_6_10,Sociodemographics,Personal welfare benefits,6–10 years before baseline,"rolling mean (rank, age-sex adj.)"
+se_pers_welfare_benefits_rank,Sociodemographics,Personal welfare benefits,Current,rank
+se_pers_welfare_benefits_rank_age_gender,Sociodemographics,Personal welfare benefits,Current,rank (age-sex adj.)
+se_pers_welfare_benefits,Sociodemographics,Personal welfare benefits,Current,raw

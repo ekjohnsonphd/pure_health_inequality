@@ -1,0 +1,453 @@
+Sex,Age band,Rank,Variable,Level,Characteristic,Observation window,Transformation,Domain,Kind,% of gap,Cumulative %,SMD,RR
+Female,50-54,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,13.47,13.47,0.487,
+Female,50-54,2,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,9.22,22.69,0.711,
+Female,50-54,3,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,8.34,31.03,0.598,
+Female,50-54,4,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,7.03,38.07,0.764,
+Female,50-54,5,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,6.1,44.17,0.366,
+Female,50-54,6,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,5.32,49.49,0.485,
+Female,50-54,7,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,4.39,53.87,,48.238
+Female,50-54,8,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,3,56.87,0.674,
+Female,50-54,9,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,2.41,59.28,-0.628,
+Female,50-54,10,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,2.35,61.63,0.569,
+Female,50-54,11,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,2.09,63.72,0.338,
+Female,50-54,12,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,1.99,65.71,0.619,
+Female,50-54,13,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,1.94,67.65,,4.448
+Female,50-54,14,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,1.89,69.54,-0.493,
+Female,50-54,15,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.47,68.07,0.253,
+Female,50-54,16,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.32,69.38,-0.709,
+Female,50-54,17,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,1.28,70.66,,11.659
+Female,50-54,18,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,1.27,71.93,0.445,
+Female,50-54,19,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.22,73.15,-0.235,
+Female,50-54,20,se_hh_welfare_benefits_rank,,Household welfare benefits,current value (0y),rank,Sociodemographics,continuous,1.17,74.32,0.658,
+Female,50-54,21,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.15,75.46,0.69,
+Female,50-54,22,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.13,76.6,0.571,
+Female,50-54,23,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.13,77.73,0.686,
+Female,50-54,24,hc_util_gp_visits,,GP visits,current value (0y),raw,Health,continuous,-0.99,76.74,0.248,
+Female,50-54,25,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.96,77.7,0.444,
+Female,50-54,26,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,0.95,78.65,,20.324
+Female,50-54,27,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,0.92,79.57,-0.759,
+Female,50-54,28,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,0.77,80.34,0.35,
+Female,50-54,29,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.74,81.08,0.549,
+Female,50-54,30,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,0.64,81.72,,15.508
+Female,50-54,31,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.63,82.35,0.44,
+Female,50-54,32,se_pers_disab_pension_rank_age_gender,,Personal disability pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.62,82.97,0.699,
+Female,50-54,33,hc_di_neo_breast_1_1_5,,Breast cancer,1–5 years before baseline,lagged binary,Health,binary,0.61,83.57,,5.803
+Female,50-54,34,fa_num_children,,Number of children,current value (0y),raw,Sociodemographics,continuous,0.59,84.16,-0.178,
+Female,50-54,35,se_hh_equiv_disp_income_roll_avg_1_5,,Household income,1–5 years before baseline,rolling mean,Sociodemographics,continuous,-0.56,83.6,-0.247,
+Female,50-54,36,se_pers_income_rank_roll_avg_1_5,,Personal income,1–5 years before baseline,rolling mean (rank),Sociodemographics,continuous,0.56,84.15,-0.695,
+Female,50-54,37,hc_cost_gp_roll_sd_1_5,,GP case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.47,84.63,0.21,
+Female,50-54,38,med_sleep_medications,,Medications: sleep_medications,current value (0y),raw,Health,binary,0.46,85.08,,3.291
+Female,50-54,39,hc_elixhauser_comorbidities_roll_avg_6_10,,Number of diagnoses,6–10 years before baseline,rolling mean,Health,continuous,0.45,85.53,0.515,
+Female,50-54,40,se_pers_income_roll_avg_1_5,,Personal income,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.45,85.98,-0.607,
+Female,50-54,41,parish_mean_se_hh_employment_status_rank_age_gender,,Parish sociodemographic characteristics,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.43,86.42,0.218,
+Female,50-54,42,hc_cost_somatic_outpatient_roll_avg_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.41,86.82,0.494,
+Female,50-54,43,hc_util_gp_visits_roll_sd_6_10,,GP visits,6–10 years before baseline,rolling SD,Health,continuous,0.4,87.23,0.198,
+Female,50-54,44,se_pers_income_rank_age_gender_roll_avg_1_5,,Personal income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)",Sociodemographics,continuous,0.4,87.62,-0.646,
+Female,50-54,45,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.4,88.02,0.584,
+Female,50-54,46,se_pers_employment_status,,Employment status,current value (0y),categorical,Sociodemographics,categorical,0.39,88.41,,
+Female,50-54,,,on_welfare,,,,Sociodemographics,level,,,,1.969
+Female,50-54,,,disab_recipient,,,,Sociodemographics,level,,,,5.245
+Female,50-54,,,employed,,,,Sociodemographics,level,,,,0.225
+Female,50-54,,,in_school,,,,Sociodemographics,level,,,,0.889
+Female,50-54,,,on_leave,,,,Sociodemographics,level,,,,2.255
+Female,50-54,,,unemployed,,,,Sociodemographics,level,,,,1.136
+Female,50-54,47,se_pers_welfare_benefits_rank_age_gender,,Personal welfare benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.37,88.78,0.559,
+Female,50-54,48,se_hh_welfare_benefits_rank_age_gender,,Household welfare benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.37,89.16,0.575,
+Female,50-54,49,hc_di_count_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.37,89.53,0.586,
+Female,50-54,50,hc_di_neo_colorectal,,Colon and rectum cancer,current value (0y),raw,Health,binary,0.37,89.9,,15.594
+Female,55-59,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,12.13,12.13,0.505,
+Female,55-59,2,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,8.52,20.66,0.585,
+Female,55-59,3,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,8.32,28.97,0.713,
+Female,55-59,4,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,6.16,35.13,0.366,
+Female,55-59,5,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,6.11,41.24,0.727,
+Female,55-59,6,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,5.25,46.5,,32.083
+Female,55-59,7,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,2.7,49.2,0.662,
+Female,55-59,8,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,2.09,51.3,0.307,
+Female,55-59,9,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,1.87,53.17,0.579,
+Female,55-59,10,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.83,55,0.693,
+Female,55-59,11,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.8,56.8,0.701,
+Female,55-59,12,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,1.8,58.6,,9.284
+Female,55-59,13,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,1.77,60.37,0.633,
+Female,55-59,14,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,1.58,61.96,0.141,
+Female,55-59,15,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.57,63.53,-0.685,
+Female,55-59,16,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.56,65.1,0.431,
+Female,55-59,17,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,1.4,66.49,,14.266
+Female,55-59,18,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,1.37,67.87,,39.52
+Female,55-59,19,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,1.32,69.19,-0.726,
+Female,55-59,20,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.3,70.48,0.586,
+Female,55-59,21,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.29,71.77,-0.192,
+Female,55-59,22,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.25,70.52,0.228,
+Female,55-59,23,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,1.2,71.73,0.495,
+Female,55-59,24,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,1.18,72.91,0.479,
+Female,55-59,25,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.16,74.07,0.555,
+Female,55-59,26,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.12,75.19,0.4,
+Female,55-59,27,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,1.11,76.3,-0.396,
+Female,55-59,28,hc_di_neo_ovarian,,Ovarian cancer,current value (0y),raw,Health,binary,1.08,77.38,,20.51
+Female,55-59,29,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.04,78.43,0.452,
+Female,55-59,30,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,1,79.42,0.536,
+Female,55-59,31,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,0.95,80.37,,12.575
+Female,55-59,32,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.87,81.24,0.631,
+Female,55-59,33,hc_cost_somatic_outpatient_roll_avg_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.81,82.05,0.474,
+Female,55-59,34,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,0.77,82.82,,3.622
+Female,55-59,35,se_pers_disab_pension_rank,,Personal disability pension,current value (0y),rank,Sociodemographics,continuous,0.67,83.49,0.713,
+Female,55-59,36,hc_di_neo_brain,,Brain and central nervous system cancer,current value (0y),raw,Health,binary,0.65,84.14,,35.969
+Female,55-59,37,se_pers_welfare_benefits,,Personal welfare benefits,current value (0y),raw,Sociodemographics,continuous,0.65,84.79,0.723,
+Female,55-59,38,hc_di_resp_copd,,Chronic obstructive pulmonary disease,current value (0y),raw,Health,binary,0.59,85.38,,9.427
+Female,55-59,39,hc_cost_prescription_drug_roll_avg_1_5,,Prescription costs,1–5 years before baseline,rolling mean,Health,continuous,0.56,85.93,0.461,
+Female,55-59,40,hc_di_lri_1_1_5,,Lower respiratory infections,1–5 years before baseline,lagged binary,Health,binary,0.53,86.46,,5.217
+Female,55-59,41,hc_charlson_comorbidities_roll_avg_6_10,,Number of diagnoses,6–10 years before baseline,rolling mean,Health,continuous,0.51,86.97,0.424,
+Female,55-59,42,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,0.48,87.45,0.127,
+Female,55-59,43,se_pers_disab_pension_rank_age_gender,,Personal disability pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.46,87.91,0.719,
+Female,55-59,44,hc_di_neo_lung_1_1_5,,"Tracheal, bronchus, and lung cancer",1–5 years before baseline,lagged binary,Health,binary,0.44,88.35,,16.054
+Female,55-59,45,se_hh_welfare_benefits_rank_age_gender,,Household welfare benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.39,88.74,0.615,
+Female,55-59,46,hc_di_count_roll_sd_1_5,,Number of diagnoses,1–5 years before baseline,rolling SD,Health,continuous,0.39,89.13,0.452,
+Female,55-59,47,fa_num_children,,Number of children,current value (0y),raw,Sociodemographics,continuous,0.39,89.51,-0.199,
+Female,55-59,48,hc_di_lri,,Lower respiratory infections,current value (0y),raw,Health,binary,0.38,89.9,,9.494
+Female,55-59,49,hc_di_count_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,-0.37,89.52,0.495,
+Female,55-59,50,hc_cost_gp_roll_avg_1_5,,GP case complexity,1–5 years before baseline,rolling mean,Health,continuous,-0.36,89.16,0.32,
+Female,60-64,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,10.7,10.7,0.474,
+Female,60-64,2,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,8.9,19.59,0.587,
+Female,60-64,3,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,7.8,27.4,0.7,
+Female,60-64,4,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,6.5,33.89,,20.554
+Female,60-64,5,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,4.18,38.08,0.338,
+Female,60-64,6,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,3.69,41.77,0.276,
+Female,60-64,7,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,3.59,45.36,0.656,
+Female,60-64,8,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,3.5,48.86,0.683,
+Female,60-64,9,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,2.7,51.56,0.614,
+Female,60-64,10,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,2.45,54.01,0.198,
+Female,60-64,11,se_pers_disab_pension_rank_age_gender,,Personal disability pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,2.37,56.38,0.691,
+Female,60-64,12,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,2.22,58.6,0.584,
+Female,60-64,13,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,1.74,60.33,0.603,
+Female,60-64,14,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.69,62.03,-0.051,
+Female,60-64,15,hc_di_resp_copd,,Chronic obstructive pulmonary disease,current value (0y),raw,Health,binary,1.58,63.61,,8.2
+Female,60-64,16,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,1.57,65.18,0.421,
+Female,60-64,17,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.48,66.66,0.514,
+Female,60-64,18,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,1.42,68.07,,7.053
+Female,60-64,19,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,1.35,69.43,-0.634,
+Female,60-64,20,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.33,70.76,0.33,
+Female,60-64,21,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.23,69.52,0.232,
+Female,60-64,22,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.1,70.63,0.411,
+Female,60-64,23,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,1.09,71.72,,9.758
+Female,60-64,24,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,1.07,72.79,,24.413
+Female,60-64,25,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.03,73.82,-0.476,
+Female,60-64,26,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,1.01,74.83,0.543,
+Female,60-64,27,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,1,75.83,0.107,
+Female,60-64,28,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.98,76.81,0.5,
+Female,60-64,29,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,0.93,77.74,0.148,
+Female,60-64,30,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,0.93,78.66,0.614,
+Female,60-64,31,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.9,79.56,0.588,
+Female,60-64,32,se_hh_disab_benefits,,Household disability benefits,current value (0y),raw,Sociodemographics,continuous,0.88,80.44,0.58,
+Female,60-64,33,hc_di_neo_ovarian,,Ovarian cancer,current value (0y),raw,Health,binary,0.83,81.27,,14.087
+Female,60-64,34,hc_util_gp_visits,,GP visits,current value (0y),raw,Health,continuous,-0.81,80.46,0.243,
+Female,60-64,35,hc_di_neo_brain,,Brain and central nervous system cancer,current value (0y),raw,Health,binary,0.8,81.26,,23.791
+Female,60-64,36,hc_cost_somatic_outpatient_roll_avg_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.76,82.02,0.408,
+Female,60-64,37,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,0.71,82.73,,3.013
+Female,60-64,38,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,0.7,83.43,,8.982
+Female,60-64,39,se_hh_unemp_benefits,,Household unemployment benefits,current value (0y),raw,Sociodemographics,continuous,0.64,84.07,0.052,
+Female,60-64,40,hc_di_neo_lung_1_1_5,,"Tracheal, bronchus, and lung cancer",1–5 years before baseline,lagged binary,Health,binary,0.63,84.69,,11.13
+Female,60-64,41,hc_util_gp_visits_roll_avg_6_10,,GP visits,6–10 years before baseline,rolling mean,Health,continuous,-0.56,84.13,0.204,
+Female,60-64,42,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.56,84.69,0.362,
+Female,60-64,43,fa_num_children,,Number of children,current value (0y),raw,Sociodemographics,continuous,0.55,85.24,-0.142,
+Female,60-64,44,hc_di_count_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,-0.53,84.71,0.462,
+Female,60-64,45,hc_cost_gp_roll_sd_1_5,,GP case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.47,85.18,0.272,
+Female,60-64,46,hc_di_neo_colorectal,,Colon and rectum cancer,current value (0y),raw,Health,binary,0.47,85.65,,8.936
+Female,60-64,47,hc_util_home_care_physical_vis_roll_avg_1_5,,Home care visits,1–5 years before baseline,rolling mean,Health,continuous,0.44,86.09,0.111,
+Female,60-64,48,se_pers_disab_pension_rank,,Personal disability pension,current value (0y),rank,Sociodemographics,continuous,0.43,86.52,0.681,
+Female,60-64,49,se_pers_welfare_benefits_rank,,Personal welfare benefits,current value (0y),rank,Sociodemographics,continuous,0.42,86.94,0.581,
+Female,60-64,50,hc_cost_somatic_inpatient_roll_avg_6_10,,Somatic inpatient case complexity,6–10 years before baseline,rolling mean,Health,continuous,0.42,87.36,0.298,
+Female,65-69,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,10.52,10.52,0.475,
+Female,65-69,2,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,9.84,20.36,0.69,
+Female,65-69,3,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,8.34,28.7,0.58,
+Female,65-69,4,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,5.11,33.81,,13.697
+Female,65-69,5,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,5.04,38.85,0.337,
+Female,65-69,6,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,5.03,43.88,0.616,
+Female,65-69,7,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,4.22,48.09,0.661,
+Female,65-69,8,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,3.08,51.18,0.425,
+Female,65-69,9,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,2.6,53.78,0.485,
+Female,65-69,10,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,2.18,55.96,0.469,
+Female,65-69,11,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.88,57.84,0.584,
+Female,65-69,12,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,1.82,59.67,0.185,
+Female,65-69,13,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,1.77,61.44,0.093,
+Female,65-69,14,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,1.77,63.21,0.589,
+Female,65-69,15,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.73,64.93,0.39,
+Female,65-69,16,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.6,66.54,0.398,
+Female,65-69,17,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.5,65.04,0.227,
+Female,65-69,18,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,1.34,66.38,,15.933
+Female,65-69,19,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.32,67.69,0.435,
+Female,65-69,20,se_pers_disab_pension_rank_age_gender,,Personal disability pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.3,68.99,0.423,
+Female,65-69,21,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.27,70.26,-0.048,
+Female,65-69,22,hc_di_resp_copd,,Chronic obstructive pulmonary disease,current value (0y),raw,Health,binary,1.2,71.46,,6.414
+Female,65-69,23,se_hh_unemp_benefits,,Household unemployment benefits,current value (0y),raw,Sociodemographics,continuous,1.11,72.57,0.029,
+Female,65-69,24,hc_util_home_care_practical_vis,,Healthcare utilization (other),current value (0y),raw,Health,continuous,0.99,73.56,0.239,
+Female,65-69,25,hc_di_resp_copd_1_1_5,,Chronic obstructive pulmonary disease,1–5 years before baseline,lagged binary,Health,binary,0.97,74.53,,4.92
+Female,65-69,26,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.97,75.49,0.43,
+Female,65-69,27,hc_di_neo_ovarian,,Ovarian cancer,current value (0y),raw,Health,binary,0.93,76.42,,10.825
+Female,65-69,28,se_hh_welfare_benefits,,Household welfare benefits,current value (0y),raw,Sociodemographics,continuous,0.91,77.33,0.201,
+Female,65-69,29,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.88,78.21,0.523,
+Female,65-69,30,hc_di_neo_lung_1_1_5,,"Tracheal, bronchus, and lung cancer",1–5 years before baseline,lagged binary,Health,binary,0.84,79.05,,7.987
+Female,65-69,31,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,0.83,79.88,-0.294,
+Female,65-69,32,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,0.81,80.69,0.54,
+Female,65-69,33,hc_charlson_comorbidities_roll_avg_6_10,,Number of diagnoses,6–10 years before baseline,rolling mean,Health,continuous,0.8,81.49,0.418,
+Female,65-69,34,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,0.77,82.25,,5.433
+Female,65-69,35,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,0.72,82.97,0.086,
+Female,65-69,36,hc_di_neuro_dementia_1_1_5,,Alzheimer's disease and other dementias,1–5 years before baseline,lagged binary,Health,binary,0.67,83.65,,7.013
+Female,65-69,37,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.64,84.29,-0.336,
+Female,65-69,38,hc_util_gp_visits_roll_avg_6_10,,GP visits,6–10 years before baseline,rolling mean,Health,continuous,-0.55,83.74,0.193,
+Female,65-69,39,hc_di_cvd_ihd_1_1_5,,Ischemic heart disease,1–5 years before baseline,lagged binary,Health,binary,-0.55,83.19,,1.636
+Female,65-69,40,se_hh_unemp_benefits_rank,,Household unemployment benefits,current value (0y),rank,Sociodemographics,continuous,0.54,83.74,0.233,
+Female,65-69,41,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.53,84.26,0.571,
+Female,65-69,42,hc_di_neo_brain,,Brain and central nervous system cancer,current value (0y),raw,Health,binary,0.52,84.79,,15.907
+Female,65-69,43,hc_cost_somatic_outpatient_roll_avg_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.52,85.31,0.437,
+Female,65-69,44,hc_di_lri_1_1_5,,Lower respiratory infections,1–5 years before baseline,lagged binary,Health,binary,0.51,85.82,,3.886
+Female,65-69,45,hc_cost_gp_roll_sd_1_5,,GP case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.51,86.32,0.293,
+Female,65-69,46,se_hh_disab_benefits,,Household disability benefits,current value (0y),raw,Sociodemographics,continuous,0.5,86.83,0.347,
+Female,65-69,47,hc_cost_prescription_drug_oop_roll_sd_1_5,,Prescription costs,1–5 years before baseline,rolling SD,Health,continuous,0.48,87.3,0.229,
+Female,65-69,48,hc_di_diabetes_typ2_1_1_5,,Diabetes mellitus type 2,1–5 years before baseline,lagged binary,Health,binary,-0.45,86.85,,2.531
+Female,65-69,49,se_pers_disab_pension_roll_avg_1_5,,Personal disability pension,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.45,87.3,0.543,
+Female,65-69,50,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,0.42,87.73,,7.242
+Male,50-54,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,12.61,12.61,0.404,
+Male,50-54,2,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,8.32,20.93,0.745,
+Male,50-54,3,se_hh_employment_status,,Household employment,current value (0y),categorical,Sociodemographics,categorical,5.04,25.96,,
+Male,50-54,,,on_welfare,,,,Sociodemographics,level,,,,3.135
+Male,50-54,,,disab_recipient,,,,Sociodemographics,level,,,,5.701
+Male,50-54,,,employed,,,,Sociodemographics,level,,,,0.169
+Male,50-54,,,in_school,,,,Sociodemographics,level,,,,0.777
+Male,50-54,,,on_leave,,,,Sociodemographics,level,,,,2.835
+Male,50-54,,,retired,,,,Sociodemographics,level,,,,1.124
+Male,50-54,,,unemployed,,,,Sociodemographics,level,,,,1.678
+Male,50-54,4,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,4.07,30.04,0.53,
+Male,50-54,5,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,3.72,33.76,-0.7,
+Male,50-54,6,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,3.57,37.33,0.435,
+Male,50-54,7,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,2.92,40.25,0.64,
+Male,50-54,8,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,2.72,42.97,,10.712
+Male,50-54,9,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,2.58,45.55,-0.965,
+Male,50-54,10,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,2.41,47.97,0.271,
+Male,50-54,11,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,2,49.97,-0.909,
+Male,50-54,12,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,1.97,51.94,,13.308
+Male,50-54,13,se_pers_welfare_benefits,,Personal welfare benefits,current value (0y),raw,Sociodemographics,continuous,1.9,53.84,0.902,
+Male,50-54,14,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,1.89,55.72,,19.099
+Male,50-54,15,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,1.82,57.54,0.588,
+Male,50-54,16,se_pers_employment_status,,Employment status,current value (0y),categorical,Sociodemographics,categorical,1.81,59.35,,
+Male,50-54,,,on_welfare,,,,Sociodemographics,level,,,,3.313
+Male,50-54,,,disab_recipient,,,,Sociodemographics,level,,,,6.43
+Male,50-54,,,employed,,,,Sociodemographics,level,,,,0.156
+Male,50-54,,,in_school,,,,Sociodemographics,level,,,,0.858
+Male,50-54,,,on_leave,,,,Sociodemographics,level,,,,3.202
+Male,50-54,,,retired,,,,Sociodemographics,level,,,,5.842
+Male,50-54,,,unemployed,,,,Sociodemographics,level,,,,1.629
+Male,50-54,17,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,1.66,61.01,0.507,
+Male,50-54,18,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.55,62.55,-0.499,
+Male,50-54,19,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,1.54,64.09,0.268,
+Male,50-54,20,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.5,65.59,0.727,
+Male,50-54,21,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.32,66.91,0.441,
+Male,50-54,22,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.32,68.23,0.569,
+Male,50-54,23,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,1.3,69.53,0.591,
+Male,50-54,24,hc_di_cirrhosis_1_1_5,,Cirrhosis and other chronic liver diseases,1–5 years before baseline,lagged binary,Health,binary,1.3,70.83,,12.371
+Male,50-54,25,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,1.24,72.07,,28.322
+Male,50-54,26,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,1.21,73.28,,5.544
+Male,50-54,27,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.13,74.41,0.391,
+Male,50-54,28,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.13,75.54,0.688,
+Male,50-54,29,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.06,76.6,0.723,
+Male,50-54,30,se_pers_disp_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.04,77.64,-0.229,
+Male,50-54,31,hc_di_count_roll_sd_1_5,,Number of diagnoses,1–5 years before baseline,rolling SD,Health,continuous,1.04,78.68,0.528,
+Male,50-54,32,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.03,79.71,-0.307,
+Male,50-54,33,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-0.95,78.77,0.343,
+Male,50-54,34,se_pers_pension,,Personal pension,current value (0y),raw,Sociodemographics,continuous,0.9,79.67,-0.364,
+Male,50-54,35,se_pers_welfare_benefits_rank,,Personal welfare benefits,current value (0y),rank,Sociodemographics,continuous,-0.86,78.81,0.937,
+Male,50-54,36,se_hh_welfare_benefits_rank_age_gender,,Household welfare benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.73,79.54,0.638,
+Male,50-54,37,med_benzodiazepines_1_1_5,,Medications: benzodiazepines,1–5 years before baseline,lagged binary,Health,binary,0.73,80.27,,4.746
+Male,50-54,38,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.72,80.98,0.502,
+Male,50-54,39,se_pers_disp_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,0.69,81.68,-0.732,
+Male,50-54,40,se_pers_income_rank_age_gender_roll_avg_1_5,,Personal income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)",Sociodemographics,continuous,0.67,82.34,-0.861,
+Male,50-54,41,se_pers_pension_rank_age_gender,,Personal pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.66,83,-0.755,
+Male,50-54,42,se_pers_disp_income_roll_avg_1_5,,Personal income,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.66,83.66,-0.355,
+Male,50-54,43,de_marital_status_Married_1_5,,Marital status,1–5 years before baseline,lagged binary,Sociodemographics,binary,0.64,84.31,,0.323
+Male,50-54,44,se_hh_equiv_disp_income_rank_age_gender_roll_avg_1_5,,Household income,1–5 years before baseline,"rolling mean (rank, age-sex adj.)",Sociodemographics,continuous,0.61,84.92,-0.606,
+Male,50-54,45,se_pers_welfare_benefits_roll_avg_1_5,,Personal welfare benefits,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.59,85.51,0.878,
+Male,50-54,46,hc_util_gp_visits,,GP visits,current value (0y),raw,Health,continuous,-0.58,84.93,0.317,
+Male,50-54,47,se_pers_income_roll_sd_1_5,,Personal income,1–5 years before baseline,rolling SD,Sociodemographics,continuous,0.58,85.51,-0.13,
+Male,50-54,48,se_hh_welfare_benefits,,Household welfare benefits,current value (0y),raw,Sociodemographics,continuous,0.56,86.07,0.701,
+Male,50-54,49,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.53,86.61,0.291,
+Male,50-54,50,hc_elixhauser_comorbidities_roll_avg_6_10,,Number of diagnoses,6–10 years before baseline,rolling mean,Health,continuous,0.52,87.13,0.559,
+Male,55-59,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,10.01,10.01,0.409,
+Male,55-59,2,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,7.14,17.15,0.692,
+Male,55-59,3,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,7.11,24.26,0.528,
+Male,55-59,4,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,4.16,28.42,0.595,
+Male,55-59,5,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,3.92,32.34,0.292,
+Male,55-59,6,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,3.8,36.15,-0.562,
+Male,55-59,7,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,2.91,39.06,0.608,
+Male,55-59,8,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,2.74,41.8,,19.937
+Male,55-59,9,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,2.48,44.28,,13.796
+Male,55-59,10,se_hh_employment_status,,Household employment,current value (0y),categorical,Sociodemographics,categorical,2.39,46.67,,
+Male,55-59,,,on_welfare,,,,Sociodemographics,level,,,,2.774
+Male,55-59,,,disab_recipient,,,,Sociodemographics,level,,,,4.6
+Male,55-59,,,employed,,,,Sociodemographics,level,,,,0.199
+Male,55-59,,,in_school,,,,Sociodemographics,level,,,,1.224
+Male,55-59,,,on_leave,,,,Sociodemographics,level,,,,2.197
+Male,55-59,,,retired,,,,Sociodemographics,level,,,,1.327
+Male,55-59,,,unemployed,,,,Sociodemographics,level,,,,1.521
+Male,55-59,11,se_pers_employment_status,,Employment status,current value (0y),categorical,Sociodemographics,categorical,2.12,48.79,,
+Male,55-59,,,on_welfare,,,,Sociodemographics,level,,,,2.903
+Male,55-59,,,disab_recipient,,,,Sociodemographics,level,,,,5.293
+Male,55-59,,,employed,,,,Sociodemographics,level,,,,0.194
+Male,55-59,,,in_school,,,,Sociodemographics,level,,,,1
+Male,55-59,,,on_leave,,,,Sociodemographics,level,,,,2.487
+Male,55-59,,,retired,,,,Sociodemographics,level,,,,0.989
+Male,55-59,,,unemployed,,,,Sociodemographics,level,,,,1.306
+Male,55-59,12,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,1.84,50.62,-0.874,
+Male,55-59,13,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,1.71,52.33,-0.243,
+Male,55-59,14,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,1.67,54.01,,7.799
+Male,55-59,15,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,1.64,55.64,0.26,
+Male,55-59,16,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,1.59,57.24,0.425,
+Male,55-59,17,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.58,58.82,0.626,
+Male,55-59,18,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,1.57,60.39,,9.744
+Male,55-59,19,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.52,61.91,0.689,
+Male,55-59,20,se_pers_welfare_benefits_rank,,Personal welfare benefits,current value (0y),rank,Sociodemographics,continuous,1.39,63.3,0.848,
+Male,55-59,21,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.37,64.67,-0.26,
+Male,55-59,22,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.33,66,0.434,
+Male,55-59,23,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.21,67.21,0.5,
+Male,55-59,24,hc_di_cirrhosis_1_1_5,,Cirrhosis and other chronic liver diseases,1–5 years before baseline,lagged binary,Health,binary,1.13,68.34,,9.305
+Male,55-59,25,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.12,69.46,-0.828,
+Male,55-59,26,se_pers_disp_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,0.97,70.43,-0.171,
+Male,55-59,27,se_hh_welfare_benefits,,Household welfare benefits,current value (0y),raw,Sociodemographics,continuous,0.95,71.38,0.67,
+Male,55-59,28,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.92,72.3,0.683,
+Male,55-59,29,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.91,73.21,0.498,
+Male,55-59,30,se_hh_welfare_benefits_rank,,Household welfare benefits,current value (0y),rank,Sociodemographics,continuous,0.89,74.1,0.716,
+Male,55-59,31,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,0.88,74.98,0.349,
+Male,55-59,32,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,0.82,75.8,,4.07
+Male,55-59,33,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,0.81,76.61,0.126,
+Male,55-59,34,se_pers_disp_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,0.8,77.41,-0.662,
+Male,55-59,35,hc_cost_somatic_inpatient_roll_sd_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.77,78.18,0.39,
+Male,55-59,36,hc_di_neo_brain,,Brain and central nervous system cancer,current value (0y),raw,Health,binary,0.76,78.94,,23.226
+Male,55-59,37,se_pers_disp_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.75,79.69,-0.687,
+Male,55-59,38,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,0.74,80.43,0.535,
+Male,55-59,39,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-0.7,79.73,0.317,
+Male,55-59,40,hc_di_mental_alcohol_1_6_10,,Alcohol use disorders,6–10 years before baseline,lagged binary,Health,binary,0.7,80.42,,6.982
+Male,55-59,41,de_marital_status_Married_1_5,,Marital status,1–5 years before baseline,lagged binary,Sociodemographics,binary,0.67,81.09,,0.363
+Male,55-59,42,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,0.67,81.76,0.139,
+Male,55-59,43,hc_di_lri,,Lower respiratory infections,current value (0y),raw,Health,binary,0.65,82.41,,8.09
+Male,55-59,44,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,0.62,83.03,,24.219
+Male,55-59,45,de_marital_status,,Marital status,current value (0y),categorical,Sociodemographics,categorical,0.59,83.62,,
+Male,55-59,,,Divorced,,,,Sociodemographics,level,,,,1.794
+Male,55-59,,,Married,,,,Sociodemographics,level,,,,0.357
+Male,55-59,,,Single,,,,Sociodemographics,level,,,,2.302
+Male,55-59,,,Widow,,,,Sociodemographics,level,,,,1.458
+Male,55-59,46,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.58,84.2,0.503,
+Male,55-59,47,se_pers_pension,,Personal pension,current value (0y),raw,Sociodemographics,continuous,0.54,84.74,-0.425,
+Male,55-59,48,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,0.54,85.28,0.301,
+Male,55-59,49,se_hh_disab_benefits,,Household disability benefits,current value (0y),raw,Sociodemographics,continuous,0.52,85.8,0.618,
+Male,55-59,50,se_hh_unemp_benefits_rank_age_gender,,Household unemployment benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.52,86.32,0.252,
+Male,60-64,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,9.49,9.49,0.425,
+Male,60-64,2,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,7.33,16.82,0.525,
+Male,60-64,3,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,5.61,22.43,0.647,
+Male,60-64,4,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,4.2,26.63,0.603,
+Male,60-64,5,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,4.1,30.73,0.197,
+Male,60-64,6,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,3.89,34.62,,13.167
+Male,60-64,7,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,3.49,38.11,-0.143,
+Male,60-64,8,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,3.06,41.17,-0.469,
+Male,60-64,9,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,2.87,44.05,0.594,
+Male,60-64,10,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,2.19,46.24,-0.759,
+Male,60-64,11,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,2.17,48.4,,5.998
+Male,60-64,12,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,2.05,50.45,0.635,
+Male,60-64,13,se_hh_disab_benefits,,Household disability benefits,current value (0y),raw,Sociodemographics,continuous,2.04,52.49,0.566,
+Male,60-64,14,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,1.99,54.49,,9.364
+Male,60-64,15,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,1.94,56.43,0.23,
+Male,60-64,16,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,1.68,58.11,0.409,
+Male,60-64,17,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,1.54,59.65,0.578,
+Male,60-64,18,se_hh_employment_status,,Household employment,current value (0y),categorical,Sociodemographics,categorical,1.45,61.11,,
+Male,60-64,,,on_welfare,,,,Sociodemographics,level,,,,2.131
+Male,60-64,,,disab_recipient,,,,Sociodemographics,level,,,,3.599
+Male,60-64,,,employed,,,,Sociodemographics,level,,,,0.255
+Male,60-64,,,in_school,,,,Sociodemographics,level,,,,1.474
+Male,60-64,,,on_leave,,,,Sociodemographics,level,,,,1.877
+Male,60-64,,,retired,,,,Sociodemographics,level,,,,1.294
+Male,60-64,,,unemployed,,,,Sociodemographics,level,,,,1.137
+Male,60-64,19,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.33,62.43,0.641,
+Male,60-64,20,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,1.32,63.75,0.126,
+Male,60-64,21,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.31,65.07,0.575,
+Male,60-64,22,se_pers_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.27,66.34,-0.734,
+Male,60-64,23,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.26,67.59,0.419,
+Male,60-64,24,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,1.25,68.84,0.113,
+Male,60-64,25,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,1.23,70.07,0.463,
+Male,60-64,26,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,1.1,71.17,0.488,
+Male,60-64,27,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,1.06,72.22,,15.397
+Male,60-64,28,se_pers_employment_status,,Employment status,current value (0y),categorical,Sociodemographics,categorical,1.05,73.28,,
+Male,60-64,,,on_welfare,,,,Sociodemographics,level,,,,2.28
+Male,60-64,,,disab_recipient,,,,Sociodemographics,level,,,,4.287
+Male,60-64,,,employed,,,,Sociodemographics,level,,,,0.259
+Male,60-64,,,in_school,,,,Sociodemographics,level,,,,1.061
+Male,60-64,,,on_leave,,,,Sociodemographics,level,,,,1.937
+Male,60-64,,,retired,,,,Sociodemographics,level,,,,1.214
+Male,60-64,,,unemployed,,,,Sociodemographics,level,,,,1.02
+Male,60-64,29,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.01,72.27,0.291,
+Male,60-64,30,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.99,73.26,0.512,
+Male,60-64,31,se_hh_welfare_benefits,,Household welfare benefits,current value (0y),raw,Sociodemographics,continuous,0.96,74.22,0.564,
+Male,60-64,32,hc_di_cirrhosis_1_1_5,,Cirrhosis and other chronic liver diseases,1–5 years before baseline,lagged binary,Health,binary,0.8,75.02,,6.599
+Male,60-64,33,se_hh_unemp_benefits,,Household unemployment benefits,current value (0y),raw,Sociodemographics,continuous,0.8,75.82,0.104,
+Male,60-64,34,se_pers_disp_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,0.79,76.61,-0.105,
+Male,60-64,35,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.78,77.38,0.457,
+Male,60-64,36,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,0.77,78.15,,7.21
+Male,60-64,37,se_pers_pension_rank_age_gender,,Personal pension,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.76,78.91,-0.664,
+Male,60-64,38,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,0.72,79.64,0.392,
+Male,60-64,39,hc_di_neo_colorectal,,Colon and rectum cancer,current value (0y),raw,Health,binary,0.67,80.31,,6.895
+Male,60-64,40,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,0.65,80.95,-0.162,
+Male,60-64,41,se_pers_disp_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,0.63,81.59,-0.556,
+Male,60-64,42,med_benzodiazepines,,Medications: benzodiazepines,current value (0y),raw,Health,binary,0.62,82.21,,3.121
+Male,60-64,43,se_pers_pension_rank,,Personal pension,current value (0y),rank,Sociodemographics,continuous,0.61,82.81,-0.696,
+Male,60-64,44,hc_di_neo_brain,,Brain and central nervous system cancer,current value (0y),raw,Health,binary,0.56,83.37,,15.343
+Male,60-64,45,se_pers_welfare_benefits_rank,,Personal welfare benefits,current value (0y),rank,Sociodemographics,continuous,0.56,83.93,0.709,
+Male,60-64,46,hc_cost_other_roll_avg_1_5,,Other healthcare case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.56,84.49,0.104,
+Male,60-64,47,de_marital_status_Married_1_5,,Marital status,1–5 years before baseline,lagged binary,Sociodemographics,binary,0.56,85.05,,0.413
+Male,60-64,48,se_pers_disp_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.52,85.57,-0.581,
+Male,60-64,49,se_pers_pension,,Personal pension,current value (0y),raw,Sociodemographics,continuous,0.49,86.06,-0.435,
+Male,60-64,50,se_hh_welfare_benefits_rank,,Household welfare benefits,current value (0y),rank,Sociodemographics,continuous,0.48,86.53,0.623,
+Male,65-69,1,hc_cost_somatic_inpatient,,Somatic inpatient case complexity,current value (0y),raw,Health,continuous,8.95,8.95,0.409,
+Male,65-69,2,hc_hospitalizations_somatic,,Number of somatic hospitalizations,current value (0y),raw,Health,continuous,7.86,16.81,0.53,
+Male,65-69,3,hc_charlson_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,5.88,22.69,0.608,
+Male,65-69,4,hc_cost_somatic_outpatient,,Somatic outpatient case complexity,current value (0y),raw,Health,continuous,4.53,27.22,0.307,
+Male,65-69,5,hc_di_neo_lung,,"Tracheal, bronchus, and lung cancer",current value (0y),raw,Health,binary,4.46,31.67,,9.498
+Male,65-69,6,hc_di_count,,Number of diagnoses,current value (0y),raw,Health,continuous,4.44,36.11,0.593,
+Male,65-69,7,hc_elixhauser_comorbidities,,Number of diagnoses,current value (0y),raw,Health,continuous,3.9,40.01,0.614,
+Male,65-69,8,fa_hh_size,,Household size,current value (0y),raw,Sociodemographics,continuous,2.86,42.87,-0.426,
+Male,65-69,9,se_hh_equiv_disp_income,,Household income,current value (0y),raw,Sociodemographics,continuous,2.59,45.46,-0.15,
+Male,65-69,10,med_num_meds,,Number of medications,current value (0y),raw,Health,continuous,2.32,47.78,0.433,
+Male,65-69,11,hc_cost_prescription_drug_oop,,Prescription costs,current value (0y),raw,Health,continuous,2.12,49.9,0.508,
+Male,65-69,12,se_hh_welfare_benefits,,Household welfare benefits,current value (0y),raw,Sociodemographics,continuous,2.03,51.92,0.212,
+Male,65-69,13,hc_charlson_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,1.83,53.75,0.523,
+Male,65-69,14,hc_di_cirrhosis,,Cirrhosis and other chronic liver diseases,current value (0y),raw,Health,binary,1.67,55.42,,6.686
+Male,65-69,15,hc_util_home_care_physical_vis,,Home care visits,current value (0y),raw,Health,continuous,1.59,57.01,0.156,
+Male,65-69,16,se_hh_disab_benefits,,Household disability benefits,current value (0y),raw,Sociodemographics,continuous,1.58,58.6,0.401,
+Male,65-69,17,se_hh_disab_benefits_rank,,Household disability benefits,current value (0y),rank,Sociodemographics,continuous,1.51,60.11,0.391,
+Male,65-69,18,se_hh_unemp_benefits,,Household unemployment benefits,current value (0y),raw,Sociodemographics,continuous,1.45,61.55,0.025,
+Male,65-69,19,se_hh_disab_benefits_rank_age_gender,,Household disability benefits,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,1.32,62.87,0.47,
+Male,65-69,20,hc_cost_prescription_drug,,Prescription costs,current value (0y),raw,Health,continuous,1.3,64.17,0.363,
+Male,65-69,21,se_long_term_sick_leave_weeks,,Long-term sick leave,current value (0y),raw,Health,continuous,1.22,65.39,0.095,
+Male,65-69,22,hc_cost_somatic_inpatient_roll_avg_1_5,,Somatic inpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,1.11,66.5,0.417,
+Male,65-69,23,hc_cost_other,,Other healthcare case complexity,current value (0y),raw,Health,continuous,1.1,67.6,0.101,
+Male,65-69,24,hc_di_mental_alcohol_1_1_5,,Alcohol use disorders,1–5 years before baseline,lagged binary,Health,binary,1.08,68.68,,4.448
+Male,65-69,25,hc_di_resp_copd,,Chronic obstructive pulmonary disease,current value (0y),raw,Health,binary,1.07,69.75,,4.742
+Male,65-69,26,se_pers_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.04,70.79,-0.225,
+Male,65-69,27,hc_util_gp_visits_roll_avg_1_5,,GP visits,1–5 years before baseline,rolling mean,Health,continuous,-1.04,69.75,0.244,
+Male,65-69,28,hc_cost_somatic_outpatient_roll_sd_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling SD,Health,continuous,1.03,70.78,0.333,
+Male,65-69,29,se_pers_disp_income,,Personal income,current value (0y),raw,Sociodemographics,continuous,1.02,71.8,-0.125,
+Male,65-69,30,hc_cost_gp,,GP case complexity,current value (0y),raw,Health,continuous,1.01,72.8,0.383,
+Male,65-69,31,se_pers_income_rank,,Personal income,current value (0y),rank,Sociodemographics,continuous,0.93,73.73,-0.462,
+Male,65-69,32,hc_di_neo_liver,,Liver cancer,current value (0y),raw,Health,binary,0.87,74.6,,10.208
+Male,65-69,33,hc_elixhauser_comorbidities_roll_avg_1_5,,Number of diagnoses,1–5 years before baseline,rolling mean,Health,continuous,0.85,75.45,0.54,
+Male,65-69,34,hc_charlson_comorbidities_roll_avg_6_10,,Number of diagnoses,6–10 years before baseline,rolling mean,Health,continuous,0.77,76.22,0.385,
+Male,65-69,35,hc_di_lri_1_1_5,,Lower respiratory infections,1–5 years before baseline,lagged binary,Health,binary,0.75,76.97,,3.366
+Male,65-69,36,se_pers_employment_status_disab_recipient_1_5,,Employment status,1–5 years before baseline,lagged binary,Sociodemographics,binary,0.68,77.64,,3.211
+Male,65-69,37,hc_util_gp_visits,,GP visits,current value (0y),raw,Health,continuous,-0.62,77.02,0.234,
+Male,65-69,38,hc_hospitalizations_somatic_roll_sd_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling SD,Health,continuous,0.62,77.64,0.481,
+Male,65-69,39,hc_hospitalizations_somatic_roll_avg_1_5,,Number of somatic hospitalizations,1–5 years before baseline,rolling mean,Health,continuous,0.62,78.26,0.473,
+Male,65-69,40,se_pers_income_roll_avg_1_5,,Personal income,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.61,78.87,-0.187,
+Male,65-69,41,hc_di_neo_bone,,Malignant neoplasm of bone and articular cartilage,current value (0y),raw,Health,binary,0.6,79.47,,10.213
+Male,65-69,42,hc_cost_somatic_outpatient_roll_avg_1_5,,Somatic outpatient case complexity,1–5 years before baseline,rolling mean,Health,continuous,0.59,80.06,0.381,
+Male,65-69,43,hc_di_neo_pancreas,,Pancreatic cancer,current value (0y),raw,Health,binary,0.58,80.64,,10.127
+Male,65-69,44,se_pers_pension_rank,,Personal pension,current value (0y),rank,Sociodemographics,continuous,0.54,81.18,-0.62,
+Male,65-69,45,hc_di_cvd_ihd,,Ischemic heart disease,current value (0y),raw,Health,binary,-0.53,80.65,,1.967
+Male,65-69,46,se_hh_equiv_disp_income_roll_avg_1_5,,Household income,1–5 years before baseline,rolling mean,Sociodemographics,continuous,0.51,81.16,-0.183,
+Male,65-69,47,hc_di_mental_alcohol,,Alcohol use disorders,current value (0y),raw,Health,binary,0.51,81.67,,5.127
+Male,65-69,48,se_pers_income_rank_roll_avg_1_5,,Personal income,1–5 years before baseline,rolling mean (rank),Sociodemographics,continuous,0.5,82.17,-0.553,
+Male,65-69,49,se_pers_disp_income_rank_age_gender,,Personal income,current value (0y),rank (age-sex adj.),Sociodemographics,continuous,0.49,82.67,-0.407,
+Male,65-69,50,se_hh_equiv_disp_income_rank,,Household income,current value (0y),rank,Sociodemographics,continuous,0.49,83.15,-0.259,
