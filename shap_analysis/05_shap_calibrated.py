@@ -32,8 +32,8 @@ OUT_PATH              = RESULTS_DIR / "calibrated_shap_values.csv"
 # The calibrated model uses model-agnostic (permutation) SHAP, which is too
 # expensive to run on the whole test set (~200k+ rows). The decomposition only
 # needs stable group means (deaths vs survivors), and deaths are rare, so we
-# explain ALL deaths plus a random survivor sample of equal size.
-# N_SURVIVORS = None  -> match the number of deaths.
+# explain ALL deaths plus a random sample of 1,000 survivors.
+# N_SURVIVORS = None  -> match the number of deaths instead.
 N_SURVIVORS   = 1000   # survivor sample explained (None = match the number of deaths)
 BACKGROUND_N  = 500    # survivor reference (background) size for SHAP
 
